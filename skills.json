@@ -7,7 +7,7 @@
   "path": "skills/academy-guide/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/academy-guide/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it for stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product.",
+  "when_to_use": "Use it when you're learning how to use Claude and want links to the right Claude Academy courses and tutorials.",
   "example_prompts": [
    "s learning hub. Trigger on: ",
    "how can I",
@@ -24,7 +24,8 @@
    "about",
    "how",
    "claude"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "algorithmic-art",
@@ -34,7 +35,7 @@
   "path": "skills/algorithmic-art/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/algorithmic-art/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it for creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration.",
+  "when_to_use": "Use it when you want Claude to make generative art with code, like flowing patterns or particle drawings you can tweak.",
   "example_prompts": [
    "Help me with creating algorithmic art using p5.js with seeded randomness and interactive parameter",
    "Walk me through algorithmic art step by step",
@@ -51,7 +52,8 @@
    "interactive",
    "parameter",
    "exploration"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "brand-guidelines",
@@ -61,7 +63,7 @@
   "path": "skills/brand-guidelines/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/brand-guidelines/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to brand colors or style guidelines, visual formatting, or company design standards apply.",
+  "when_to_use": "Use it when you want something Claude makes to follow Anthropic's official brand colors and fonts.",
   "example_prompts": [
    "Can you help me brand colors or style guidelines, visual formatting, or company design standards?",
    "Walk me through brand guidelines step by step",
@@ -78,7 +80,8 @@
    "sort",
    "artifact",
    "may"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "canvas-design",
@@ -88,7 +91,7 @@
   "path": "skills/canvas-design/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create a poster, piece of art, design, or other static piece.",
+  "when_to_use": "Use it when you want a poster, art piece or other polished visual saved as a PNG or PDF.",
   "example_prompts": [
    "Can you help me create a poster, piece of art, design, or other static piece?",
    "Walk me through canvas design step by step",
@@ -105,7 +108,8 @@
    "documents",
    "using",
    "design"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "claude-api",
@@ -115,7 +119,7 @@
   "path": "skills/claude-api/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/claude-api/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching.",
+  "when_to_use": "Use it when you're writing code that calls the Claude API or Anthropic SDK and want correct models, settings and examples.",
   "example_prompts": [
    "Can you help me reference for the Claude API / Anthropic SDK — model ids?",
    "Walk me through claude api step by step",
@@ -132,7 +136,8 @@
    "ids",
    "pricing",
    "params"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "discernment-nudge",
@@ -142,7 +147,7 @@
   "path": "skills/discernment-nudge/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/discernment-nudge/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it for after you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans.",
+  "when_to_use": "Use it when you want Claude to point out what to double-check before you act on its advice or drafts.",
   "example_prompts": [
    "Can you help me after you give a substantive answer or draft that the user?",
    "Walk me through discernment nudge step by step",
@@ -159,7 +164,8 @@
    "act",
    "advice",
    "recommendations"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "doc-coauthoring",
@@ -169,7 +175,7 @@
   "path": "skills/doc-coauthoring/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to write documentation, proposals, technical specs, decision docs, or similar structured content.",
+  "when_to_use": "Use it when you want to write documentation, a proposal or a technical spec together with Claude, step by step.",
   "example_prompts": [
    "Can you help me write documentation, proposals, technical specs, decision docs, or similar structured content?",
    "Walk me through doc coauthoring step by step",
@@ -186,7 +192,8 @@
    "documentation",
    "wants",
    "write"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "docx",
@@ -196,7 +203,7 @@
   "path": "skills/docx/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create, read, edit, or manipulate Word documents or Word templates.",
+  "when_to_use": "Use it when you want to create, read or edit a Word document (.docx), such as a report, letter or memo.",
   "example_prompts": [
    "Word doc",
    "word document"
@@ -212,7 +219,8 @@
    "word",
    "documents",
    "files"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "frontend-design",
@@ -222,7 +230,7 @@
   "path": "skills/frontend-design/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to guidance for distinctive, intentional visual design when building new UI or reshaping an existing one.",
+  "when_to_use": "Use it when you're building a web page or app screen and want it to look distinctive and well designed, not generic.",
   "example_prompts": [
    "Can you help me guidance for distinctive, intentional visual design when building new UI?",
    "Walk me through frontend design step by step",
@@ -239,7 +247,8 @@
    "new",
    "reshaping",
    "existing"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "internal-comms",
@@ -249,7 +258,7 @@
   "path": "skills/internal-comms/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/internal-comms/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to asked to write some sort of internal communications.",
+  "when_to_use": "Use it when you need to write a company update, newsletter, status report or other internal announcement.",
   "example_prompts": [
    "Can you help me asked to write some sort of internal communications?",
    "Walk me through internal comms step by step",
@@ -266,7 +275,8 @@
    "internal",
    "communications",
    "using"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "mcp-builder",
@@ -276,7 +286,7 @@
   "path": "skills/mcp-builder/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/mcp-builder/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're building MCP servers to integrate external APIs or services, whether in Python or Node/TypeScript.",
+  "when_to_use": "Use it when you want to build an MCP server so Claude can connect to another app or service.",
   "example_prompts": [
    "Help me with building MCP servers to integrate external APIs or services, whether in",
    "Walk me through mcp builder step by step",
@@ -293,7 +303,8 @@
    "protocol",
    "servers",
    "enable"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pdf",
@@ -303,7 +314,7 @@
   "path": "skills/pdf/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to do anything with PDF files.",
+  "when_to_use": "Use it when you need to read, summarize, fill in, merge, split or create PDF files.",
   "example_prompts": [
    "Can you help me do anything with PDF files?",
    "Walk me through pdf step by step",
@@ -320,7 +331,8 @@
    "extracting",
    "text",
    "tables"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pptx",
@@ -330,7 +342,7 @@
   "path": "skills/pptx/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it any time a .pptx or .potx file is involved in any way — as input, output, or both.",
+  "when_to_use": "Use it when you want to make or edit a PowerPoint deck, like a pitch deck or presentation.",
   "example_prompts": [
    "Can you help me use this skill any time a .pptx or .potx file is?",
    "Walk me through pptx step by step",
@@ -347,7 +359,8 @@
    "output",
    "both",
    "includes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "skill-creator",
@@ -357,7 +370,7 @@
   "path": "skills/skill-creator/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill.",
+  "when_to_use": "Use it when you want to create your own Claude skill or improve one you already have.",
   "example_prompts": [
    "Can you help me create a skill from scratch, edit, or optimize an existing skill?",
    "Walk me through skill creator step by step",
@@ -374,7 +387,8 @@
    "measure",
    "performance",
    "users"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "slack-gif-creator",
@@ -384,7 +398,7 @@
   "path": "skills/slack-gif-creator/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/slack-gif-creator/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.",
+  "when_to_use": "Use it when you want a fun animated GIF that's sized and optimized for Slack.",
   "example_prompts": [
    "Can you help me request animated GIFs for Slack like \"make me a GIF?",
    "Walk me through slack gif creator step by step",
@@ -401,7 +415,8 @@
    "slack",
    "provides",
    "constraints"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "theme-factory",
@@ -411,7 +426,7 @@
   "path": "skills/theme-factory/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/theme-factory/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to toolkit for styling artifacts with a theme.",
+  "when_to_use": "Use it when you want to give slides, documents or a web page a consistent color and font theme.",
   "example_prompts": [
    "Can you help me toolkit for styling artifacts with a theme?",
    "Walk me through theme factory step by step",
@@ -428,7 +443,8 @@
    "slides",
    "docs",
    "reportings"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "web-artifacts-builder",
@@ -438,7 +454,7 @@
   "path": "skills/web-artifacts-builder/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/web-artifacts-builder/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+  "when_to_use": "Use it when you want Claude to build a richer interactive web app (React, Tailwind) as an artifact.",
   "example_prompts": [
    "Can you help me complex artifacts requiring state management, routing, or shadcn/ui components - not?",
    "Walk me through web artifacts builder step by step",
@@ -455,7 +471,8 @@
    "html",
    "artifacts",
    "using"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "webapp-testing",
@@ -465,7 +482,7 @@
   "path": "skills/webapp-testing/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to toolkit for interacting with and testing local web applications using Playwright.",
+  "when_to_use": "Use it when you want Claude to open your local web app in a browser, click through it and check that it works.",
   "example_prompts": [
    "Can you help me toolkit for interacting with and testing local web applications using Playwright?",
    "Walk me through webapp testing step by step",
@@ -482,7 +499,8 @@
    "using",
    "playwright",
    "supports"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "xlsx",
@@ -492,7 +510,7 @@
   "path": "skills/xlsx/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it any time a spreadsheet file is the primary input or output.",
+  "when_to_use": "Use it when you're working with an Excel or spreadsheet file, whether creating, cleaning, editing or adding charts.",
   "example_prompts": [
    "Can you help me use this skill any time a spreadsheet file is the primary?",
    "Walk me through xlsx step by step",
@@ -509,7 +527,8 @@
    "means",
    "task",
    "where"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "template-skill",
@@ -541,7 +560,7 @@
   "path": "skills/brainstorming/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/brainstorming/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it for you MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior.",
+  "when_to_use": "Use it before building something new, so Claude asks the right questions and turns a rough idea into a clear design.",
   "example_prompts": [
    "Can you help me you MUST use this before any creative work - creating features?",
    "Walk me through brainstorming step by step",
@@ -558,7 +577,8 @@
    "building",
    "components",
    "adding"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "diagnosing-superpowers",
@@ -568,7 +588,7 @@
   "path": "skills/diagnosing-superpowers/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/diagnosing-superpowers/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results.",
+  "when_to_use": "Use it when a Superpowers coding session went badly and you want to understand what went wrong.",
   "example_prompts": [
    "t fire, ",
    "why is it so expensive",
@@ -585,7 +605,8 @@
    "wants",
    "know",
    "why"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "dispatching-parallel-agents",
@@ -595,7 +616,7 @@
   "path": "skills/dispatching-parallel-agents/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/dispatching-parallel-agents/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you're facing 2+ independent tasks that can be worked on without shared state or sequential dependencies.",
+  "when_to_use": "Use it when you have several independent tasks and want Claude to work on them at the same time.",
   "example_prompts": [
    "Help me with facing 2+ independent tasks that can be worked on without shared",
    "Walk me through dispatching parallel agents step by step",
@@ -612,7 +633,8 @@
    "shared",
    "state",
    "sequential"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "executing-plans",
@@ -622,7 +644,7 @@
   "path": "skills/executing-plans/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/executing-plans/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you're executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution.",
+  "when_to_use": "Use it when you already have a written implementation plan and want Claude to carry it out step by step.",
   "example_prompts": [
    "Help me with executing an implementation plan in the current session as the implementer",
    "Walk me through executing plans step by step",
@@ -639,7 +661,8 @@
    "yourself",
    "human",
    "partner"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "finishing-a-development-branch",
@@ -649,7 +672,7 @@
   "path": "skills/finishing-a-development-branch/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/finishing-a-development-branch/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to implementation is complete, all tests pass, and you need to decide how to integrate the work.",
+  "when_to_use": "Use it when your code is done and tests pass, and you need to decide how to merge or ship the work.",
   "example_prompts": [
    "Can you help me implementation is complete, all tests pass, and you need to decide?",
    "Walk me through finishing a development branch step by step",
@@ -666,7 +689,8 @@
    "decide",
    "how",
    "integrate"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "receiving-code-review",
@@ -676,7 +700,7 @@
   "path": "skills/receiving-code-review/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/receiving-code-review/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you're receiving code review feedback, before implementing suggestions, especially if feedback seems unclear.",
+  "when_to_use": "Use it when you've gotten code review feedback and want to handle it carefully instead of blindly applying it.",
   "example_prompts": [
    "Help me with receiving code review feedback, before implementing suggestions, especially if feedback seems",
    "Walk me through receiving code review step by step",
@@ -693,7 +717,8 @@
    "suggestions",
    "especially",
    "seems"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "requesting-code-review",
@@ -703,7 +728,7 @@
   "path": "skills/requesting-code-review/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you're completing tasks, implementing major features, or before merging to verify work meets requirements.",
+  "when_to_use": "Use it when you've finished a feature and want your code reviewed before merging it.",
   "example_prompts": [
    "Help me with completing tasks, implementing major features, or before merging to verify work",
    "Walk me through requesting code review step by step",
@@ -720,7 +745,8 @@
    "merging",
    "verify",
    "work"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "subagent-driven-development",
@@ -730,7 +756,7 @@
   "path": "skills/subagent-driven-development/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/subagent-driven-development/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you're executing implementation plans with independent tasks in the current session.",
+  "when_to_use": "Use it when you have a plan with separate tasks and want Claude to hand each task to a helper agent.",
   "example_prompts": [
    "Help me with executing implementation plans with independent tasks in the current session",
    "Walk me through subagent driven development step by step",
@@ -745,7 +771,8 @@
    "tasks",
    "current",
    "session"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "systematic-debugging",
@@ -755,7 +782,7 @@
   "path": "skills/systematic-debugging/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you're encountering any bug, test failure, or unexpected behavior, before proposing fixes.",
+  "when_to_use": "Use it when something is broken or a test fails and you want to find the real cause before changing code.",
   "example_prompts": [
    "Help me with encountering any bug, test failure, or unexpected behavior, before proposing fixes",
    "Walk me through systematic debugging step by step",
@@ -772,7 +799,8 @@
    "before",
    "proposing",
    "fixes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "test-driven-development",
@@ -782,7 +810,7 @@
   "path": "skills/test-driven-development/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/test-driven-development/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you're implementing any feature or bugfix, before writing implementation code.",
+  "when_to_use": "Use it when you're adding a feature or fixing a bug and want to write the tests first.",
   "example_prompts": [
    "Help me with implementing any feature or bugfix, before writing implementation code",
    "Walk me through test driven development step by step",
@@ -797,7 +825,8 @@
    "writing",
    "implementation",
    "code"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "using-git-worktrees",
@@ -807,7 +836,7 @@
   "path": "skills/using-git-worktrees/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you're starting feature work that needs isolation from current workspace.",
+  "when_to_use": "Use it when you want to start new code work in a separate, isolated copy of your project.",
   "example_prompts": [
    "Help me with starting feature work that needs isolation from current workspace",
    "Walk me through using git worktrees step by step",
@@ -824,7 +853,8 @@
    "workspace",
    "before",
    "executing"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "using-superpowers",
@@ -834,7 +864,7 @@
   "path": "skills/using-superpowers/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/using-superpowers/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you're starting any conversation - establishes how to find and use skills.",
+  "when_to_use": "Use it at the start of a coding session so Claude knows to look for and use the right Superpowers skills.",
   "example_prompts": [
    "Help me with starting any conversation - establishes how to find and use skills",
    "Walk me through using superpowers step by step",
@@ -851,7 +881,8 @@
    "requiring",
    "invocation",
    "before"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "verification-before-completion",
@@ -861,7 +892,7 @@
   "path": "skills/verification-before-completion/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you want to about to claim work is complete, fixed, or passing, before committing.",
+  "when_to_use": "Use it when you want Claude to actually run the checks and prove the work is done before saying it's finished.",
   "example_prompts": [
    "Can you help me about to claim work is complete, fixed, or passing, before committing?",
    "Walk me through verification before completion step by step",
@@ -878,7 +909,8 @@
    "before",
    "committing",
    "creating"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "writing-plans",
@@ -888,7 +920,7 @@
   "path": "skills/writing-plans/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to have a spec or requirements for a multi-step task, before touching code.",
+  "when_to_use": "Use it when you have a multi-step coding task and want a clear plan written before any code changes.",
   "example_prompts": [
    "Can you help me have a spec or requirements for a multi-step task, before touching?",
    "Walk me through writing plans step by step",
@@ -904,7 +936,8 @@
    "before",
    "touching",
    "code"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "writing-skills",
@@ -914,7 +947,7 @@
   "path": "skills/writing-skills/SKILL.md",
   "url": "https://github.com/obra/superpowers/blob/main/skills/writing-skills/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you're creating new skills, editing existing skills, or verifying skills work before deployment.",
+  "when_to_use": "Use it when you're creating or editing a Claude skill and want to test that it actually works.",
   "example_prompts": [
    "Help me with creating new skills, editing existing skills, or verifying skills work before",
    "Walk me through writing skills step by step",
@@ -931,7 +964,8 @@
    "work",
    "before",
    "deployment"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "artifacts-builder",
@@ -968,7 +1002,7 @@
   "path": "brand-guidelines/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/brand-guidelines/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to brand colors or style guidelines, visual formatting, or company design standards apply.",
+  "when_to_use": "Use it when you want something Claude makes to follow Anthropic's official brand colors and fonts.",
   "example_prompts": [
    "Can you help me brand colors or style guidelines, visual formatting, or company design standards?",
    "Walk me through brand guidelines step by step",
@@ -985,7 +1019,8 @@
    "sort",
    "artifact",
    "may"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "canvas-design",
@@ -995,7 +1030,7 @@
   "path": "canvas-design/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/canvas-design/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create a poster, piece of art, design, or other static piece.",
+  "when_to_use": "Use it when you want a poster, art piece or other polished visual saved as a PNG or PDF.",
   "example_prompts": [
    "Can you help me create a poster, piece of art, design, or other static piece?",
    "Walk me through canvas design step by step",
@@ -1012,7 +1047,8 @@
    "documents",
    "using",
    "design"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "changelog-generator",
@@ -23540,7 +23576,7 @@
   "path": "connect-apps/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/connect-apps/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to send emails, create issues, post messages, or take actions in external services.",
+  "when_to_use": "Use it when you want Claude to take actions in apps like Gmail, Slack or GitHub.",
   "example_prompts": [
    "Can you help me send emails, create issues, post messages, or take actions in external?",
    "Walk me through connect apps step by step",
@@ -23557,7 +23593,8 @@
    "github",
    "wants",
    "send"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "connect",
@@ -23648,7 +23685,7 @@
   "path": "document-skills/docx/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/document-skills/docx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it for comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation.",
+  "when_to_use": "Use it when you want to create, read or edit a Word document (.docx), such as a report, letter or memo.",
   "example_prompts": [
    "Can you help me comprehensive document creation, editing, and analysis with support for tracked changes?",
    "Walk me through docx step by step",
@@ -23665,7 +23702,8 @@
    "tracked",
    "changes",
    "comments"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pdf",
@@ -23675,7 +23713,7 @@
   "path": "document-skills/pdf/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/document-skills/pdf/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it for comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms.",
+  "when_to_use": "Use it when you need to read, summarize, fill in, merge, split or create PDF files.",
   "example_prompts": [
    "Can you help me comprehensive PDF manipulation toolkit for extracting text and tables, creating new?",
    "Walk me through pdf step by step",
@@ -23692,7 +23730,8 @@
    "creating",
    "new",
    "pdfs"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pptx",
@@ -23702,7 +23741,7 @@
   "path": "document-skills/pptx/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/document-skills/pptx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to presentation creation, editing, and analysis.",
+  "when_to_use": "Use it when you want to make or edit a PowerPoint deck, like a pitch deck or presentation.",
   "example_prompts": [
    "Can you help me presentation creation, editing, and analysis?",
    "Walk me through pptx step by step",
@@ -23719,7 +23758,8 @@
    "work",
    "presentations",
    "files"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "xlsx",
@@ -23729,7 +23769,7 @@
   "path": "document-skills/xlsx/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/document-skills/xlsx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it for comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization.",
+  "when_to_use": "Use it when you're working with an Excel or spreadsheet file, whether creating, cleaning, editing or adding charts.",
   "example_prompts": [
    "Can you help me comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting?",
    "Walk me through xlsx step by step",
@@ -23746,7 +23786,8 @@
    "formulas",
    "formatting",
    "data"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "domain-name-brainstormer",
@@ -23810,7 +23851,7 @@
   "path": "image-enhancer/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/image-enhancer/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to improve the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity.",
+  "when_to_use": "Use it when you want to sharpen or improve the quality of screenshots and other images.",
   "example_prompts": [
    "Can you help me improve the quality of images, especially screenshots, by enhancing resolution, sharpness?",
    "Walk me through image enhancer step by step",
@@ -23827,7 +23868,8 @@
    "resolution",
    "sharpness",
    "clarity"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "internal-comms",
@@ -23837,7 +23879,7 @@
   "path": "internal-comms/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/internal-comms/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to asked to write some sort of internal communications.",
+  "when_to_use": "Use it when you need to write a company update, newsletter, status report or other internal announcement.",
   "example_prompts": [
    "Can you help me asked to write some sort of internal communications?",
    "Walk me through internal comms step by step",
@@ -23854,7 +23896,8 @@
    "internal",
    "communications",
    "using"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "invoice-organizer",
@@ -23864,7 +23907,7 @@
   "path": "invoice-organizer/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/invoice-organizer/SKILL.md",
   "category": "business",
-  "when_to_use": "Use it for automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information.",
+  "when_to_use": "Use it when you have a messy pile of invoices or receipts and want them renamed and sorted for taxes.",
   "example_prompts": [
    "Can you help me automatically organizes invoices and receipts for tax preparation by reading messy?",
    "Walk me through invoice organizer step by step",
@@ -23881,7 +23924,8 @@
    "reading",
    "messy",
    "files"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "langsmith-fetch",
@@ -23891,7 +23935,7 @@
   "path": "langsmith-fetch/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/langsmith-fetch/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you're debugging agent behavior, investigating errors, analyzing tool calls, checking memory operations, or examining agent performance.",
+  "when_to_use": "Use it when you're debugging a LangChain or LangGraph agent and want to look at its LangSmith traces.",
   "example_prompts": [
    "Help me with debugging agent behavior, investigating errors, analyzing tool calls, checking memory operations",
    "Walk me through langsmith fetch step by step",
@@ -23908,7 +23952,8 @@
    "traces",
    "langsmith",
    "studio"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "lead-research-assistant",
@@ -23945,7 +23990,7 @@
   "path": "mcp-builder/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/mcp-builder/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're building MCP servers to integrate external APIs or services, whether in Python or Node/TypeScript.",
+  "when_to_use": "Use it when you want to build an MCP server so Claude can connect to another app or service.",
   "example_prompts": [
    "Help me with building MCP servers to integrate external APIs or services, whether in",
    "Walk me through mcp builder step by step",
@@ -23962,7 +24007,8 @@
    "protocol",
    "servers",
    "enable"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "meeting-insights-analyzer",
@@ -24026,7 +24072,7 @@
   "path": "skill-creator/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/skill-creator/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you want to guide for creating effective skills.",
+  "when_to_use": "Use it when you want to create your own Claude skill or improve one you already have.",
   "example_prompts": [
    "Can you help me guide for creating effective skills?",
    "Walk me through skill creator step by step",
@@ -24043,7 +24089,8 @@
    "users",
    "want",
    "create"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "skill-share",
@@ -24080,7 +24127,7 @@
   "path": "slack-gif-creator/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/slack-gif-creator/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to toolkit for creating animated GIFs optimized for Slack.",
+  "when_to_use": "Use it when you want a fun animated GIF that's sized and optimized for Slack.",
   "example_prompts": [
    "Can you help me toolkit for creating animated GIFs optimized for Slack?",
    "Walk me through slack gif creator step by step",
@@ -24097,7 +24144,8 @@
    "validators",
    "size",
    "constraints"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "tailored-resume-generator",
@@ -24107,7 +24155,7 @@
   "path": "tailored-resume-generator/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/tailored-resume-generator/SKILL.md",
   "category": "productivity",
-  "when_to_use": "Use it when you want to analyze job descriptions and generates tailored resumes that highlight relevant experience, skills.",
+  "when_to_use": "Use it when you want a resume tailored to a specific job description.",
   "example_prompts": [
    "Can you help me analyze job descriptions and generates tailored resumes that highlight relevant experience?",
    "Walk me through tailored resume generator step by step",
@@ -24124,7 +24172,8 @@
    "highlight",
    "relevant",
    "experience"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "template-skill",
@@ -24156,7 +24205,7 @@
   "path": "theme-factory/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/theme-factory/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to toolkit for styling artifacts with a theme.",
+  "when_to_use": "Use it when you want to give slides, documents or a web page a consistent color and font theme.",
   "example_prompts": [
    "Can you help me toolkit for styling artifacts with a theme?",
    "Walk me through theme factory step by step",
@@ -24173,7 +24222,8 @@
    "slides",
    "docs",
    "reportings"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "twitter-algorithm-optimizer",
@@ -24237,7 +24287,7 @@
   "path": "webapp-testing/SKILL.md",
   "url": "https://github.com/ComposioHQ/awesome-claude-skills/blob/master/webapp-testing/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to toolkit for interacting with and testing local web applications using Playwright.",
+  "when_to_use": "Use it when you want Claude to open your local web app in a browser, click through it and check that it works.",
   "example_prompts": [
    "Can you help me toolkit for interacting with and testing local web applications using Playwright?",
    "Walk me through webapp testing step by step",
@@ -24254,7 +24304,8 @@
    "using",
    "playwright",
    "supports"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ab-testing",
@@ -24264,7 +24315,7 @@
   "path": "skills/ab-testing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/ab-testing/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan, design, or implement an A/B test or experiment, or build a growth experimentation program.",
+  "when_to_use": "Use it when you want to plan or set up an A/B test to compare two versions of a page, email or feature.",
   "example_prompts": [
    "Can you help me plan, design, or implement an A/B test or experiment, or build?",
    "Walk me through ab testing step by step",
@@ -24281,7 +24332,8 @@
    "build",
    "growth",
    "experimentation"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ad-creative",
@@ -24291,7 +24343,7 @@
   "path": "skills/ad-creative/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/ad-creative/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations.",
+  "when_to_use": "Use it when you need ad headlines, descriptions or full ad variations for Google, Meta, LinkedIn and similar platforms.",
   "example_prompts": [
    "creative format taxonomy.",
    "s not X, it"
@@ -24307,7 +24359,8 @@
    "descriptions",
    "primary",
    "text"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ads",
@@ -24317,7 +24370,7 @@
   "path": "skills/ads/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/ads/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user wants help with paid advertising campaigns on Google Ads, Meta , LinkedIn, Twitter/X, or other ad platforms.",
+  "when_to_use": "Use it when you're planning or improving paid ad campaigns on Google, Facebook/Instagram, LinkedIn or X.",
   "example_prompts": [
    "Can you help me when the user wants help with paid advertising campaigns on Google?",
    "Walk me through ads step by step",
@@ -24334,7 +24387,8 @@
    "meta",
    "facebook",
    "instagram"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ai-seo",
@@ -24344,7 +24398,7 @@
   "path": "skills/ai-seo/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/ai-seo/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers.",
+  "when_to_use": "Use it when you want your content to show up and get cited in AI answers like ChatGPT, Perplexity or Google AI Overviews.",
   "example_prompts": [
    "Can you help me optimize content for AI search engines, get cited by LLMs?",
    "Walk me through ai seo step by step",
@@ -24361,7 +24415,8 @@
    "cited",
    "llms",
    "appear"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "analytics",
@@ -24371,7 +24426,7 @@
   "path": "skills/analytics/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/analytics/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to set up, improve, or audit analytics tracking and measurement.",
+  "when_to_use": "Use it when you want to set up or fix tracking, like Google Analytics, conversion events or UTM links.",
   "example_prompts": [
    "Can you help me set up, improve, or audit analytics tracking and measurement?",
    "Walk me through analytics step by step",
@@ -24388,7 +24443,8 @@
    "also",
    "mentions",
    "ga4"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "aso",
@@ -24398,7 +24454,7 @@
   "path": "skills/aso/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/aso/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to audit or optimize an App Store or Google Play listing.",
+  "when_to_use": "Use it when you want to improve your app's App Store or Google Play listing so more people find and install it.",
   "example_prompts": [
    "why aren",
    "compare my app to competitors."
@@ -24414,7 +24470,8 @@
    "play",
    "listing",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "attribution",
@@ -24424,7 +24481,7 @@
   "path": "skills/attribution/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/attribution/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to figure out which marketing actually drives conversions and revenue, choose or interpret an attribution model.",
+  "when_to_use": "Use it when you want to figure out which marketing channels actually bring in customers and revenue.",
   "example_prompts": [
    "Can you help me figure out which marketing actually drives conversions and revenue, choose?",
    "Walk me through attribution step by step",
@@ -24441,7 +24498,8 @@
    "drives",
    "conversions",
    "revenue"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "churn-prevention",
@@ -24451,7 +24509,7 @@
   "path": "skills/churn-prevention/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/churn-prevention/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies.",
+  "when_to_use": "Use it when customers are canceling and you want ideas, cancel flows or save offers to keep them.",
   "example_prompts": [
    "Can you help me reduce churn, build cancellation flows, set up save offers, recover failed?",
    "Walk me through churn prevention step by step",
@@ -24468,7 +24526,8 @@
    "set",
    "save",
    "offers"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "co-marketing",
@@ -24478,7 +24537,7 @@
   "path": "skills/co-marketing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/co-marketing/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,' 'integration marketing.",
+  "when_to_use": "Use it when you want to find partner companies and plan joint marketing campaigns with them.",
   "example_prompts": [
    "Can you help me says 'co-marketing,' 'partner marketing,' 'joint campaign,' 'who should we partner with,'?",
    "Walk me through co marketing step by step",
@@ -24495,7 +24554,8 @@
    "brainstorm",
    "partnership",
    "opportunities"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "cold-email",
@@ -24505,7 +24565,7 @@
   "path": "skills/cold-email/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/cold-email/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to mentions \"cold email,\" \"cold outreach,\" \"outbound,\" \"prospecting email,\" \"SDR emails,\" \"follow-up sequence.",
+  "when_to_use": "Use it when you need to write cold outreach emails and follow-ups that actually get replies.",
   "example_prompts": [
    "product-led outbound.",
    "s not X, it"
@@ -24521,7 +24581,8 @@
    "replies",
    "emails",
    "follow-ups"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "community-marketing",
@@ -24531,7 +24592,7 @@
   "path": "skills/community-marketing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/community-marketing/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create a community strategy, grow a Discord or Slack community, manage a forum or subreddit, build brand advocates.",
+  "when_to_use": "Use it when you want to build or grow a community, like a Discord or Slack group, around your product.",
   "example_prompts": [
    "Can you help me create a community strategy, grow a Discord or Slack community, manage?",
    "Walk me through community marketing step by step",
@@ -24548,7 +24609,8 @@
    "growth",
    "brand",
    "loyalty"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "competitor-profiling",
@@ -24558,7 +24620,7 @@
   "path": "skills/competitor-profiling/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/competitor-profiling/SKILL.md",
   "category": "security",
-  "when_to_use": "Use it when you want to research, profile, or analyze competitors from their URLs.",
+  "when_to_use": "Use it when you want a clear profile of your competitors based on their websites.",
   "example_prompts": [
    "Can you help me research, profile, or analyze competitors from their URLs?",
    "Walk me through competitor profiling step by step",
@@ -24575,7 +24637,8 @@
    "urls",
    "also",
    "mentions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "competitors",
@@ -24585,7 +24648,7 @@
   "path": "skills/competitors/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/competitors/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create competitor comparison or alternative pages for SEO and buyer-facing use.",
+  "when_to_use": "Use it when you want to write 'X vs Y' or 'alternative to X' comparison pages for your product.",
   "example_prompts": [
    "Can you help me create competitor comparison or alternative pages for SEO and buyer-facing use?",
    "Walk me through competitors step by step",
@@ -24602,7 +24665,8 @@
    "seo",
    "buyer-facing",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "content-strategy",
@@ -24612,7 +24676,7 @@
   "path": "skills/content-strategy/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/content-strategy/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan a content strategy, decide what content to create, or figure out what topics to cover.",
+  "when_to_use": "Use it when you're deciding what blog posts or content to create and which topics to cover.",
   "example_prompts": [
    "Can you help me plan a content strategy, decide what content to create, or figure?",
    "Walk me through content strategy step by step",
@@ -24629,7 +24693,8 @@
    "create",
    "figure",
    "out"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "copy-editing",
@@ -24639,7 +24704,7 @@
   "path": "skills/copy-editing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/copy-editing/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to edit, review, or improve existing marketing copy, or refresh outdated content.",
+  "when_to_use": "Use it when you already have marketing copy and want it reviewed, tightened or refreshed.",
   "example_prompts": [
    "make it sound human.",
    "s not X, it"
@@ -24655,7 +24720,8 @@
    "copy",
    "refresh",
    "outdated"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "copywriting",
@@ -24665,7 +24731,7 @@
   "path": "skills/copywriting/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to write, rewrite, or improve marketing copy for any page, including homepage, landing pages, pricing pages, feature pages.",
+  "when_to_use": "Use it when you need to write or rewrite website copy, like a homepage, landing page or pricing page.",
   "example_prompts": [
    "help me describe my product.",
    "s not X, it"
@@ -24681,7 +24747,8 @@
    "page",
    "including",
    "homepage"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "cro",
@@ -24691,7 +24758,7 @@
   "path": "skills/cro/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/cro/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to optimize, improve, or increase conversions on any marketing page or form — including homepage, landing pages, pricing pages.",
+  "when_to_use": "Use it when you want more visitors on a page or form to sign up, buy or take action.",
   "example_prompts": [
    "this page isn",
    "why isn",
@@ -24708,7 +24775,8 @@
    "page",
    "form",
    "including"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "customer-research",
@@ -24718,7 +24786,7 @@
   "path": "skills/customer-research/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews.",
+  "when_to_use": "Use it when you want to plan customer interviews or make sense of feedback, reviews and survey answers.",
   "example_prompts": [
    "Can you help me mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer?",
    "Walk me through customer research step by step",
@@ -24735,7 +24803,8 @@
    "mentions",
    "icp",
    "talk"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "directory-submissions",
@@ -24745,7 +24814,7 @@
   "path": "skills/directory-submissions/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/directory-submissions/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating.",
+  "when_to_use": "Use it when you want to list your product on startup, SaaS or AI directories to get discovered and earn backlinks.",
   "example_prompts": [
    "Can you help me submit their product to startup, SaaS, AI, agent, MCP, no-code?",
    "Walk me through directory submissions step by step",
@@ -24762,7 +24831,8 @@
    "agent",
    "mcp",
    "no-code"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "emails",
@@ -24772,7 +24842,7 @@
   "path": "skills/emails/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/emails/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program.",
+  "when_to_use": "Use it when you want to create an email sequence, like a welcome series or drip campaign.",
   "example_prompts": [
    "email cadence.",
    "s not X, it",
@@ -24789,7 +24859,8 @@
    "campaign",
    "automated",
    "flow"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "events",
@@ -24799,7 +24870,7 @@
   "path": "skills/events/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/events/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops.",
+  "when_to_use": "Use it when you're planning a webinar, conference appearance, meetup or other event to get leads.",
   "example_prompts": [
    "Can you help me plan, run, sponsor, speak at, or get pipeline from events?",
    "Walk me through events step by step",
@@ -24816,7 +24887,8 @@
    "pipeline",
    "webinars",
    "conferences"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "free-tools",
@@ -24826,7 +24898,7 @@
   "path": "skills/free-tools/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/free-tools/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or brand awareness.",
+  "when_to_use": "Use it when you want to plan a free tool or calculator that attracts visitors and leads.",
   "example_prompts": [
    "Can you help me plan, evaluate, or build a free tool for marketing purposes?",
    "Walk me through free tools step by step",
@@ -24843,7 +24915,8 @@
    "marketing",
    "purposes",
    "lead"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "image",
@@ -24853,7 +24926,7 @@
   "path": "skills/image/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/image/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product mockups, profile banners.",
+  "when_to_use": "Use it when you need marketing images like blog headers, social graphics or product mockups.",
   "example_prompts": [
    "Can you help me create, generate, edit, or optimize images for marketing — blog heroes?",
    "Walk me through image step by step",
@@ -24870,7 +24943,8 @@
    "marketing",
    "blog",
    "heroes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "influencer-marketing",
@@ -24880,7 +24954,7 @@
   "path": "skills/influencer-marketing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/influencer-marketing/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to run influencer, creator, or ambassador partnerships to promote their product — finding and vetting partners.",
+  "when_to_use": "Use it when you want to find and work with influencers or creators to promote your product.",
   "example_prompts": [
    "Can you help me run influencer, creator, or ambassador partnerships to promote their product?",
    "Walk me through influencer marketing step by step",
@@ -24897,7 +24971,8 @@
    "promote",
    "their",
    "product"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "launch",
@@ -24907,7 +24982,7 @@
   "path": "skills/launch/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/launch/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan a product launch, feature announcement, or release strategy.",
+  "when_to_use": "Use it when you're planning a product launch, feature announcement or Product Hunt launch.",
   "example_prompts": [
    "Can you help me plan a product launch, feature announcement, or release strategy?",
    "Walk me through launch step by step",
@@ -24924,7 +24999,8 @@
    "strategy",
    "also",
    "mentions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "lead-magnets",
@@ -24934,7 +25010,7 @@
   "path": "skills/lead-magnets/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/lead-magnets/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create, plan, or optimize a lead magnet for email capture or lead generation.",
+  "when_to_use": "Use it when you want a free download, checklist or guide that gets people to share their email.",
   "example_prompts": [
    "Can you help me create, plan, or optimize a lead magnet for email capture?",
    "Walk me through lead magnets step by step",
@@ -24951,7 +25027,8 @@
    "email",
    "capture",
    "generation"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-council",
@@ -24961,7 +25038,7 @@
   "path": "skills/marketing-council/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/marketing-council/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to when the user wants multiple expert perspectives on a marketing question.",
+  "when_to_use": "Use it when you want several expert-style opinions on a marketing question before deciding.",
   "example_prompts": [
    "Can you help me when the user wants multiple expert perspectives on a marketing question?",
    "Walk me through marketing council step by step",
@@ -24978,7 +25055,8 @@
    "simulated",
    "board",
    "advisors"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-ideas",
@@ -24988,7 +25066,7 @@
   "path": "skills/marketing-ideas/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/marketing-ideas/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user needs marketing ideas, inspiration, or strategies for their SaaS or software product.",
+  "when_to_use": "Use it when you need fresh marketing or growth ideas for your product.",
   "example_prompts": [
    "Can you help me when the user needs marketing ideas, inspiration, or strategies for their?",
    "Walk me through marketing ideas step by step",
@@ -25005,7 +25083,8 @@
    "saas",
    "software",
    "product"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-loops",
@@ -25015,7 +25094,7 @@
   "path": "skills/marketing-loops/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/marketing-loops/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to set up a recurring, self-running marketing workflow.",
+  "when_to_use": "Use it when you want a repeatable marketing routine an AI agent can run every day or week.",
   "example_prompts": [
    "Can you help me set up a recurring, self-running marketing workflow?",
    "Walk me through marketing loops step by step",
@@ -25032,7 +25111,8 @@
    "repeatable",
    "loop",
    "agent"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-plan",
@@ -25042,7 +25122,7 @@
   "path": "skills/marketing-plan/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/marketing-plan/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to when the user needs a comprehensive marketing plan for a client, a company they advise, or their own product.",
+  "when_to_use": "Use it when you need a complete marketing plan for your product or a client.",
   "example_prompts": [
    "Can you help me when the user needs a comprehensive marketing plan for a client?",
    "Walk me through marketing plan step by step",
@@ -25059,7 +25139,8 @@
    "they",
    "advise",
    "their"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-psychology",
@@ -25069,7 +25150,7 @@
   "path": "skills/marketing-psychology/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/marketing-psychology/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to apply psychological principles, mental models, or behavioral science to marketing.",
+  "when_to_use": "Use it when you want to use psychology and persuasion principles to make your marketing more effective.",
   "example_prompts": [
    "Can you help me apply psychological principles, mental models, or behavioral science to marketing?",
    "Walk me through marketing psychology step by step",
@@ -25086,7 +25167,8 @@
    "behavioral",
    "science",
    "marketing"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "offers",
@@ -25096,7 +25178,7 @@
   "path": "skills/offers/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/offers/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to design, construct, or improve an offer — the thing they actually sell — including value framing, bonus stacking.",
+  "when_to_use": "Use it when you want to make what you sell more compelling with better value, bonuses or guarantees.",
   "example_prompts": [
    "Can you help me design, construct, or improve an offer — the thing they actually?",
    "Walk me through offers step by step",
@@ -25113,7 +25195,8 @@
    "they",
    "actually",
    "sell"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "onboarding",
@@ -25123,7 +25206,7 @@
   "path": "skills/onboarding/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/onboarding/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to optimize post-signup onboarding, user activation, first-run experience, or time-to-value.",
+  "when_to_use": "Use it when new users sign up but don't stick around, and you want a better first-run experience.",
   "example_prompts": [
    "users aren",
    "users sign up but don",
@@ -25140,7 +25223,8 @@
    "time-to-value",
    "also",
    "mentions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "paywalls",
@@ -25150,7 +25234,7 @@
   "path": "skills/paywalls/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/paywalls/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates.",
+  "when_to_use": "Use it when you're designing an upgrade screen or paywall to turn free users into paying ones.",
   "example_prompts": [
    "free users won",
    "how do I get users to pay."
@@ -25166,7 +25250,8 @@
    "upsell",
    "modals",
    "feature"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "popups",
@@ -25176,7 +25261,7 @@
   "path": "skills/popups/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/popups/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes.",
+  "when_to_use": "Use it when you want to create or improve popups, banners or exit-intent offers on your site.",
   "example_prompts": [
    "Can you help me create or optimize popups, modals, overlays, slide-ins, or banners for conversion?",
    "Walk me through popups step by step",
@@ -25193,7 +25278,8 @@
    "banners",
    "conversion",
    "purposes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pricing",
@@ -25203,7 +25289,7 @@
   "path": "skills/pricing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/pricing/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user wants help with pricing decisions, packaging, or monetization strategy.",
+  "when_to_use": "Use it when you're deciding how to price or package your product, like tiers, free trials or freemium.",
   "example_prompts": [
    "Can you help me when the user wants help with pricing decisions, packaging, or monetization?",
    "Walk me through pricing step by step",
@@ -25220,7 +25306,8 @@
    "also",
    "mentions",
    "tiers"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "product-marketing",
@@ -25230,7 +25317,7 @@
   "path": "skills/product-marketing/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/product-marketing/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create or update their product marketing context document.",
+  "when_to_use": "Use it when you want to write down your product, audience and positioning so other marketing work stays consistent.",
   "example_prompts": [
    "Can you help me create or update their product marketing context document?",
    "Walk me through product marketing step by step",
@@ -25247,7 +25334,8 @@
    "context",
    "document",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "programmatic-seo",
@@ -25257,7 +25345,7 @@
   "path": "skills/programmatic-seo/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/programmatic-seo/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create SEO-driven pages at scale using templates and data.",
+  "when_to_use": "Use it when you want to create many SEO pages at once from a template and a data source.",
   "example_prompts": [
    "Can you help me create SEO-driven pages at scale using templates and data?",
    "Walk me through programmatic seo step by step",
@@ -25274,7 +25362,8 @@
    "templates",
    "data",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "prospecting",
@@ -25284,7 +25373,7 @@
   "path": "skills/prospecting/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/prospecting/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to find, qualify, and build a list of prospects to reach out to, across B2B SaaS, general B2B, or local small businesses.",
+  "when_to_use": "Use it when you need to find and qualify a list of potential customers to reach out to.",
   "example_prompts": [
    "Can you help me find, qualify, and build a list of prospects to reach out?",
    "Walk me through prospecting step by step",
@@ -25301,7 +25390,8 @@
    "reach",
    "out",
    "across"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "public-relations",
@@ -25311,7 +25401,7 @@
   "path": "skills/public-relations/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/public-relations/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy.",
+  "when_to_use": "Use it when you want press coverage, need a press release or want to pitch journalists.",
   "example_prompts": [
    "Can you help me when the user wants help with public relations, earned media, press?",
    "Walk me through public relations step by step",
@@ -25328,7 +25418,8 @@
    "press",
    "coverage",
    "journalist"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "referrals",
@@ -25338,7 +25429,7 @@
   "path": "skills/referrals/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/referrals/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy.",
+  "when_to_use": "Use it when you want to start or improve a referral or affiliate program.",
   "example_prompts": [
    "Can you help me create, optimize, or analyze a referral program, affiliate program, or word-of-mouth?",
    "Walk me through referrals step by step",
@@ -25355,7 +25446,8 @@
    "affiliate",
    "word-of-mouth",
    "strategy"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "revops",
@@ -25365,7 +25457,7 @@
   "path": "skills/revops/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/revops/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes.",
+  "when_to_use": "Use it when you want to organize how leads move from marketing to sales and track the pipeline.",
   "example_prompts": [
    "leads aren",
    "when should marketing hand off to sales."
@@ -25381,7 +25473,8 @@
    "management",
    "marketing-to-sales",
    "handoff"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "sales-enablement",
@@ -25391,7 +25484,7 @@
   "path": "skills/sales-enablement/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/sales-enablement/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts.",
+  "when_to_use": "Use it when you need sales materials like a sales deck, one-pager, demo script or objection handling guide.",
   "example_prompts": [
    "Can you help me create sales collateral, pitch decks, one-pagers, objection handling docs, or demo?",
    "Walk me through sales enablement step by step",
@@ -25408,7 +25501,8 @@
    "one-pagers",
    "objection",
    "handling"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "schema",
@@ -25418,7 +25512,7 @@
   "path": "skills/schema/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/schema/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to add, fix, or optimize schema markup and structured data on their site.",
+  "when_to_use": "Use it when you want to add structured data (schema markup) to your site so search engines understand it better.",
   "example_prompts": [
    "Can you help me add, fix, or optimize schema markup and structured data on their?",
    "Walk me through schema step by step",
@@ -25435,7 +25529,8 @@
    "data",
    "their",
    "site"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "seo-audit",
@@ -25445,7 +25540,7 @@
   "path": "skills/seo-audit/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/seo-audit/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to audit, review, or diagnose SEO issues on their site.",
+  "when_to_use": "Use it when you want to find out why your site or blog isn't ranking and what SEO issues to fix.",
   "example_prompts": [
    "site isn",
    "map pack.",
@@ -25462,7 +25557,8 @@
    "their",
    "site",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "signup",
@@ -25472,7 +25568,7 @@
   "path": "skills/signup/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/signup/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to optimize signup, registration, account creation, or trial activation flows.",
+  "when_to_use": "Use it when you want more people to finish signing up or starting a trial.",
   "example_prompts": [
    "people aren",
    "simplify our signup."
@@ -25488,7 +25584,8 @@
    "activation",
    "flows",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "site-architecture",
@@ -25498,7 +25595,7 @@
   "path": "skills/site-architecture/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/site-architecture/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking.",
+  "when_to_use": "Use it when you're planning your website's pages, navigation and URL structure.",
   "example_prompts": [
    "Can you help me plan, map, or restructure their website's page hierarchy, navigation, URL structure?",
    "Walk me through site architecture step by step",
@@ -25515,7 +25612,8 @@
    "page",
    "hierarchy",
    "navigation"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "sms",
@@ -25525,7 +25623,7 @@
   "path": "skills/sms/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/sms/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan, build, or optimize SMS, MMS, or WhatsApp marketing — including welcome flows, abandoned cart texts, post-purchase.",
+  "when_to_use": "Use it when you want to plan SMS or WhatsApp marketing messages, like welcome texts or abandoned cart reminders.",
   "example_prompts": [
    "Can you help me plan, build, or optimize SMS, MMS, or WhatsApp marketing —?",
    "Walk me through sms step by step",
@@ -25542,7 +25640,8 @@
    "marketing",
    "including",
    "welcome"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "social",
@@ -25552,7 +25651,7 @@
   "path": "skills/social/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/social/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to when the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok.",
+  "when_to_use": "Use it when you want to create or schedule social media posts for LinkedIn, X, Instagram, TikTok or Facebook.",
   "example_prompts": [
    "document post.",
    "s not X, it"
@@ -25568,7 +25667,8 @@
    "content",
    "linkedin",
    "twitter"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "video",
@@ -25578,7 +25678,7 @@
   "path": "skills/video/SKILL.md",
   "url": "https://github.com/coreyhaines31/marketingskills/blob/main/skills/video/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create, generate, or produce video content using AI tools or programmatic frameworks.",
+  "when_to_use": "Use it when you want to plan or produce marketing videos with AI tools.",
   "example_prompts": [
    "Can you help me create, generate, or produce video content using AI tools or programmatic?",
    "Walk me through video step by step",
@@ -25595,7 +25695,8 @@
    "tools",
    "programmatic",
    "frameworks"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "agent-launcher-orchestrator",
@@ -25955,7 +26056,7 @@
   "path": "business-operations/skills/internal-comms/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/business-operations/skills/internal-comms/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when a Head of People Ops, BizOps lead, or Internal Communications owner needs to draft and sequence an internal-only change-management.",
+  "when_to_use": "Use it when you need to write a company update, newsletter, status report or other internal announcement.",
   "example_prompts": [
    "all-hands announcement",
    "change comms",
@@ -25972,7 +26073,8 @@
    "communications",
    "owner",
    "needs"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "knowledge-ops",
@@ -26333,7 +26435,7 @@
   "path": "c-level-advisor/executive-mentor/skills/stress-test/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/c-level-advisor/executive-mentor/skills/stress-test/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it for /em:stress-test — Business assumption stress testing.",
+  "when_to_use": "Use it when you want your business plan's key assumptions challenged before you commit to it.",
   "example_prompts": [
    "I need help with /em:stress-test — Business assumption stress testing",
    "Walk me through stress test step by step",
@@ -26350,7 +26452,8 @@
    "plan",
    "whose",
    "core"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "general-counsel-advisor",
@@ -26414,7 +26517,7 @@
   "path": "c-level-advisor/skills/board-deck-builder/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/c-level-advisor/skills/board-deck-builder/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you're preparing board meetings, investor updates, quarterly business reviews, or fundraising narratives.",
+  "when_to_use": "Use it when you're preparing a board meeting or investor update deck.",
   "example_prompts": [
    "Help me with preparing board meetings, investor updates, quarterly business reviews, or fundraising narratives",
    "Walk me through board deck builder step by step",
@@ -26431,7 +26534,8 @@
    "pulling",
    "perspectives",
    "all"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "board-meeting",
@@ -28330,7 +28434,7 @@
   "path": "engineering-team/playwright-pro/skills/fix/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/playwright-pro/skills/fix/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to user says \"fix test\", \"flaky test\", \"test failing\", \"debug test\", \"test broken\", \"test passes sometimes\".",
+  "when_to_use": "Use it when your Playwright browser tests are failing or flaky and you want them fixed.",
   "example_prompts": [
    "fix test",
    "flaky test",
@@ -28347,7 +28451,8 @@
    "debug",
    "broken",
    "passes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "generate",
@@ -28357,7 +28462,7 @@
   "path": "engineering-team/playwright-pro/skills/generate/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/playwright-pro/skills/generate/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to user says \"write tests\", \"generate tests\", \"add tests for\", \"test this component\", \"e2e test\", \"create test for\".",
+  "when_to_use": "Use it when you want Claude to write Playwright end-to-end tests for a page or component.",
   "example_prompts": [
    "write tests",
    "generate tests",
@@ -28374,7 +28479,8 @@
    "component",
    "e2e",
    "create"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "migrate",
@@ -28465,7 +28571,7 @@
   "path": "engineering-team/playwright-pro/skills/pw/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/playwright-pro/skills/pw/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test migration, CI/CD testing.",
+  "when_to_use": "Use it when you're writing, fixing or scaling Playwright browser tests.",
   "example_prompts": [
    "Can you help me mentions Playwright tests, end-to-end testing, browser automation, fixing flaky tests, test?",
    "Walk me through playwright pro step by step",
@@ -28482,7 +28588,8 @@
    "end-to-end",
    "browser",
    "automation"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "report",
@@ -28735,7 +28842,7 @@
   "path": "engineering-team/skills/ai-security/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/skills/ai-security/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you're assessing AI/ML systems for prompt injection, jailbreak vulnerabilities, model inversion risk, data poisoning exposure.",
+  "when_to_use": "Use it when you want to check an AI app or agent for prompt injection and other security risks.",
   "example_prompts": [
    "Help me with assessing AI/ML systems for prompt injection, jailbreak vulnerabilities, model inversion risk",
    "Walk me through ai security step by step",
@@ -28752,7 +28859,8 @@
    "model",
    "inversion",
    "risk"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "aws-solution-architect",
@@ -28843,7 +28951,7 @@
   "path": "engineering-team/skills/code-reviewer/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/skills/code-reviewer/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're reviewing pull requests, analyzing code quality, identifying issues, generating review checklists.",
+  "when_to_use": "Use it when you want an automated code review of your changes in almost any programming language.",
   "example_prompts": [
    "Help me with reviewing pull requests, analyzing code quality, identifying issues, generating review checklists",
    "Walk me through code reviewer step by step",
@@ -28860,7 +28968,8 @@
    "swift",
    "kotlin",
    "net"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "email-template-builder",
@@ -28870,7 +28979,7 @@
   "path": "engineering-team/skills/email-template-builder/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/skills/email-template-builder/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you're adding transactional email to a new product, migrating between email providers.",
+  "when_to_use": "Use it when you need transactional email templates, like receipts or password resets, built in code.",
   "example_prompts": [
    "Help me with adding transactional email to a new product, migrating between email providers",
    "Walk me through email template builder step by step",
@@ -28887,7 +28996,8 @@
    "templates",
    "provider",
    "integration"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "embedded-iot-mentor",
@@ -29275,7 +29385,7 @@
   "path": "engineering-team/skills/senior-data-scientist/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/skills/senior-data-scientist/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're designing or analysing controlled experiments, building and evaluating classification or regression models.",
+  "when_to_use": "Use it when you need advanced data science help, like predictive models or experiment design.",
   "example_prompts": [
    "Help me with designing or analysing controlled experiments, building and evaluating classification or regression",
    "Walk me through senior data scientist step by step",
@@ -29292,7 +29402,8 @@
    "modeling",
    "experiment",
    "design"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "senior-devops",
@@ -29329,7 +29440,7 @@
   "path": "engineering-team/skills/senior-frontend/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/skills/senior-frontend/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're building React components, optimizing Next.",
+  "when_to_use": "Use it when you're building or optimizing a React, Next.js or Tailwind front end.",
   "example_prompts": [
    "Help me with building React components, optimizing Next",
    "Walk me through senior frontend step by step",
@@ -29346,7 +29457,8 @@
    "css",
    "applications",
    "building"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "senior-fullstack",
@@ -29545,7 +29657,7 @@
   "path": "engineering-team/skills/tdd-guide/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/skills/tdd-guide/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to write tests, improve test coverage, practice TDD, generate mocks or stubs, or mentions testing frameworks like Jest, pytest.",
+  "when_to_use": "Use it when you want help writing unit tests, mocks and fixtures, or finding untested code.",
   "example_prompts": [
    "Can you help me write tests, improve test coverage, practice TDD, generate mocks or stubs?",
    "Walk me through tdd guide step by step",
@@ -29562,7 +29674,8 @@
    "test",
    "fixtures",
    "mocks"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "tech-stack-evaluator",
@@ -30274,7 +30387,7 @@
   "path": "engineering/data-quality-auditor/skills/data-quality-auditor/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/data-quality-auditor/skills/data-quality-auditor/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you want to check data quality, profile a dataset, hunt outliers or missing values, or validate data before analysis or model training.",
+  "when_to_use": "Use it when you want to check a dataset for missing values, errors, duplicates or outliers before using it.",
   "example_prompts": [
    "Can you help me check data quality, profile a dataset, hunt outliers or missing values?",
    "Walk me through data quality auditor step by step",
@@ -30291,7 +30404,8 @@
    "profile",
    "data",
    "distributions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "deep-learning-book",
@@ -30328,7 +30442,7 @@
   "path": "engineering/demo-video/skills/demo-video/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/demo-video/skills/demo-video/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create a demo video, product walkthrough, feature showcase, animated presentation, marketing video.",
+  "when_to_use": "Use it when you want a product demo video or walkthrough made from screenshots or scene descriptions.",
   "example_prompts": [
    "Can you help me create a demo video, product walkthrough, feature showcase, animated presentation, marketing?",
    "Walk me through demo video step by step",
@@ -30345,7 +30459,8 @@
    "feature",
    "showcase",
    "animated"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "docker-development",
@@ -30948,7 +31063,7 @@
   "path": "engineering/skills/browser-automation/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/browser-automation/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you want to automate browser tasks, scrape websites, fill forms, capture screenshots, extract structured data from web pages.",
+  "when_to_use": "Use it when you want to automate browser tasks like scraping a site, filling in forms or taking screenshots.",
   "example_prompts": [
    "Can you help me automate browser tasks, scrape websites, fill forms, capture screenshots, extract structured?",
    "Walk me through browser automation step by step",
@@ -30965,7 +31080,8 @@
    "fill",
    "forms",
    "capture"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "changelog-generator",
@@ -31110,7 +31226,7 @@
   "path": "engineering/skills/dependency-auditor/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/dependency-auditor/SKILL.md",
   "category": "security",
-  "when_to_use": "Use it when you're auditing third-party packages before release, investigating a CVE, planning a major version bump.",
+  "when_to_use": "Use it when you want to check your project's dependencies for vulnerabilities, license issues or safe upgrades.",
   "example_prompts": [
    "audit our npm dependencies",
    "do we have GPL contamination",
@@ -31127,7 +31243,8 @@
    "identifies",
    "vulnerabilities",
    "license"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "engineering-advanced-skills",
@@ -31191,7 +31308,7 @@
   "path": "engineering/skills/focused-fix/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/focused-fix/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to fix, debug, or make a specific feature/module/area work end-to-end.",
+  "when_to_use": "Use it when a specific feature or part of your code is broken and you want it fixed end to end.",
   "example_prompts": [
    "make X work",
    "fix the Y feature",
@@ -31208,7 +31325,8 @@
    "module",
    "area",
    "work"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "full-page-screenshot",
@@ -31299,7 +31417,7 @@
   "path": "engineering/skills/mcp-server-builder/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/mcp-server-builder/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you're exposing an existing API as an MCP server, building tool integrations for Claude or Codex or Cursor.",
+  "when_to_use": "Use it when you want to turn an existing API into a production-ready MCP server.",
   "example_prompts": [
    "Help me with exposing an existing API as an MCP server, building tool integrations",
    "Walk me through mcp server builder step by step",
@@ -31316,7 +31434,8 @@
    "protocol",
    "servers",
    "openapi"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "migration-architect",
@@ -31434,7 +31553,7 @@
   "path": "engineering/skills/pr-review-expert/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/pr-review-expert/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to review pull requests, analyze code changes, check for security issues in PRs, or assess code quality of diffs.",
+  "when_to_use": "Use it when you want a pull request reviewed for bugs, security issues and code quality.",
   "example_prompts": [
    "Can you help me review pull requests, analyze code changes, check for security issues in?",
    "Walk me through pr review expert step by step",
@@ -31451,7 +31570,8 @@
    "changes",
    "check",
    "security"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "rag-architect",
@@ -31704,7 +31824,7 @@
   "path": "engineering/skills/spec-driven-workflow/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/spec-driven-workflow/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to write specs before code, define acceptance criteria, plan features before implementation, generate tests from specifications.",
+  "when_to_use": "Use it when you want to write a clear spec and acceptance criteria before writing code.",
   "example_prompts": [
    "Can you help me write specs before code, define acceptance criteria, plan features before implementation?",
    "Walk me through spec driven workflow step by step",
@@ -31721,7 +31841,8 @@
    "acceptance",
    "criteria",
    "plan"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "sql-database-assistant",
@@ -31785,7 +31906,7 @@
   "path": "engineering/skills/tech-debt-tracker/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/skills/tech-debt-tracker/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to mention tech debt, code quality, refactoring priority, debt scoring, cleanup sprints, or code health assessment.",
+  "when_to_use": "Use it when your codebase feels messy and you want a prioritized list of what to clean up.",
   "example_prompts": [
    "Can you help me mention tech debt, code quality, refactoring priority, debt scoring, cleanup sprints?",
    "Walk me through tech debt tracker step by step",
@@ -31802,7 +31923,8 @@
    "track",
    "trends",
    "generate"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "spinning-up-deep-rl",
@@ -31839,7 +31961,7 @@
   "path": "engineering/statistical-analyst/skills/statistical-analyst/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/statistical-analyst/skills/statistical-analyst/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to validate whether observed differences are real, size an experiment correctly before launch.",
+  "when_to_use": "Use it when you want to check whether results, like an A/B test, are statistically significant.",
   "example_prompts": [
    "Can you help me validate whether observed differences are real, size an experiment correctly before?",
    "Walk me through statistical analyst step by step",
@@ -31856,7 +31978,8 @@
    "calculate",
    "sample",
    "sizes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "strict-api",
@@ -31866,7 +31989,7 @@
   "path": "engineering/strict-api/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/strict-api/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to says 'no hallucinations', 'verify APIs', 'reality check', or 'don't invent functions'.",
+  "when_to_use": "Use it when you want Claude to only use functions and APIs that really exist in your code, without guessing.",
   "example_prompts": [
    "no hallucinations",
    "verify APIs",
@@ -31883,7 +32006,8 @@
    "don",
    "invent",
    "functions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "terraform-patterns",
@@ -31947,7 +32071,7 @@
   "path": "engineering/workflow-builder/skills/workflow-builder/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/workflow-builder/skills/workflow-builder/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to build, create, author, scaffold, or run a custom Claude Code workflow, orchestrate sub-agents.",
+  "when_to_use": "Use it when you want to build a repeatable multi-agent workflow script for Claude Code.",
   "example_prompts": [
    "Can you help me build, create, author, scaffold, or run a custom Claude Code workflow?",
    "Walk me through workflow builder step by step",
@@ -31964,7 +32088,8 @@
    "files",
    "claude",
    "workflows"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "write-a-skill",
@@ -31974,7 +32099,7 @@
   "path": "engineering/write-a-skill/skills/write-a-skill/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/engineering/write-a-skill/skills/write-a-skill/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to create, write, build, or author a new skill.",
+  "when_to_use": "Use it when you want to create a new skill with the right structure and files.",
   "example_prompts": [
    "Can you help me create, write, build, or author a new skill?",
    "Walk me through write a skill step by step",
@@ -31991,7 +32116,8 @@
    "progressive",
    "disclosure",
    "bundled"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "zero-hallucination-coder",
@@ -32108,7 +32234,7 @@
   "path": "finance/skills/saas-metrics-coach/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/finance/skills/saas-metrics-coach/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you want to shares revenue or customer numbers, or mentions ARR, MRR, churn, LTV, CAC, NRR, or asks how their SaaS business is doing.",
+  "when_to_use": "Use it when you want to understand your SaaS numbers, like MRR, churn, LTV or CAC.",
   "example_prompts": [
    "Can you help me shares revenue or customer numbers, or mentions ARR, MRR, churn, LTV?",
    "Walk me through saas metrics coach step by step",
@@ -32125,7 +32251,8 @@
    "customer",
    "numbers",
    "mentions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "stock-analysis",
@@ -32243,7 +32370,7 @@
   "path": "markdown-html/skills/md-document/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/markdown-html/skills/md-document/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to convert long-form markdown into a single-file, lightly-interactive HTML document with sticky TOC, scrollspy, search filter.",
+  "when_to_use": "Use it when you've written a long Markdown document and want it as a nice, readable HTML page.",
   "example_prompts": [
    "Can you help me convert long-form markdown into a single-file, lightly-interactive HTML document with sticky?",
    "Walk me through md document step by step",
@@ -32260,7 +32387,8 @@
    "plans",
    "explainers",
    "into"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "md-review",
@@ -32297,7 +32425,7 @@
   "path": "markdown-html/skills/md-slides/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/markdown-html/skills/md-slides/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to convert a markdown deck into a single-file HTML presentation with arrow-key / space / PgDn / PgUp / Home / End / P / Esc.",
+  "when_to_use": "Use it when you've written slides in Markdown and want them turned into a single HTML presentation.",
   "example_prompts": [
    "Can you help me convert a markdown deck into a single-file HTML presentation with arrow-key?",
    "Walk me through md slides step by step",
@@ -32314,7 +32442,8 @@
    "headings",
    "optional",
    "notes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ab-test-setup",
@@ -32351,7 +32480,7 @@
   "path": "marketing-skill/skills/ad-creative/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/ad-creative/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to they say 'write ad copy,' 'generate headlines,' 'create ad variations,' 'bulk creative,' 'iterate on ads.",
+  "when_to_use": "Use it when you need ad headlines, descriptions or full ad variations for Google, Meta, LinkedIn and similar platforms.",
   "example_prompts": [
    "Can you help me they say 'write ad copy,' 'generate headlines,' 'create ad variations,' 'bulk?",
    "Walk me through ad creative step by step",
@@ -32368,7 +32497,8 @@
    "advertising",
    "they",
    "say"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "aeo",
@@ -32432,7 +32562,7 @@
   "path": "marketing-skill/skills/app-store-optimization/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/app-store-optimization/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it for app Store Optimization toolkit for researching.",
+  "when_to_use": "Use it when you want your app to rank higher and get more downloads in the app stores.",
   "example_prompts": [
    "Can you help me app Store Optimization toolkit for researching?",
    "Walk me through app store optimization step by step",
@@ -32449,7 +32579,8 @@
    "keywords",
    "analyzing",
    "competitor"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "brand-guidelines",
@@ -32459,7 +32590,7 @@
   "path": "marketing-skill/skills/brand-guidelines/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/brand-guidelines/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to apply, document, or enforce brand guidelines for any product or company.",
+  "when_to_use": "Use it when you want something Claude makes to follow Anthropic's official brand colors and fonts.",
   "example_prompts": [
    "Can you help me apply, document, or enforce brand guidelines for any product or company?",
    "Walk me through brand guidelines step by step",
@@ -32476,7 +32607,8 @@
    "product",
    "company",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "business-name-fit",
@@ -32540,7 +32672,7 @@
   "path": "marketing-skill/skills/churn-prevention/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/churn-prevention/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're designing or optimizing a cancel flow, building save offers, setting up dunning emails, or reducing failed-payment churn.",
+  "when_to_use": "Use it when customers are canceling and you want ideas, cancel flows or save offers to keep them.",
   "example_prompts": [
    "Help me with designing or optimizing a cancel flow, building save offers, setting up",
    "Walk me through churn prevention step by step",
@@ -32557,7 +32689,8 @@
    "flow",
    "design",
    "save"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "cold-email",
@@ -32567,7 +32700,7 @@
   "path": "marketing-skill/skills/cold-email/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/cold-email/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to mentions 'cold email,' 'cold outreach,' 'prospecting emails,' 'SDR emails,' 'sales emails,' 'first touch email.",
+  "when_to_use": "Use it when you need to write cold outreach emails and follow-ups that actually get replies.",
   "example_prompts": [
    "t asked to hear from them. Use when the user mentions ",
    "email prospecting."
@@ -32583,7 +32716,8 @@
    "cold",
    "outreach",
    "emails"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "competitor-alternatives",
@@ -32673,7 +32807,7 @@
   "path": "marketing-skill/skills/content-production/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/content-production/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to execute content: write a blog post, article, or guide end-to-end.",
+  "when_to_use": "Use it when you want to write a complete blog post, article or guide from topic to finished draft.",
   "example_prompts": [
    "write a post about",
    "draft an article",
@@ -32690,7 +32824,8 @@
    "blank",
    "page",
    "published-ready"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "content-strategy",
@@ -32700,7 +32835,7 @@
   "path": "marketing-skill/skills/content-strategy/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/content-strategy/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan a content strategy, decide what content to create, or figure out what topics to cover.",
+  "when_to_use": "Use it when you're deciding what blog posts or content to create and which topics to cover.",
   "example_prompts": [
    "Can you help me plan a content strategy, decide what content to create, or figure?",
    "Walk me through content strategy step by step",
@@ -32717,7 +32852,8 @@
    "create",
    "figure",
    "out"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "copy-editing",
@@ -32727,7 +32863,7 @@
   "path": "marketing-skill/skills/copy-editing/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/copy-editing/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to edit, review, or improve existing marketing copy.",
+  "when_to_use": "Use it when you already have marketing copy and want it reviewed, tightened or refreshed.",
   "example_prompts": [
    "Can you help me edit, review, or improve existing marketing copy?",
    "Walk me through copy editing step by step",
@@ -32744,7 +32880,8 @@
    "copy",
    "also",
    "mentions"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "copywriting",
@@ -32754,7 +32891,7 @@
   "path": "marketing-skill/skills/copywriting/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/copywriting/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages.",
+  "when_to_use": "Use it when you need to write or rewrite website copy, like a homepage, landing page or pricing page.",
   "example_prompts": [
    "Can you help me write, rewrite, or improve marketing copy for any page —?",
    "Walk me through copywriting step by step",
@@ -32771,7 +32908,8 @@
    "page",
    "including",
    "homepage"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "email-sequence",
@@ -32781,7 +32919,7 @@
   "path": "marketing-skill/skills/email-sequence/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/email-sequence/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program.",
+  "when_to_use": "Use it when you want to write a series of automated emails, like onboarding or nurture emails.",
   "example_prompts": [
    "Can you help me create or optimize an email sequence, drip campaign, automated email flow?",
    "Walk me through email sequence step by step",
@@ -32798,7 +32936,8 @@
    "campaign",
    "automated",
    "flow"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "form-cro",
@@ -32808,7 +32947,7 @@
   "path": "marketing-skill/skills/form-cro/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/form-cro/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms.",
+  "when_to_use": "Use it when you want more people to complete a contact, lead or survey form on your site.",
   "example_prompts": [
    "Can you help me optimize any form that is NOT signup/registration — including lead capture?",
    "Walk me through form cro step by step",
@@ -32825,7 +32964,8 @@
    "including",
    "lead",
    "capture"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "free-tool-strategy",
@@ -32862,7 +33002,7 @@
   "path": "marketing-skill/skills/launch-strategy/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/launch-strategy/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to plan a product launch, feature announcement, or release strategy.",
+  "when_to_use": "Use it when you're planning a product or feature launch and the announcement around it.",
   "example_prompts": [
    "Can you help me plan a product launch, feature announcement, or release strategy?",
    "Walk me through launch strategy step by step",
@@ -32879,7 +33019,8 @@
    "release",
    "strategy",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "local-seo-manager",
@@ -32916,7 +33057,7 @@
   "path": "marketing-skill/skills/marketing-context/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/marketing-context/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to mentions 'marketing context,' 'brand voice,' 'set up context,' 'target audience,' 'ICP,' 'style guide,' 'who is my customer.",
+  "when_to_use": "Use it when you want to set up your brand voice and product details so marketing work stays consistent.",
   "example_prompts": [
    "Can you help me mentions 'marketing context,' 'brand voice,' 'set up context,' 'target audience,' 'ICP,'?",
    "Walk me through marketing context step by step",
@@ -32933,7 +33074,8 @@
    "skills",
    "read",
    "before"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-demand-acquisition",
@@ -32970,7 +33112,7 @@
   "path": "marketing-skill/skills/marketing-ideas/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/marketing-ideas/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user needs marketing ideas, inspiration, or strategies for their SaaS or software product.",
+  "when_to_use": "Use it when you need fresh marketing or growth ideas for your product.",
   "example_prompts": [
    "Can you help me when the user needs marketing ideas, inspiration, or strategies for their?",
    "Walk me through marketing ideas step by step",
@@ -32987,7 +33129,8 @@
    "saas",
    "software",
    "product"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-ops",
@@ -33024,7 +33167,7 @@
   "path": "marketing-skill/skills/marketing-psychology/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/marketing-psychology/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to apply psychological principles, mental models, or behavioral science to marketing.",
+  "when_to_use": "Use it when you want to use psychology and persuasion principles to make your marketing more effective.",
   "example_prompts": [
    "Can you help me apply psychological principles, mental models, or behavioral science to marketing?",
    "Walk me through marketing psychology step by step",
@@ -33041,7 +33184,8 @@
    "behavioral",
    "science",
    "marketing"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "marketing-skills",
@@ -33132,7 +33276,7 @@
   "path": "marketing-skill/skills/page-cro/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/page-cro/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to optimize, improve, or increase conversions on any marketing page — including homepage, landing pages, pricing pages.",
+  "when_to_use": "Use it when a specific page, like a landing or pricing page, isn't converting and you want to improve it.",
   "example_prompts": [
    "this page isn",
    "why isn"
@@ -33148,7 +33292,8 @@
    "page",
    "including",
    "homepage"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "paid-ads",
@@ -33212,7 +33357,7 @@
   "path": "marketing-skill/skills/popup-cro/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/popup-cro/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes.",
+  "when_to_use": "Use it when you want popups or banners on your site to convert better without annoying visitors.",
   "example_prompts": [
    "Can you help me create or optimize popups, modals, overlays, slide-ins, or banners for conversion?",
    "Walk me through popup cro step by step",
@@ -33229,7 +33374,8 @@
    "slide-ins",
    "banners",
    "conversion"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pricing-strategy",
@@ -33239,7 +33385,7 @@
   "path": "marketing-skill/skills/pricing-strategy/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/pricing-strategy/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you're building a pricing model from scratch, redesigning existing pricing, planning a price increase, or improving a pricing page.",
+  "when_to_use": "Use it when you're designing or changing your SaaS pricing tiers or pricing page.",
   "example_prompts": [
    "Help me with building a pricing model from scratch, redesigning existing pricing, planning",
    "Walk me through pricing strategy step by step",
@@ -33256,7 +33402,8 @@
    "structure",
    "value",
    "metrics"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "programmatic-seo",
@@ -33266,7 +33413,7 @@
   "path": "marketing-skill/skills/programmatic-seo/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/programmatic-seo/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create SEO-driven pages at scale using templates and data.",
+  "when_to_use": "Use it when you want to create many SEO pages at once from a template and a data source.",
   "example_prompts": [
    "Can you help me create SEO-driven pages at scale using templates and data?",
    "Walk me through programmatic seo step by step",
@@ -33283,7 +33430,8 @@
    "templates",
    "data",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "prompt-engineer-toolkit",
@@ -33293,7 +33441,7 @@
   "path": "marketing-skill/skills/prompt-engineer-toolkit/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/prompt-engineer-toolkit/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when a marketing team relies on AI-generated content and needs prompt quality to be measurable and safe.",
+  "when_to_use": "Use it when you want to test and improve AI prompts and keep track of their versions.",
   "example_prompts": [
    "I need help with a marketing team relies on AI-generated content and needs prompt quality",
    "Walk me through prompt engineer toolkit step by step",
@@ -33310,7 +33458,8 @@
    "production",
    "assets",
    "prompt"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "referral-program",
@@ -33374,7 +33523,7 @@
   "path": "marketing-skill/skills/seo-audit/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/seo-audit/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to audit, review, or diagnose SEO issues on their site.",
+  "when_to_use": "Use it when you want to find out why your site or blog isn't ranking and what SEO issues to fix.",
   "example_prompts": [
    "Can you help me audit, review, or diagnose SEO issues on their site?",
    "Walk me through seo audit step by step",
@@ -33391,7 +33540,8 @@
    "their",
    "site",
    "also"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "signup-flow-cro",
@@ -33428,7 +33578,7 @@
   "path": "marketing-skill/skills/site-architecture/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/site-architecture/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to mentions 'site architecture,' 'URL structure,' 'internal links,' 'site navigation,' 'breadcrumbs,' 'topic clusters.",
+  "when_to_use": "Use it when you're planning your website's pages, navigation and URL structure.",
   "example_prompts": [
    "Can you help me mentions 'site architecture,' 'URL structure,' 'internal links,' 'site navigation,' 'breadcrumbs,' 'topic?",
    "Walk me through site architecture step by step",
@@ -33445,7 +33595,8 @@
    "structure",
    "url",
    "hierarchy"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "social-content",
@@ -33455,7 +33606,7 @@
   "path": "marketing-skill/skills/social-content/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/social-content/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to when the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok.",
+  "when_to_use": "Use it when you want help writing and scheduling social media posts.",
   "example_prompts": [
    "Can you help me when the user wants help creating, scheduling, or optimizing social media?",
    "Walk me through social content step by step",
@@ -33472,7 +33623,8 @@
    "media",
    "content",
    "linkedin"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "social-media-analyzer",
@@ -33482,7 +33634,7 @@
   "path": "marketing-skill/skills/social-media-analyzer/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/social-media-analyzer/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you're analyzing social media performance, calculating engagement rate, measuring campaign ROI, comparing platform metrics.",
+  "when_to_use": "Use it when you want to measure how your social media campaigns are performing.",
   "example_prompts": [
    "Help me with analyzing social media performance, calculating engagement rate, measuring campaign ROI, comparing",
    "Walk me through social media analyzer step by step",
@@ -33499,7 +33651,8 @@
    "calculates",
    "engagement",
    "rates"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "social-media-manager",
@@ -33509,7 +33662,7 @@
   "path": "marketing-skill/skills/social-media-manager/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/skills/social-media-manager/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to develop social media strategy, plan content calendars, manage community engagement.",
+  "when_to_use": "Use it when you want a social media strategy or content calendar.",
   "example_prompts": [
    "Can you help me develop social media strategy, plan content calendars, manage community engagement?",
    "Walk me through social media manager step by step",
@@ -33526,7 +33679,8 @@
    "content",
    "calendars",
    "manage"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "webinar-marketing",
@@ -33644,7 +33798,7 @@
   "path": "marketing/landing/skills/landing/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing/landing/skills/landing/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to says 'landing for X', 'create a landing page', 'build a landing page', 'make a landing page for X', 'I need a web page for Y'.",
+  "when_to_use": "Use it when you want a flashy single-file HTML landing page with animations.",
   "example_prompts": [
    "landing for X",
    "create a landing page",
@@ -33661,7 +33815,8 @@
    "animations",
    "gsap",
    "scroll"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "linkedin-analytics",
@@ -33698,7 +33853,7 @@
   "path": "marketing/linkedin/skills/linkedin-content/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing/linkedin/skills/linkedin-content/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to someone wants to write, edit, or lint a LinkedIn post — a story, how-to, opinion piece, carousel script, video script.",
+  "when_to_use": "Use it when you want to write or polish a LinkedIn post.",
   "example_prompts": [
    "write a LinkedIn post",
    "is this hook any good",
@@ -33715,7 +33870,8 @@
    "post",
    "story",
    "how-to"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "linkedin-engagement",
@@ -33806,7 +33962,7 @@
   "path": "marketing/linkedin/skills/linkedin-strategy/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing/linkedin/skills/linkedin-strategy/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to someone needs a LinkedIn plan rather than a post — content pillars, positioning for a career change or consulting.",
+  "when_to_use": "Use it when you want a LinkedIn plan, like what to post and how often.",
   "example_prompts": [
    "what should I post about",
    "how often should I post",
@@ -33823,7 +33979,8 @@
    "post",
    "content",
    "pillars"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "agile-product-owner",
@@ -33860,7 +34017,7 @@
   "path": "product-team/apple-hig-expert/skills/apple-hig-expert/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/apple-hig-expert/skills/apple-hig-expert/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you're reviewing an Apple-platform mockup or app for HIG compliance, checking contrast or tap-target sizes.",
+  "when_to_use": "Use it when you're designing an iPhone, Mac or Apple Watch app and want it to follow Apple's design guidelines.",
   "example_prompts": [
    "audit my iOS app against the HIG",
    "is this text readable on Liquid Glass?"
@@ -33876,7 +34033,8 @@
    "interfaces",
    "against",
    "apple"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "code-to-prd",
@@ -33886,7 +34044,7 @@
   "path": "product-team/code-to-prd/skills/code-to-prd/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/code-to-prd/skills/code-to-prd/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to mention: generate PRD, reverse-engineer requirements, code to documentation, extract product specs from code.",
+  "when_to_use": "Use it when you have an existing codebase and want a product requirements document written from it.",
   "example_prompts": [
    "Can you help me mention: generate PRD, reverse-engineer requirements, code to documentation, extract product specs?",
    "Walk me through code to prd step by step",
@@ -33903,7 +34061,8 @@
    "document",
    "prd",
    "analyzes"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "research-summarizer",
@@ -33994,7 +34153,7 @@
   "path": "product-team/skills/landing-page-generator/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/landing-page-generator/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to create a landing page, marketing page, homepage, single-page site, lead capture page, campaign page, promo page.",
+  "when_to_use": "Use it when you want a ready-made landing page built in React/Next.js with Tailwind.",
   "example_prompts": [
    "Can you help me create a landing page, marketing page, homepage, single-page site, lead capture?",
    "Walk me through landing page generator step by step",
@@ -34011,7 +34170,8 @@
    "react",
    "tsx",
    "components"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "product-analytics",
@@ -34021,7 +34181,7 @@
   "path": "product-team/skills/product-analytics/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/product-analytics/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you're defining product KPIs, building metric dashboards, running cohort or retention analysis.",
+  "when_to_use": "Use it when you want to define product metrics, build dashboards or look at retention and feature usage.",
   "example_prompts": [
    "Help me with defining product KPIs, building metric dashboards, running cohort or retention analysis",
    "Walk me through product analytics step by step",
@@ -34038,7 +34198,8 @@
    "running",
    "cohort",
    "retention"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "product-discovery",
@@ -34129,7 +34290,7 @@
   "path": "product-team/skills/product-strategist/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/product-strategist/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you're creating quarterly OKR documents, defining product goals or KPIs, building product roadmaps, running competitive analysis.",
+  "when_to_use": "Use it when you're doing product planning, like OKRs, a product vision or a competitive landscape.",
   "example_prompts": [
    "Help me with creating quarterly OKR documents, defining product goals or KPIs, building product",
    "Walk me through product strategist step by step",
@@ -34146,7 +34307,8 @@
    "okr",
    "cascade",
    "generation"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "roadmap-communicator",
@@ -34183,7 +34345,7 @@
   "path": "product-team/skills/saas-scaffolder/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/saas-scaffolder/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to create a new SaaS app, start a subscription-based web project, scaffold a Next.",
+  "when_to_use": "Use it when you want a starter SaaS app with login, database, billing and a dashboard already set up.",
   "example_prompts": [
    "Can you help me create a new SaaS app, start a subscription-based web project, scaffold?",
    "Walk me through saas scaffolder step by step",
@@ -34200,7 +34362,8 @@
    "including",
    "authentication",
    "database"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "spec-to-repo",
@@ -34210,7 +34373,7 @@
   "path": "product-team/skills/spec-to-repo/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/spec-to-repo/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to says 'build me an app', 'create a project from this spec', 'scaffold a new repo', 'generate a starter'.",
+  "when_to_use": "Use it when you have an app idea or spec and want Claude to set up a starter project.",
   "example_prompts": [
    "build me an app",
    "create a project from this spec",
@@ -34227,7 +34390,8 @@
    "scaffold",
    "new",
    "repo"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ui-design-system",
@@ -34237,7 +34401,7 @@
   "path": "product-team/skills/ui-design-system/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/product-team/skills/ui-design-system/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you're creating design systems, generating design tokens, maintaining visual consistency.",
+  "when_to_use": "Use it when you want a consistent UI design system with colors, spacing and reusable components.",
   "example_prompts": [
    "Help me with creating design systems, generating design tokens, maintaining visual consistency",
    "Walk me through ui design system step by step",
@@ -34254,7 +34418,8 @@
    "token",
    "generation",
    "component"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "ux-researcher-designer",
@@ -34345,7 +34510,7 @@
   "path": "productivity/deep-work/skills/deep-work/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/productivity/deep-work/skills/deep-work/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to someone wants to plan a deep work day, time-block their calendar or task list, budget or cut shallow work.",
+  "when_to_use": "Use it when you want to plan a focused work day and protect time from distractions.",
   "example_prompts": [
    "Can you help me someone wants to plan a deep work day, time-block their calendar?",
    "Walk me through deep work step by step",
@@ -34362,7 +34527,8 @@
    "time-block",
    "their",
    "calendar"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "inbox-setup",
@@ -34776,7 +34942,7 @@
   "path": "project-management/skills/senior-pm/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/project-management/skills/senior-pm/SKILL.md",
   "category": "coding",
-  "when_to_use": "Use it when you want to needs help with project plans, project status reports, risk assessments, resource allocation, project roadmaps.",
+  "when_to_use": "Use it when you're managing a larger software project and need help with risks, resources or status reporting.",
   "example_prompts": [
    "Can you help me needs help with project plans, project status reports, risk assessments, resource?",
    "Walk me through senior pm step by step",
@@ -34793,7 +34959,8 @@
    "digital",
    "transformation",
    "projects"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "team-communications",
@@ -34803,7 +34970,7 @@
   "path": "project-management/skills/team-communications/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/project-management/skills/team-communications/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you want to write internal company communications — 3P updates , company-wide newsletters, FAQ roundups, incident reports.",
+  "when_to_use": "Use it when you need to write a team update, company newsletter, incident report or status report.",
   "example_prompts": [
    "weekly update",
    "internal comms",
@@ -34820,7 +34987,8 @@
    "plans",
    "problems",
    "company-wide"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "eu-ai-act-specialist",
@@ -35421,7 +35589,7 @@
   "path": "research/deep-research/skills/deep-research/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/research/deep-research/skills/deep-research/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when a low-quality answer is expensive: strategy work, comparing N products/methods/markets, validating a hypothesis with external data.",
+  "when_to_use": "Use it when you want thorough, well-sourced research on a topic, like a literature review or fact-check.",
   "example_prompts": [
    "I need help with a low-quality answer is expensive: strategy work, comparing N products/methods/markets, validating",
    "Walk me through deep research step by step",
@@ -35438,7 +35606,8 @@
    "question",
    "decision",
    "fan-out"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "deepread",
@@ -35448,7 +35617,7 @@
   "path": "research/deepread/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/research/deepread/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to deeply read a book, article, PDF, or document set.",
+  "when_to_use": "Use it when you want to deeply understand a book, article or PDF and pull out its key ideas.",
   "example_prompts": [
    "Can you help me deeply read a book, article, PDF, or document set?",
    "Walk me through deepread step by step",
@@ -35465,7 +35634,8 @@
    "document",
    "set",
    "extract"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "dossier",
@@ -35528,7 +35698,7 @@
   "path": "research/litreview/skills/litreview/SKILL.md",
   "url": "https://github.com/alirezarezvani/claude-skills/blob/main/research/litreview/skills/litreview/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to starts literature-oriented research.",
+  "when_to_use": "Use it when you want to search scientific papers and get oriented on the literature for a topic.",
   "example_prompts": [
    "launching pad",
    "litreview on [topic]",
@@ -35545,7 +35715,8 @@
    "free",
    "keyless",
    "apis"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "notebooklm",
@@ -36768,7 +36939,7 @@
   "path": "skills/exploratory-data-analysis/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/exploratory-data-analysis/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you want to perform bounded, local exploratory analysis of explicitly supported scientific files.",
+  "when_to_use": "Use it when you have a CSV or data file and want a first look at what's in it, with summaries and patterns.",
   "example_prompts": [
    "Can you help me perform bounded, local exploratory analysis of explicitly supported scientific files?",
    "Walk me through exploratory data analysis step by step",
@@ -36785,7 +36956,8 @@
    "supported",
    "scientific",
    "files"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "fictiv",
@@ -37523,7 +37695,7 @@
   "path": "skills/latex-posters/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/latex-posters/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to conference posters, academic presentations, multi-column scientific layouts, figure integration, typography, compilation.",
+  "when_to_use": "Use it when you need an academic conference poster made in LaTeX.",
   "example_prompts": [
    "Can you help me conference posters, academic presentations, multi-column scientific layouts, figure integration, typography, compilation?",
    "Walk me through latex posters step by step",
@@ -37540,7 +37712,8 @@
    "tikzposter",
    "baposter",
    "conference"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "liteparse",
@@ -37658,7 +37831,7 @@
   "path": "skills/markdown-mermaid-writing/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/markdown-mermaid-writing/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to requests Markdown, Mermaid, or a text-based structural diagram.",
+  "when_to_use": "Use it when you want documentation with diagrams, like flowcharts or timelines, written in Markdown.",
   "example_prompts": [
    "Can you help me requests Markdown, Mermaid, or a text-based structural diagram?",
    "Walk me through markdown mermaid writing step by step",
@@ -37675,7 +37848,8 @@
    "workflows",
    "relationships",
    "timelines"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "market-research-reports",
@@ -37793,7 +37967,7 @@
   "path": "skills/matplotlib/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/matplotlib/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create and customizes scientific plots with Matplotlib.",
+  "when_to_use": "Use it when you want to make charts or plots in Python with Matplotlib.",
   "example_prompts": [
    "Can you help me create and customizes scientific plots with Matplotlib?",
    "Walk me through matplotlib step by step",
@@ -37810,7 +37984,8 @@
    "control",
    "over",
    "plot"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "medchem",
@@ -38684,7 +38859,7 @@
   "path": "skills/polars/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/polars/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it for high-performance DataFrame library for Python ETL, analytics, and pandas migration.",
+  "when_to_use": "Use it when you want to analyze or transform large tables of data quickly in Python with Polars.",
   "example_prompts": [
    "Can you help me high-performance DataFrame library for Python ETL, analytics, and pandas migration?",
    "Walk me through polars step by step",
@@ -38701,7 +38876,8 @@
    "pandas",
    "migration",
    "supports"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "pptx-posters",
@@ -38711,7 +38887,7 @@
   "path": "skills/pptx-posters/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/pptx-posters/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to create and audits editable scientific posters in macro-free PowerPoint from author-approved local content and assets.",
+  "when_to_use": "Use it when you need a scientific poster as an editable PowerPoint file.",
   "example_prompts": [
    "Can you help me create and audits editable scientific posters in macro-free PowerPoint from author-approved?",
    "Walk me through pptx posters step by step",
@@ -38728,7 +38904,8 @@
    "powerpoint",
    "pptx",
    "author-approved"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "primekg",
@@ -39602,7 +39779,7 @@
   "path": "skills/scientific-slides/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-slides/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to build slide decks and presentations for research talks.",
+  "when_to_use": "Use it when you need slides for a research talk, conference presentation or thesis defense.",
   "example_prompts": [
    "Can you help me build slide decks and presentations for research talks?",
    "Walk me through scientific slides step by step",
@@ -39619,7 +39796,8 @@
    "used",
    "making",
    "powerpoint"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "scientific-visualization",
@@ -39629,7 +39807,7 @@
   "path": "skills/scientific-visualization/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-visualization/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image metadata validation.",
+  "when_to_use": "Use it when you need clear, publication-ready charts and figures from your data.",
   "example_prompts": [
    "Can you help me figure design, multi-panel layouts, uncertainty and missing-data displays, color/contrast review, image?",
    "Walk me through scientific visualization step by step",
@@ -39646,7 +39824,8 @@
    "figures",
    "matplotlib",
    "seaborn"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "scientific-writing",
@@ -39926,7 +40105,7 @@
   "path": "skills/statistical-analysis/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/statistical-analysis/SKILL.md",
   "category": "data",
-  "when_to_use": "Use it when you want to compare groups, test a hypothesis, analyze experimental or survey data, check statistical assumptions.",
+  "when_to_use": "Use it when you want help picking and running the right statistical test on your data.",
   "example_prompts": [
    "Can you help me compare groups, test a hypothesis, analyze experimental or survey data, check?",
    "Walk me through statistical analysis step by step",
@@ -39943,7 +40122,8 @@
    "selection",
    "assumption",
    "checking"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "statistical-power",
@@ -39953,7 +40133,7 @@
   "path": "skills/statistical-power/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/statistical-power/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it when you want to calculate sample sizes and statistical power for study planning.",
+  "when_to_use": "Use it when you need to know how many samples or participants your study needs.",
   "example_prompts": [
    "how many subjects/samples/replicates do I need",
    "80% power",
@@ -39970,7 +40150,8 @@
    "planning",
    "applies",
    "someone"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "statsmodels",
@@ -40358,7 +40539,7 @@
   "path": "skills/venue-templates/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/venue-templates/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to prepare journal manuscripts, conference papers, research posters.",
+  "when_to_use": "Use it when you need to format a paper, poster or grant for a specific journal or conference.",
   "example_prompts": [
    "Can you help me prepare journal manuscripts, conference papers, research posters?",
    "Walk me through venue templates step by step",
@@ -40375,7 +40556,8 @@
    "posters",
    "grant",
    "documents"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "waypoint-bio",
@@ -40601,7 +40783,7 @@
   "path": "skills/planning-with-files/SKILL.md",
   "url": "https://github.com/OthmanAdi/planning-with-files/blob/master/skills/planning-with-files/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to research or work needing 5+ tool calls.",
+  "when_to_use": "Use it when you're doing a long multi-step task and want Claude to keep its plan and progress in files.",
   "example_prompts": [
    "Can you help me research or work needing 5+ tool calls?",
    "Walk me through planning with files step by step",
@@ -40618,7 +40800,8 @@
    "keeps",
    "task",
    "plan"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "seo-ahrefs",
@@ -40655,7 +40838,7 @@
   "path": "extensions/banana/skills/seo-image-gen/SKILL.md",
   "url": "https://github.com/AgriciDaniel/claude-seo/blob/main/extensions/banana/skills/seo-image-gen/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to user says \"generate image\", \"OG image\", \"social preview\", \"hero image\", \"blog image\", \"product photo\", \"infographic\".",
+  "when_to_use": "Use it when you need SEO-friendly images like social preview images or blog hero images.",
   "example_prompts": [
    "generate image",
    "OG image",
@@ -40672,7 +40855,8 @@
    "images",
    "blog",
    "hero"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "seo-bing",
@@ -40898,7 +41082,7 @@
   "path": "skills/seo-audit/SKILL.md",
   "url": "https://github.com/AgriciDaniel/claude-seo/blob/main/skills/seo-audit/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to run a full-site SEO audit and return a scored, prioritized report.",
+  "when_to_use": "Use it when you want to find out why your site or blog isn't ranking and what SEO issues to fix.",
   "example_prompts": [
    "Can you help me run a full-site SEO audit and return a scored, prioritized report?",
    "Walk me through seo audit step by step",
@@ -40915,7 +41099,8 @@
    "prioritized",
    "report",
    "only"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "seo-backlinks",
@@ -41006,7 +41191,7 @@
   "path": "skills/seo-content-brief/SKILL.md",
   "url": "https://github.com/AgriciDaniel/claude-seo/blob/main/skills/seo-content-brief/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to generate competitive SEO content briefs with per-section word counts, competitor scoring.",
+  "when_to_use": "Use it when you're about to write an article and want an SEO content brief with keywords and structure.",
   "example_prompts": [
    "content brief",
    "write a brief",
@@ -41023,7 +41208,8 @@
    "word",
    "counts",
    "competitor"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "seo-content",
@@ -41141,7 +41327,7 @@
   "path": "skills/seo-geo/SKILL.md",
   "url": "https://github.com/AgriciDaniel/claude-seo/blob/main/skills/seo-geo/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it when you want to audit and improve content for AI Overviews and answer engines, including citability, entity clarity, crawler access.",
+  "when_to_use": "Use it when you want your content to show up better in AI answer engines like Google AI Overviews.",
   "example_prompts": [
    "Can you help me audit and improve content for AI Overviews and answer engines?",
    "Walk me through seo geo step by step",
@@ -41158,7 +41344,8 @@
    "including",
    "citability",
    "entity"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "seo-google",
@@ -41492,7 +41679,7 @@
   "path": "skills/seo/SKILL.md",
   "url": "https://github.com/AgriciDaniel/claude-seo/blob/main/skills/seo/SKILL.md",
   "category": "marketing",
-  "when_to_use": "Use it for comprehensive SEO analysis for any website or business type.",
+  "when_to_use": "Use it when you want a full SEO checkup of your website, including technical, content and on-page issues.",
   "example_prompts": [
    "Can you help me comprehensive SEO analysis for any website or business type?",
    "Walk me through seo step by step",
@@ -41509,7 +41696,8 @@
    "site",
    "audits",
    "single-page"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "academic-paper-reviewer",
@@ -41519,7 +41707,7 @@
   "path": "academic-paper-reviewer/SKILL.md",
   "url": "https://github.com/Imbad0202/academic-research-skills/blob/main/academic-paper-reviewer/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it for multi-perspective academic paper review with dynamic reviewer personas.",
+  "when_to_use": "Use it when you want your academic paper reviewed from several reviewer perspectives before submitting.",
   "example_prompts": [
    "Can you help me multi-perspective academic paper review with dynamic reviewer personas?",
    "Walk me through academic paper reviewer step by step",
@@ -41536,7 +41724,8 @@
    "personas",
    "runs",
    "seat"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "academic-paper",
@@ -41546,7 +41735,7 @@
   "path": "academic-paper/SKILL.md",
   "url": "https://github.com/Imbad0202/academic-research-skills/blob/main/academic-paper/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it for 12-agent academic paper writing pipeline.",
+  "when_to_use": "Use it when you're writing an academic paper and want help with the outline, drafting, citations or revisions.",
   "example_prompts": [
    "I need help with 12-agent academic paper writing pipeline",
    "Walk me through academic paper step by step",
@@ -41563,7 +41752,8 @@
    "full",
    "plan",
    "outline"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "academic-pipeline",
@@ -41573,7 +41763,7 @@
   "path": "academic-pipeline/SKILL.md",
   "url": "https://github.com/Imbad0202/academic-research-skills/blob/main/academic-pipeline/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it for orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise.",
+  "when_to_use": "Use it when you want help with the whole academic process, from research and writing to review and revision.",
   "example_prompts": [
    "Can you help me orchestrator for the full academic research pipeline: research -> write ->?",
    "Walk me through academic pipeline step by step",
@@ -41590,7 +41780,8 @@
    "integrity",
    "check",
    "review"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "deep-research",
@@ -41600,7 +41791,7 @@
   "path": "deep-research/SKILL.md",
   "url": "https://github.com/Imbad0202/academic-research-skills/blob/main/deep-research/SKILL.md",
   "category": "design",
-  "when_to_use": "Use it for universal deep research agent team.",
+  "when_to_use": "Use it when you want thorough, well-sourced research on a topic, like a literature review or fact-check.",
   "example_prompts": [
    "Can you help me universal deep research agent team?",
    "Walk me through deep research step by step",
@@ -41617,7 +41808,8 @@
    "rigorous",
    "academic",
    "topic"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "sr-screener",
@@ -42221,7 +42413,7 @@
   "path": "skills/analyzing-email-headers-for-phishing-investigation/SKILL.md",
   "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/analyzing-email-headers-for-phishing-investigation/SKILL.md",
   "category": "security",
-  "when_to_use": "Use it when you're triaging a suspicious or reported email, investigating a phishing incident.",
+  "when_to_use": "Use it when you want to check a suspicious email's headers to see where it really came from.",
   "example_prompts": [
    "Help me with triaging a suspicious or reported email, investigating a phishing incident",
    "Walk me through analyzing email headers for phishing investigation step by step",
@@ -42238,7 +42430,8 @@
    "return-path",
    "message-id",
    "trace"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "analyzing-ethereum-smart-contract-vulnerabilities",
@@ -45866,7 +46059,7 @@
   "path": "skills/conducting-phishing-incident-response/SKILL.md",
   "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/conducting-phishing-incident-response/SKILL.md",
   "category": "security",
-  "when_to_use": "Use it when you're investigating a reported phishing or credential-phishing email, a suspected spearphishing incident.",
+  "when_to_use": "Use it when you're responding to a phishing incident and need to find who was affected and clean up.",
   "example_prompts": [
    "Help me with investigating a reported phishing or credential-phishing email, a suspected spearphishing incident",
    "Walk me through conducting phishing incident response step by step",
@@ -45883,7 +46076,8 @@
    "extracting",
    "indicators",
    "sandboxing"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "conducting-post-incident-lessons-learned",
@@ -56828,7 +57022,7 @@
   "path": "skills/investigating-phishing-email-incident/SKILL.md",
   "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/skills/investigating-phishing-email-incident/SKILL.md",
   "category": "security",
-  "when_to_use": "Use it when a reported phishing email requires full incident investigation to determine scope and impact.",
+  "when_to_use": "Use it when someone reported a phishing email and you need to investigate and contain it.",
   "example_prompts": [
    "I need help with a reported phishing email requires full incident investigation to determine scope",
    "Walk me through investigating phishing email incident step by step",
@@ -56845,7 +57039,8 @@
    "through",
    "header",
    "analysis"
-  ]
+  ],
+  "tip_source": "hand-written"
  },
  {
   "name": "investigating-ransomware-attack-artifacts",
@@ -63740,7 +63935,7 @@
   "path": "skills/karpathy-guidelines/SKILL.md",
   "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/main/skills/karpathy-guidelines/SKILL.md",
   "category": "writing",
-  "when_to_use": "Use it when you're writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions.",
+  "when_to_use": "Use it when you're writing, reviewing or refactoring code and want Claude to keep changes simple and avoid common AI coding mistakes.",
   "example_prompts": [
    "Help me with writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes",
    "Walk me through karpathy guidelines step by step",
@@ -63757,6 +63952,7 @@
    "mistakes",
    "writing",
    "reviewing"
-  ]
+  ],
+  "tip_source": "hand-written"
  }
 ]

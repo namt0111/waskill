@@ -1,6 +1,7 @@
 (function(g){
 const STOP=new Set("a an the and or to of for in on with my me i is it this that be can you please help want need make some how do from at by as your our into about use using".split(" "));
-const SYN={deck:["pptx","powerpoint","presentation","slides"],slides:["pptx","presentation"],presentation:["pptx","slides"],pitch:["presentation","pptx"],spreadsheet:["xlsx","excel"],excel:["xlsx","spreadsheet"],csv:["data","exploratory","eda","dataset","analysis","xlsx"],data:["exploratory","analysis"],plan:["planning"],research:["research","literature"],paper:["academic","paper"],analyze:["analysis","exploratory"],word:["docx"],document:["docx"],pdf:["pdf"],debug:["debugging","bug","systematic","fix"],bug:["debugging"],landing:["page","conversion","copywriting","cro"],python:["code","debugging"],test:["testing","tdd"],email:["email","sequence"],logo:["design","brand"],seo:["seo","search"],poster:["design","canvas","art"]};
+const SYN={deck:["pptx","powerpoint","presentation","slides"],slides:["pptx","presentation"],presentation:["pptx","slides"],pitch:["presentation","pptx"],spreadsheet:["xlsx","excel"],excel:["xlsx","spreadsheet"],csv:["data","exploratory","eda","dataset","analysis","xlsx"],data:["exploratory","analysis"],plan:["planning"],research:["research","literature"],paper:["academic","paper"],analyze:["analysis","exploratory"],word:["docx"],document:["docx"],pdf:["pdf"],debug:["debugging","bug","systematic","fix"],bug:["debugging"],landing:["page","conversion","copywriting","cro"],python:["code","debugging"],test:["testing","tdd"],email:["email","sequence"],logo:["design","brand"],seo:["seo","search"],react:["frontend","web","ui"],website:["frontend","web","page"],keyword:["seo","keyword"],refactor:["refactoring","code","quality","simplify"],messy:["clean"],script:["code","automation"],newsletter:["email","content","sequence"],chart:["visualization","plot","matplotlib"],plot:["matplotlib","visualization"],resume:["resume","cv"],poster:["design","canvas","art"]};
+const DATAQ=/\b(csv|dataset|data|spreadsheet|excel|xlsx|analy[sz]e|chart|statistic)/i;
 const SECQ=/secur|attack|threat|vuln|malware|pentest|hack|exploit|siem|soc\b|forensic|incident|cve|phish|firewall|compliance|ransom|red team|blue team/i;
 function tok(s){return (s.toLowerCase().match(/[a-z0-9+#]+/g)||[]).filter(w=>!STOP.has(w)&&w.length>1).map(w=>w.length>4&&w.endsWith("s")?w.slice(0,-1):w);}
 function build(all){const best={};all.forEach(s=>{if(!best[s.name]||best[s.name].repo_stars<s.repo_stars)best[s.name]=s;});const skills=Object.values(best).filter(s=>!/-(ar|de|es|zh|zht)$/.test(s.name));
@@ -14,6 +15,9 @@ function search(idx,q,k=5){
   if(sc<=0)continue;
   if(base.some(w=>d.nt.has(w)))sc*=1.4;
   if(d.auto){const named=d.app.length>2&&base.some(w=>w.replace(/[^a-z0-9]/g,"")===d.app)||(d.app.length>5&&qflat.includes(d.app));sc*=named?4:0.15;}
+  if(DATAQ.test(q)){if(/data|analy|csv|xlsx|pandas|polars|statistic|visuali|matplotlib|plot/.test(d.s.name))sc*=2.5;else if(d.s.category==="data")sc*=1.3;}
+  if(/helm/.test(d.s.name)&&!/helm|kubernetes|k8s/i.test(q))sc*=0.1;
+  if(/\bseo\b|keyword research|search ranking|rank on google/i.test(q)&&/^seo(-audit)?$/.test(d.s.name))sc*=2.2;
   if(d.sec&&!SECQ.test(q))sc*=0.35;
   sc*=1+0.08*Math.log10(d.s.repo_stars);res.push({s:d.s,score:sc});}
  res.sort((a,b)=>b.score-a.score);const seen=new Set(),out=[];for(const r of res){if(seen.has(r.s.name))continue;seen.add(r.s.name);out.push(r);if(out.length>=k)break;}return out;}
