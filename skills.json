@@ -330,7 +330,7 @@
   "path": "skills/pptx/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both.",
+  "when_to_use": "Use it any time a .pptx or .potx file is involved in any way — as input, output, or both.",
   "example_prompts": [
    "Can you help me use this skill any time a .pptx or .potx file is?",
    "Walk me through pptx step by step",
@@ -492,7 +492,7 @@
   "path": "skills/xlsx/SKILL.md",
   "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
   "category": "documents",
-  "when_to_use": "Use it when you want to use this skill any time a spreadsheet file is the primary input or output.",
+  "when_to_use": "Use it any time a spreadsheet file is the primary input or output.",
   "example_prompts": [
    "Can you help me use this skill any time a spreadsheet file is the primary?",
    "Walk me through xlsx step by step",
@@ -36767,7 +36767,7 @@
   "repo_stars": 50561,
   "path": "skills/exploratory-data-analysis/SKILL.md",
   "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/exploratory-data-analysis/SKILL.md",
-  "category": "design",
+  "category": "data",
   "when_to_use": "Use it when you want to perform bounded, local exploratory analysis of explicitly supported scientific files.",
   "example_prompts": [
    "Can you help me perform bounded, local exploratory analysis of explicitly supported scientific files?",
