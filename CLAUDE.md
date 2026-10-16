@@ -7,7 +7,17 @@ Waskill (https://waskill.dev) is a free, no-signup static site on GitHub Pages. 
 - **Never delete or change `CNAME`.** It holds the `waskill.dev` custom domain.
 - **Keep GoatCounter.** Every page loads `<script data-goatcounter="https://waskill.goatcounter.com/count" async src="//gc.zgo.at/count.js">`. Keep its three events: `search` (index.html `run()`, only on user-triggered searches), `newsletter-signup` (the `form[data-nl]` submit handler), `sponsor-click` (sponsor.js, only for a real active sponsor).
 - **Keep the Buttondown signup forms**: `action="https://buttondown.com/api/emails/embed-subscribe/waskill"`, `data-nl` attribute, `name="email"` input, and the hidden `tag` input. Tags in use: `waskill-results`, `waskill-footer`, `waskill-cat-<category>`.
-- **Keep the sponsor slot working**: `/sponsor/` page, `sponsor.json`, `sponsor.js` (card after result #3, house card linking to `/sponsor/` while inactive).
+- **Keep the sponsor slot working**: `/sponsor/` page, `sponsor.json`, `sponsor.js` (one card after the top 5 results, never above #1). Never invent a sponsor: no made-up company name, logo or claim that a real sponsor exists.
+
+## Sponsor slot (sponsor.json drives everything, no code changes)
+
+| `sponsor.json` state | What visitors see |
+| --- | --- |
+| `active: true, demo: true` (current) | Example card: "Your product here", the pitch, an orange (#d97757) "Sponsored" tag and "Example sponsor. This slot is available", linking to `/sponsor/`. |
+| `active: true, demo: false` + `name`, `tagline`, `url` (+ optional `logo`, `keywords`) | The real sponsor's card replaces the demo, same place and style, opening `url` in a new tab with `rel="sponsored noopener"`. |
+| `active: false` | A small plain house card linking to `/sponsor/`. |
+
+To put a real sponsor in: edit `sponsor.json` only (set `demo` to `false`, fill `name`, `tagline`, `url`, optionally `logo` and `keywords`), commit, push. Clicks fire the GoatCounter `sponsor-click` event with title `demo` for the example and the sponsor's `name` for a real sponsor. The footer of every page links to `/sponsor/` ("Sponsor Waskill").
 - **After changing skills or pages, run `tools/gen_seo.py`** so `sitemap.xml`, `robots.txt`, `llms.txt`, `llms-full.txt`, JSON-LD and `skills/<category>.html` stay current. The script writes the category pages, `sitemap.xml`, `llms.txt` (sponsor line), `llms-full.txt`, and the `<!--g:name-->…<!--/g:name-->` blocks in `index.html` (skill count, repo count, repo table, category links). `robots.txt` and the JSON-LD block in `index.html` are hand-maintained: the FAQPage JSON-LD must match the visible FAQ questions word for word.
 - **The user's prompt never leaves the browser.** No backend, no tracking of prompt text, no signup. The `search` event sends only the fixed title `"search"`, and `index.html` sets `window.goatcounter={path:…location.pathname}` so a `?q=` deep link is never sent with the pageview. Keep both.
 - **Other agents also commit here.** Always `git pull` before working, and stage only the files you changed (`git add <file>`, never `git add -A` / `.`).

@@ -1,9 +1,10 @@
 {
- "active": false,
- "name": "",
- "tagline": "",
+ "active": true,
+ "demo": true,
+ "name": "Your product here",
+ "tagline": "Reach Claude users at the exact moment they're picking tools.",
  "logo": "",
- "url": "",
+ "url": "/sponsor/",
  "keywords": [],
- "_help": "Set active:true and fill name/tagline/url (logo = image URL, optional). keywords (optional): show only when the prompt contains one of them; empty = show for every prompt. While inactive, a house card linking to /sponsor/ is shown."
+ "_help": "One card after the top 5 results. To run a real sponsor: set demo:false and fill name/tagline/url (logo = image URL, optional); no code change needed. keywords (optional): show only when the prompt contains one of them; empty = every prompt. demo:true labels the card 'Example sponsor' and should point url at /sponsor/. active:false shows a plain house card linking to /sponsor/."
 }
