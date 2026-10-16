@@ -1,6 +1,6 @@
 (function(g){
 const STOP=new Set("a an the and or to of for in on with my me i is it this that be can you please help want need make some how do from at by as your our into about use using".split(" "));
-const SYN={deck:["pptx","powerpoint","presentation","slides"],slides:["pptx","presentation"],presentation:["pptx","slides"],pitch:["presentation","pptx"],spreadsheet:["xlsx","excel"],excel:["xlsx","spreadsheet"],csv:["data","exploratory","eda","dataset","analysis","xlsx"],data:["exploratory","analysis"],plan:["planning"],research:["research","literature"],paper:["academic","paper"],analyze:["analysis","exploratory"],word:["docx"],document:["docx"],pdf:["pdf"],debug:["debugging","bug","systematic","fix"],bug:["debugging"],landing:["page","conversion","copywriting","cro"],python:["code","debugging"],test:["testing","tdd"],email:["email","sequence"],logo:["design","brand"],seo:["seo","search"],react:["frontend","web","ui"],website:["frontend","web","page"],keyword:["seo","keyword"],refactor:["refactoring","code","quality","simplify"],messy:["clean"],script:["code","automation"],newsletter:["email","content","sequence"],chart:["visualization","plot","matplotlib"],plot:["matplotlib","visualization"],resume:["resume","cv"],poster:["design","canvas","art"]};
+const SYN={deck:["pptx","powerpoint","presentation","slides"],slides:["pptx","presentation"],presentation:["pptx","slides"],pitch:["presentation","pptx"],spreadsheet:["xlsx","excel"],excel:["xlsx","spreadsheet"],csv:["data","exploratory","eda","dataset","analysis","xlsx"],data:["exploratory","analysis"],plan:["planning"],research:["research","literature"],paper:["academic","paper"],analyze:["analysis","exploratory"],word:["docx"],document:["docx"],pdf:["pdf"],debug:["debugging","bug","systematic","fix"],bug:["debugging"],landing:["page","conversion","copywriting","cro"],python:["code","debugging"],test:["testing","tdd"],email:["email","sequence"],logo:["design","brand"],seo:["seo","search"],react:["frontend","web","ui"],website:["frontend","web","page"],keyword:["seo","keyword"],refactor:["refactoring","code","quality","simplify"],messy:["clean"],script:["code","automation"],newsletter:["email","content","sequence"],chart:["visualization","plot","matplotlib"],plot:["matplotlib","visualization"],resume:["resume","cv","job"],cv:["resume","job"],rename:["organize","organizer","file"],files:["file","organizer"],refactoring:["refactor"],poster:["design","canvas","art"]};
 const DATAQ=/\b(csv|dataset|data|spreadsheet|excel|xlsx|analy[sz]e|chart|statistic)/i;
 const SECQ=/secur|attack|threat|vuln|malware|pentest|hack|exploit|siem|soc\b|forensic|incident|cve|phish|firewall|compliance|ransom|red team|blue team/i;
 function tok(s){return (s.toLowerCase().match(/[a-z0-9+#]+/g)||[]).filter(w=>!STOP.has(w)&&w.length>1).map(w=>w.length>4&&w.endsWith("s")?w.slice(0,-1):w);}
@@ -8,19 +8,33 @@ function build(all){const best={};all.forEach(s=>{if(!best[s.name]||best[s.name]
  const docs=skills.map(s=>{const t=[...tok(s.name),...tok(s.name),...tok(s.name),...tok(s.description),...tok((s.keywords||[]).join(" "))];const tf={};t.forEach(w=>tf[w]=(tf[w]||0)+1);return{s,tf,len:t.length,sec:s.repo.startsWith("mukul975"),nt:new Set(tok(s.name)),auto:s.repo.startsWith("ComposioHQ")&&s.name.endsWith("-automation"),app:s.name.replace(/-automation$/,"").replace(/-/g,"")};});
  const df={};docs.forEach(d=>Object.keys(d.tf).forEach(w=>df[w]=(df[w]||0)+1));
  const avg=docs.reduce((a,d)=>a+d.len,0)/docs.length;return{docs,df,avg,N:docs.length};}
-function search(idx,q,k=5){
+function attach(idx,meta,buf){const E=new Int8Array(buf),dim=meta.dim,pos={};meta.names.forEach((n,i)=>pos[n]=i);
+ idx.docs.forEach(d=>{const i=pos[d.s.name];if(i===undefined)return;const v=E.subarray(i*dim,(i+1)*dim);let n=0;for(let k=0;k<dim;k++)n+=v[k]*v[k];d.ev=v;d.en=Math.sqrt(n)||1;});idx.dim=dim;idx.emb=true;return idx;}
+function boost(d,q,base,qflat){let m=1;
+  if(base.some(w=>d.nt.has(w)))m*=1.4;
+  if(d.auto){const named=d.app.length>2&&base.some(w=>w.replace(/[^a-z0-9]/g,"")===d.app)||(d.app.length>5&&qflat.includes(d.app));m*=named?4:0.15;}
+  if(DATAQ.test(q)){if(/data|analy|csv|xlsx|pandas|polars|statistic|visuali|matplotlib|plot/.test(d.s.name))m*=2.5;}
+  if(/helm/.test(d.s.name)&&!/helm|kubernetes|k8s/i.test(q))m*=0.1;
+  if(/\bseo\b|keyword research|search ranking|rank on google/i.test(q)&&/^seo(-audit)?$/.test(d.s.name))m*=2.2;
+  if(d.sec&&!SECQ.test(q))m*=0.35;
+  if(/brainstorm/i.test(q)&&d.s.name==="brainstorming")m*=2;
+  if(d.s.name==="ar-resume"&&!/experiment|paused|continue/i.test(q))m*=0.1;
+  if(/refactor|clean ?up (my|this) code|messy (code|function)/i.test(q)&&/karpathy|refactor|tech-debt|simplif/.test(d.s.name))m*=2;
+  if(/\b(react|website|web app|frontend)\b/i.test(q)&&/frontend|web-artifacts|fullstack/.test(d.s.name))m*=1.6;
+  if(/email/.test(d.s.name)&&!/email|newsletter/i.test(q))m*=0.5;
+  if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
+  return m*(1+0.08*Math.log10(d.s.repo_stars));}
+function search(idx,q,k=5,qvec){
  const base=tok(q);const qt=[...base];base.forEach(w=>(SYN[w]||[]).forEach(x=>qt.push(...tok(x))));
  const qset=new Set(qt), qflat=q.toLowerCase().replace(/[^a-z0-9]/g,"");
- const res=[];for(const d of idx.docs){let sc=0;for(const w of qset){const f=d.tf[w];if(!f)continue;const idf=Math.log(1+(idx.N-idx.df[w]+.5)/(idx.df[w]+.5));const wq=base.includes(w)?1:.6;sc+=wq*idf*f*2.2/(f+1.2*(.25+.75*d.len/idx.avg));}
-  if(sc<=0)continue;
-  if(base.some(w=>d.nt.has(w)))sc*=1.4;
-  if(d.auto){const named=d.app.length>2&&base.some(w=>w.replace(/[^a-z0-9]/g,"")===d.app)||(d.app.length>5&&qflat.includes(d.app));sc*=named?4:0.15;}
-  if(DATAQ.test(q)){if(/data|analy|csv|xlsx|pandas|polars|statistic|visuali|matplotlib|plot/.test(d.s.name))sc*=2.5;else if(d.s.category==="data")sc*=1.3;}
-  if(/helm/.test(d.s.name)&&!/helm|kubernetes|k8s/i.test(q))sc*=0.1;
-  if(/\bseo\b|keyword research|search ranking|rank on google/i.test(q)&&/^seo(-audit)?$/.test(d.s.name))sc*=2.2;
-  if(d.sec&&!SECQ.test(q))sc*=0.35;
-  sc*=1+0.08*Math.log10(d.s.repo_stars);res.push({s:d.s,score:sc});}
+ const bm=idx.docs.map(d=>{let sc=0;for(const w of qset){const f=d.tf[w];if(!f)continue;const idf=Math.log(1+(idx.N-idx.df[w]+.5)/(idx.df[w]+.5));const wq=base.includes(w)?1:.6;sc+=wq*idf*f*2.2/(f+1.2*(.25+.75*d.len/idx.avg));}return sc;});
+ const sem=qvec&&idx.emb;const bmMax=Math.max(1e-9,...bm);const res=[];
+ idx.docs.forEach((d,i)=>{let sc;
+  if(sem){let c=0;if(d.ev){let dot=0;for(let j=0;j<idx.dim;j++)dot+=d.ev[j]*qvec[j];c=dot/d.en;}
+   const sv=Math.max(0,(c-0.12)/0.4);sc=0.4*bm[i]/bmMax+0.6*sv;}
+  else sc=bm[i];
+  if(sc<=0)return;res.push({s:d.s,score:sc*boost(d,q,base,qflat)});});
  res.sort((a,b)=>b.score-a.score);const seen=new Set(),out=[];for(const r of res){if(seen.has(r.s.name))continue;seen.add(r.s.name);out.push(r);if(out.length>=k)break;}return out;}
 function rewrite(p,s){return `Use the "${s.name}" Claude skill (${s.url}) for this task.\n\n${p}`;}
-g.SkillMatch={build,search,rewrite};if(typeof module!=="undefined")module.exports=g.SkillMatch;
+g.SkillMatch={build,search,rewrite,attach};if(typeof module!=="undefined")module.exports=g.SkillMatch;
 })(typeof window!=="undefined"?window:globalThis);
