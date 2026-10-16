@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Waskill — find the right Claude skill</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23d97757%22/%3E%3Ctext x=%2250%22 y=%2272%22 font-size=%2264%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EW%3C/text%3E%3C/svg%3E"><meta name="description" content="Waskill suggests Claude Agent Skills for the prompt you are about to send.">
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#faf7f2;color:#2b2b2b;margin:0}
+main{max-width:760px;margin:0 auto;padding:40px 20px}
+h1{font-size:28px;margin:0 0 6px}.sub{color:#666;margin:0 0 22px}
+textarea{width:100%;box-sizing:border-box;min-height:110px;padding:14px;border:2px solid #e3dccf;border-radius:12px;font:inherit;font-size:16px;resize:vertical;background:#fff}
+textarea:focus{outline:none;border-color:#d97757}
+button{background:#d97757;color:#fff;border:0;border-radius:10px;padding:10px 18px;font-size:15px;cursor:pointer}button:hover{background:#c4613f}
+.row{display:flex;gap:10px;align-items:center;margin:12px 0 26px;flex-wrap:wrap}.chip{background:#fff;color:#555;border:1px solid #e3dccf;padding:6px 12px;font-size:13px;border-radius:20px}.chip:hover{background:#f3ece1}
+.card{background:#fff;border:1px solid #eee5d8;border-radius:14px;padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}.name{font-weight:700;font-size:18px}.cat{font-size:12px;background:#f3ece1;padding:3px 9px;border-radius:12px;color:#8a5a3c}
+.when{margin:8px 0 10px;line-height:1.45}.meta{font-size:13px;color:#777;display:flex;gap:14px;flex-wrap:wrap;align-items:center}.meta a{color:#d97757}
+.copy{margin-left:auto;padding:7px 14px;font-size:13px}.empty{color:#888;text-align:center}
+</style></head><body><main>
+<div style="font-weight:800;font-size:22px;color:#d97757;margin-bottom:18px"><span style="background:#d97757;color:#fff;border-radius:8px;padding:2px 9px;margin-right:6px">W</span>Waskill</div><h1>Which Claude skill should I use?</h1>
+<p class="sub">Paste the prompt you're about to send to Claude. We'll suggest skills that can help it do a better job.</p>
+<textarea id="q" placeholder="e.g. Make a pitch deck for my coffee startup"></textarea>
+<div class="row"><button id="go">Suggest skills</button><span style="color:#888;font-size:13px">Try:</span>
+<button class="chip">make a pitch deck</button><button class="chip">write a landing page</button><button class="chip">debug my python</button><button class="chip">analyze this CSV</button></div>
+<div id="out"></div><p style="color:#999;font-size:12px;text-align:center;margin-top:30px">Waskill · skills indexed from popular open-source GitHub repos (100+ stars). Not affiliated with Anthropic.</p></main>
+<script src="match.js"></script><script>
+let idx;const $=s=>document.querySelector(s);$("#q").value=new URLSearchParams(location.search).get("q")||"";
+fetch("skills.json").then(r=>r.json()).then(d=>{idx=SkillMatch.build(d);if($("#q").value)run();});
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function run(){const q=$("#q").value.trim();if(!q||!idx)return;const r=SkillMatch.search(idx,q,5);
+$("#out").innerHTML=r.length?r.map((x,i)=>`<div class="card"><div class="top"><span class="name">${esc(x.s.name)}</span><span class="cat">${x.s.category}</span></div><div class="when">${esc(x.s.when_to_use.length>180?x.s.when_to_use.slice(0,177)+"…":x.s.when_to_use)}</div><div class="meta"><span>📦 ${x.s.repo}</span><span>⭐ ${x.s.repo_stars.toLocaleString()}</span><a href="${x.s.url}" target="_blank">View SKILL.md ↗</a><button class="copy" data-i="${i}">Copy prompt with skill</button></div></div>`).join(""):'<p class="empty">No matching skills — try describing your task in a few more words.</p>';
+document.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(SkillMatch.rewrite(q,r[b.dataset.i].s)).catch(()=>{});b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy prompt with skill",1500);});}
+$("#go").onclick=run;$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"&&(e.metaKey||e.ctrlKey))run();});
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("#q").value=c.textContent;run();});
+</script></body></html>
