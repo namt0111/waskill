@@ -2,7 +2,7 @@
 """Generate static SEO files (category pages, sitemap.xml, llms-full.txt) from skills.json.
 Read-only on skills.json. Run from web/: python3 tools/gen_seo.py"""
 import json, html, os, datetime, collections
-BASE = "https://namt0111.github.io/waskill/"
+BASE = "https://waskill.dev/"
 os.chdir(os.path.join(os.path.dirname(__file__), ".."))
 skills = json.load(open("skills.json"))
 by = collections.defaultdict(list)

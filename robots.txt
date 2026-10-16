@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://namt0111.github.io/waskill/sitemap.xml
+Sitemap: https://waskill.dev/sitemap.xml

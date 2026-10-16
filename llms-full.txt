@@ -2,7 +2,7 @@
 
 > Waskill is a free tool that helps beginner Claude users find the right Claude Agent Skill (a SKILL.md file) for the prompt they are about to send. Paste a prompt, get the top 5 matching skills from popular open-source GitHub repositories (100+ stars), with a link to each SKILL.md and a one-click "copy prompt with skill" button.
 
-Site: https://namt0111.github.io/waskill/
+Site: https://waskill.dev/
 Not affiliated with Anthropic. Runs entirely in the browser; prompts are not sent to any server.
 
 ## What are Claude skills?
@@ -11,17 +11,17 @@ Claude Agent Skills are folders containing a SKILL.md file (instructions, plus o
 
 ## How to use Waskill
 
-1. Open https://namt0111.github.io/waskill/ and paste the prompt you plan to send to Claude.
+1. Open https://waskill.dev/ and paste the prompt you plan to send to Claude.
 2. Click "Suggest skills" to see the 5 best-matching skills, each with category, source repo and star count.
 3. Click "View SKILL.md" to read or install the skill (e.g. add it to Claude.ai, Claude Code `~/.claude/skills/`, or the API), or click "Copy prompt with skill" to copy your prompt rewritten to use that skill.
-4. Deep link: https://namt0111.github.io/waskill/?q=make%20a%20pitch%20deck runs a search directly.
+4. Deep link: https://waskill.dev/?q=make%20a%20pitch%20deck runs a search directly.
 
 ## Pages
 
-- [Home / search](https://namt0111.github.io/waskill/)
-- [Skill data (JSON)](https://namt0111.github.io/waskill/skills.json): name, description, repo, stars, url, category for every indexed skill
-- [Full index for LLMs](https://namt0111.github.io/waskill/llms-full.txt)
-- Category pages: [security](https://namt0111.github.io/waskill/skills/security.html), [integrations](https://namt0111.github.io/waskill/skills/integrations.html), [marketing](https://namt0111.github.io/waskill/skills/marketing.html), [data](https://namt0111.github.io/waskill/skills/data.html), [documents](https://namt0111.github.io/waskill/skills/documents.html), [design](https://namt0111.github.io/waskill/skills/design.html), [coding](https://namt0111.github.io/waskill/skills/coding.html), [productivity](https://namt0111.github.io/waskill/skills/productivity.html), [writing](https://namt0111.github.io/waskill/skills/writing.html), [business](https://namt0111.github.io/waskill/skills/business.html)
+- [Home / search](https://waskill.dev/)
+- [Skill data (JSON)](https://waskill.dev/skills.json): name, description, repo, stars, url, category for every indexed skill
+- [Full index for LLMs](https://waskill.dev/llms-full.txt)
+- Category pages: [security](https://waskill.dev/skills/security.html), [integrations](https://waskill.dev/skills/integrations.html), [marketing](https://waskill.dev/skills/marketing.html), [data](https://waskill.dev/skills/data.html), [documents](https://waskill.dev/skills/documents.html), [design](https://waskill.dev/skills/design.html), [coding](https://waskill.dev/skills/coding.html), [productivity](https://waskill.dev/skills/productivity.html), [writing](https://waskill.dev/skills/writing.html), [business](https://waskill.dev/skills/business.html)
 
 ## Full skill index (top 25 per category by repo stars)
 
