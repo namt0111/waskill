@@ -35,8 +35,9 @@ let idx;const $=s=>document.querySelector(s);$("#q").value=new URLSearchParams(l
 fetch("skills.json").then(r=>r.json()).then(d=>{idx=SkillMatch.build(d);if($("#q").value)run();});
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function run(){const q=$("#q").value.trim();if(!q||!idx)return;const r=SkillMatch.search(idx,q,5);
+try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:"search",title:q.slice(0,60),event:true})}catch(e){}
 $("#out").innerHTML=r.length?r.map((x,i)=>`<div class="card"><div class="top"><span class="name">${esc(x.s.name)}</span><span class="cat">${x.s.category}</span></div><div class="when">${esc(x.s.when_to_use.length>180?x.s.when_to_use.slice(0,177)+"…":x.s.when_to_use)}</div><div class="meta"><span>📦 ${x.s.repo}</span><span>⭐ ${x.s.repo_stars.toLocaleString()}</span><a href="${x.s.url}" target="_blank">View SKILL.md ↗</a><button class="copy" data-i="${i}">Copy prompt with skill</button></div></div>`).join(""):'<p class="empty">No matching skills — try describing your task in a few more words.</p>';
 document.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(SkillMatch.rewrite(q,r[b.dataset.i].s)).catch(()=>{});b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy prompt with skill",1500);});}
 $("#go").onclick=run;$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"&&(e.metaKey||e.ctrlKey))run();});
 document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("#q").value=c.textContent;run();});
-</script></body></html>
+</script><script data-goatcounter="https://waskill.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
