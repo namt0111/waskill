@@ -8,5 +8,5 @@
  "keywords": [],
  "bar": true,
  "card": false,
- "_help": "Edit only this file to change sponsors. To run a real sponsor: set demo:false and fill name/tagline/url (logo = image URL, optional). bar: ticker fixed to the bottom of every page (sideways scroll, pauses on hover/focus, visitor can hide it). card: one card after the top 5 results on the home page; keywords (optional) limit the card to prompts containing one of them. demo:true labels both as 'Example sponsor' and should point url at /sponsor/. active:false hides the bar and shows a plain house card linking to /sponsor/."
+ "_help": "Edit only this file to change sponsors. One sponsor: set demo:false and fill name/tagline/url (logo = image URL, optional). Several sponsors (bar only): add \"sponsors\": [{\"name\",\"tagline\",\"url\",\"logo\",\"demo\"}] and they all scroll in the bar and show in its expanded list; the top-level fields still drive the results card. bar: ticker fixed to the bottom of every page; desktop hover or a tap on phones opens the full list; visitors can hide it with x. card: one card after the top 5 results; keywords (optional) limit the card to prompts containing one of them. demo:true labels an entry 'Example sponsor' and should point url at /sponsor/. active:false hides the bar and shows a plain house card linking to /sponsor/."
 }

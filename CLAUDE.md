@@ -13,7 +13,8 @@ Waskill (https://waskill.dev) is a free, no-signup static site on GitHub Pages. 
 
 Two placements, both rendered by `sponsor.js` from `sponsor.json`:
 
-- **bar** (`"bar": true`, on now): a 48px ticker fixed to the bottom of every page (home, category pages, /sponsor/). The sponsor's name and pitch scroll sideways in a loop, pause on hover and keyboard focus, and stay still under reduced motion. Visitors can hide it with ×; that choice is kept in localStorage per sponsor name, so a new sponsor shows again. `body` gets bottom padding so the bar never covers the footer.
+- **bar** (`"bar": true`, on now): a 48px ticker fixed to the bottom of every page (home, category pages, /sponsor/). Sponsors scroll sideways at a fixed 30px/s (re-measured after web fonts load and on resize), and stay still under reduced motion. **Desktop:** hovering the bar (or clicking/focusing the "Sponsored ⌃" tab) pauses it and opens a panel listing every sponsor. **Phones:** tapping the moving text or the tab opens the same list as a bottom sheet instead of following a link; tapping outside, the tab again, or Esc closes it. Visitors can hide the bar with ×; that choice is kept in localStorage per sponsor set, so new sponsors show again. `body` gets bottom padding so the bar never covers the footer.
+- **Several sponsors:** add `"sponsors": [{"name","tagline","url","logo","demo"}]` to `sponsor.json`; all of them scroll in the bar and appear in the expanded list. Without it, the top-level fields are the one sponsor. The results card always uses the top-level fields.
 - **card** (`"card": false`, off now): one card after the top 5 results on the home page. `keywords` only apply to the card.
 
 | `sponsor.json` state | What visitors see |
@@ -22,7 +23,7 @@ Two placements, both rendered by `sponsor.js` from `sponsor.json`:
 | `active: true, demo: false` + `name`, `tagline`, `url` (+ optional `logo`, `keywords`) | The real sponsor replaces the demo in the same places, opening `url` in a new tab with `rel="sponsored noopener"`. |
 | `active: false` | No bar; a small plain house card linking to `/sponsor/` after the results. |
 
-To put a real sponsor in: edit `sponsor.json` only (set `demo` to `false`, fill `name`, `tagline`, `url`, optionally `logo` and `keywords`; turn `bar`/`card` on or off), commit, push. Clicks fire the GoatCounter `sponsor-click` event: title `demo` or the sponsor's `name`, with ` (bar)` appended for bar clicks. Never invent a sponsor name, logo or claim. The footer of every page links to `/sponsor/` ("Sponsor Waskill").
+To put a real sponsor in: edit `sponsor.json` only (set `demo` to `false`, fill `name`, `tagline`, `url`, optionally `logo` and `keywords`; turn `bar`/`card` on or off), commit, push. Clicks fire the GoatCounter `sponsor-click` event: title `demo` or the sponsor's `name`, with ` (bar)` appended for desktop clicks on the ticker and ` (list)` for clicks in the expanded list. A phone tap that only opens the list fires nothing. Never invent a sponsor name, logo or claim. The footer of every page links to `/sponsor/` ("Sponsor Waskill").
 
 ## Structure
 
