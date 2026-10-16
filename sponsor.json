@@ -6,5 +6,7 @@
  "logo": "",
  "url": "/sponsor/",
  "keywords": [],
- "_help": "One card after the top 5 results. To run a real sponsor: set demo:false and fill name/tagline/url (logo = image URL, optional); no code change needed. keywords (optional): show only when the prompt contains one of them; empty = every prompt. demo:true labels the card 'Example sponsor' and should point url at /sponsor/. active:false shows a plain house card linking to /sponsor/."
+ "bar": true,
+ "card": false,
+ "_help": "Edit only this file to change sponsors. To run a real sponsor: set demo:false and fill name/tagline/url (logo = image URL, optional). bar: ticker fixed to the bottom of every page (sideways scroll, pauses on hover/focus, visitor can hide it). card: one card after the top 5 results on the home page; keywords (optional) limit the card to prompts containing one of them. demo:true labels both as 'Example sponsor' and should point url at /sponsor/. active:false hides the bar and shows a plain house card linking to /sponsor/."
 }
