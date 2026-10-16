@@ -1,42 +1,249 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Waskill — Find the right Claude skill (SKILL.md) for your prompt</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23d97757%22/%3E%3Ctext x=%2250%22 y=%2272%22 font-size=%2264%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EW%3C/text%3E%3C/svg%3E"><meta name="description" content="Free tool for Claude beginners: paste your prompt and get the top 5 matching Claude Agent Skills (SKILL.md) from popular open-source GitHub repos.">
-<link rel="canonical" href="https://waskill.dev/"><meta name="robots" content="index,follow"><meta name="theme-color" content="#d97757">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Waskill — Find the right Claude skill (SKILL.md) for your prompt</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%231f2b4d%22/%3E%3Ctext x=%2250%22 y=%2271%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EW%3C/text%3E%3C/svg%3E"><meta name="description" content="Free tool for Claude beginners: paste your prompt and get the top 5 matching Claude Agent Skills (SKILL.md) from popular open-source GitHub repos.">
+<link rel="canonical" href="https://waskill.dev/"><meta name="robots" content="index,follow"><meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Waskill"><meta property="og:title" content="Waskill — Find the right Claude skill (SKILL.md) for your prompt"><meta property="og:description" content="Free tool for Claude beginners: paste your prompt and get the top 5 matching Claude Agent Skills (SKILL.md) from popular open-source GitHub repos."><meta property="og:url" content="https://waskill.dev/"><meta property="og:image" content="https://waskill.dev/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Waskill — Find the right Claude skill (SKILL.md) for your prompt"><meta name="twitter:description" content="Free tool for Claude beginners: paste your prompt and get the top 5 matching Claude Agent Skills (SKILL.md) from popular open-source GitHub repos."><meta name="twitter:image" content="https://waskill.dev/og.png">
 <link rel="alternate" type="text/plain" title="llms.txt" href="llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Waskill", "url": "https://waskill.dev/", "description": "Free tool for Claude beginners: paste your prompt and get the top 5 matching Claude Agent Skills (SKILL.md) from popular open-source GitHub repos.", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any (web browser)", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "potentialAction": {"@type": "SearchAction", "target": "https://waskill.dev/?q={search_term_string}", "query-input": "required name=search_term_string"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are Claude skills?", "acceptedAnswer": {"@type": "Answer", "text": "Claude Agent Skills are folders with a SKILL.md file of instructions (and sometimes scripts) that teach Claude how to do a specific task well, like building slide decks, filling PDF forms or writing tests."}}, {"@type": "Question", "name": "How do I use a skill Waskill suggests?", "acceptedAnswer": {"@type": "Answer", "text": "Click “View SKILL.md” to read the skill and install it in Claude.ai, Claude Code (~/.claude/skills/) or the API, or click “Copy prompt with skill” to copy your prompt rewritten to use that skill."}}, {"@type": "Question", "name": "Where do the skills come from?", "acceptedAnswer": {"@type": "Answer", "text": "Waskill indexes SKILL.md files from popular public GitHub repositories with 100+ stars. Waskill is free and not affiliated with Anthropic."}}, {"@type": "Question", "name": "Is my prompt sent anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. Matching runs entirely in your browser."}}]}]</script>
 <style>
-body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#faf7f2;color:#2b2b2b;margin:0}
-main{max-width:760px;margin:0 auto;padding:40px 20px}
-h1{font-size:28px;margin:0 0 6px}.sub{color:#666;margin:0 0 22px}
-textarea{width:100%;box-sizing:border-box;min-height:110px;padding:14px;border:2px solid #e3dccf;border-radius:12px;font:inherit;font-size:16px;resize:vertical;background:#fff}
-textarea:focus{outline:none;border-color:#d97757}
-button{background:#d97757;color:#fff;border:0;border-radius:10px;padding:10px 18px;font-size:15px;cursor:pointer}button:hover{background:#c4613f}
-.row{display:flex;gap:10px;align-items:center;margin:12px 0 26px;flex-wrap:wrap}.chip{background:#fff;color:#555;border:1px solid #e3dccf;padding:6px 12px;font-size:13px;border-radius:20px}.chip:hover{background:#f3ece1}
-.card{background:#fff;border:1px solid #eee5d8;border-radius:14px;padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}.name{font-weight:700;font-size:18px}.cat{font-size:12px;background:#f3ece1;padding:3px 9px;border-radius:12px;color:#8a5a3c}
-.when{margin:8px 0 10px;line-height:1.45}.meta{font-size:13px;color:#777;display:flex;gap:14px;flex-wrap:wrap;align-items:center}.meta a{color:#d97757}
-.copy{margin-left:auto;padding:7px 14px;font-size:13px}.empty{color:#888;text-align:center}
-.nl{margin:18px 0;font-size:14px;color:#555}.nl form{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}.nl input[type=email]{flex:1 1 200px;min-width:0;padding:9px 12px;border:2px solid #e3dccf;border-radius:10px;font:inherit;font-size:16px;background:#fff}.nl input[type=email]:focus{outline:none;border-color:#d97757}.nl button{background:#d97757;color:#fff;border:0;border-radius:10px;padding:10px 16px;font-size:14px;cursor:pointer}.nl .ok{color:#3b7a3b;margin:6px 0 0}.nl-c{margin:4px 0 14px;font-size:13px}.nl-c form{flex-wrap:nowrap;gap:6px;margin:0}.nl-c .nl-t{white-space:nowrap;color:#888}.nl-c input[type=email]{flex:1 1 120px;padding:5px 9px;font-size:13px;border-width:1px;border-radius:8px}.nl-c button{padding:6px 12px;font-size:13px;border-radius:8px}.nl-c .ok{margin:4px 0 0}@media(max-width:420px){.nl-c .nl-t{display:none}}.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-</style></head><body><main>
-<div style="font-weight:800;font-size:22px;color:#d97757;margin-bottom:18px"><span style="background:#d97757;color:#fff;border-radius:8px;padding:2px 9px;margin-right:6px">W</span>Waskill</div><h1>Which Claude skill should I use?</h1>
-<p class="sub">Paste the prompt you're about to send to Claude. We'll suggest skills that can help it do a better job.</p>
-<textarea id="q" placeholder="e.g. Make a pitch deck for my coffee startup"></textarea>
-<div class="row"><button id="go">Suggest skills</button><span style="color:#888;font-size:13px">Try:</span>
-<button class="chip">make a pitch deck</button><button class="chip">write a landing page</button><button class="chip">debug my python</button><button class="chip">analyze this CSV</button></div>
-<div id="out"></div><div class="nl nl-c" hidden id="nl-res"><form action="https://buttondown.com/api/emails/embed-subscribe/waskill" method="post" target="_blank" data-nl><span class="nl-t">Get new Claude skills weekly</span><label class="vh" for="nl-res-e">Email address</label><input id="nl-res-e" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><input type="hidden" name="tag" value="waskill-results"><button type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite"></p></div><section id="about" style="margin-top:40px;color:#555;font-size:14px;line-height:1.5"><details><summary style="cursor:pointer;color:#8a5a3c;font-weight:600">What is this? · FAQ</summary>
-<p>Waskill helps you pick a <strong>Claude skill</strong> for the task you're about to ask Claude to do. Type your prompt, and it shows the 5 best-matching skills from popular open-source GitHub repos.</p>
-<h2 style="font-size:15px;margin:14px 0 4px">What are Claude skills?</h2><p style="margin:0">Claude Agent Skills are folders with a SKILL.md file of instructions (and sometimes scripts) that teach Claude how to do a specific task well, like building slide decks, filling PDF forms or writing tests.</p><h2 style="font-size:15px;margin:14px 0 4px">How do I use a skill Waskill suggests?</h2><p style="margin:0">Click “View SKILL.md” to read the skill and install it in Claude.ai, Claude Code (~/.claude/skills/) or the API, or click “Copy prompt with skill” to copy your prompt rewritten to use that skill.</p><h2 style="font-size:15px;margin:14px 0 4px">Where do the skills come from?</h2><p style="margin:0">Waskill indexes SKILL.md files from popular public GitHub repositories with 100+ stars. Waskill is free and not affiliated with Anthropic.</p><h2 style="font-size:15px;margin:14px 0 4px">Is my prompt sent anywhere?</h2><p style="margin:0">No. Matching runs entirely in your browser.</p>
-<p>Browse by category: <a href="skills/security.html" style="color:#d97757">security</a> · <a href="skills/integrations.html" style="color:#d97757">integrations</a> · <a href="skills/marketing.html" style="color:#d97757">marketing</a> · <a href="skills/data.html" style="color:#d97757">data</a> · <a href="skills/documents.html" style="color:#d97757">documents</a> · <a href="skills/design.html" style="color:#d97757">design</a> · <a href="skills/coding.html" style="color:#d97757">coding</a> · <a href="skills/productivity.html" style="color:#d97757">productivity</a> · <a href="skills/writing.html" style="color:#d97757">writing</a> · <a href="skills/business.html" style="color:#d97757">business</a></p></details></section>
-<div class="nl" id="nl-foot"><p style="margin:0">Get new and trending Claude skills, one short email a week.</p><form action="https://buttondown.com/api/emails/embed-subscribe/waskill" method="post" target="_blank" data-nl><label class="vh" for="nl-foot-e">Email address</label><input id="nl-foot-e" type="email" name="email" placeholder="you@example.com" autocomplete="email" required><input type="hidden" name="tag" value="waskill-footer"><button type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite"></p></div>
-<p style="color:#999;font-size:12px;text-align:center;margin-top:30px">Waskill · skills indexed from popular open-source GitHub repos (100+ stars). Not affiliated with Anthropic.</p></main>
+:root{
+ --bg:#ffffff;--surface:#f4f4f2;--surface-2:#e9e7e2;--ink:#1f2b4d;--muted:#5f667b;--accent:#f7941d;--accent-hover:#ffa63d;--accent-ink:#1f2b4d;
+ --font:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+ --step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem);--step-sec:clamp(1.625rem,1.3rem + 1.2vw,2.25rem);
+ --r:4px;--gut:24px;--col:600px;--ease:cubic-bezier(.2,.7,.2,1);
+ color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(31,43,77,.12)}
+a{color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;transition:text-decoration-color .15s,color .15s}
+a:hover{text-decoration-color:var(--accent);text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+::selection{background:var(--accent);color:var(--accent-ink)}
+button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
+h1,h2,h3{font-weight:400;margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:var(--gut);top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:var(--r);z-index:10}
+.skip:focus{top:12px}
+.wrap{padding-inline:max(var(--gut),env(safe-area-inset-left)) max(var(--gut),env(safe-area-inset-right))}
+.col{max-width:var(--col)}
+.wide{max-width:960px}
+@media (min-width:960px){.col,.wide,.bar{margin-left:calc(22vw - var(--gut))}}
+/* bar */
+.bar{display:flex;align-items:center;gap:24px;padding-top:28px;max-width:960px;font-size:var(--step-small)}
+.mark{display:inline-flex;align-items:center;gap:10px;font-size:var(--step-body);font-weight:500;text-decoration:none;letter-spacing:-.01em}
+.mark i{display:grid;place-items:center;width:28px;height:28px;border-radius:var(--r);background:var(--ink);color:#fff;font-style:normal;font-size:var(--step-small);font-weight:500}
+.bar nav{margin-left:auto;display:flex;gap:20px}
+.bar nav a{text-decoration:none;padding:8px 0}
+.bar nav a:hover{text-decoration:underline;text-decoration-color:var(--accent)}
+/* hero */
+.hero{padding-top:clamp(40px,9vh,112px)}
+h1{font-size:var(--step-head);font-weight:300;letter-spacing:-.035em;line-height:1.02;max-width:16ch}
+.lead{margin-top:24px;max-width:34em}
+.field{position:relative;margin-top:32px}
+textarea{display:block;width:100%;min-height:6.2em;padding:20px 22px;border:0;border-radius:var(--r);background:var(--surface);color:var(--ink);font:inherit;font-size:var(--step-lead);line-height:1.4;letter-spacing:-.01em;resize:vertical;transition:background-color .2s}
+textarea:hover{background:var(--surface-2)}
+textarea:focus{outline:none;background:var(--surface-2)}
+textarea:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+textarea::placeholder{color:var(--muted);opacity:1}
+.js textarea.ghosted::placeholder{color:transparent}
+.ghost{position:absolute;left:22px;right:22px;top:20px;font-size:var(--step-lead);line-height:1.4;letter-spacing:-.01em;color:var(--muted);pointer-events:none;opacity:0;transition:opacity .8s ease}
+.ghost.on{opacity:1}
+textarea:not(:placeholder-shown)+.ghost{display:none}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:0;border-radius:var(--r);background:var(--accent);color:var(--accent-ink);font-weight:500;letter-spacing:-.005em;transition:background-color .15s,transform .1s}
+.btn:hover{background:var(--accent-hover)}
+.btn:active{transform:translateY(1px)}
+.hint{font-size:var(--step-small);color:var(--muted)}
+.tries{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:20px;font-size:var(--step-small)}
+.tries>span{color:var(--muted);margin-right:4px}
+.chip{min-height:40px;padding:0 14px;border:0;border-radius:var(--r);background:var(--surface);color:var(--ink);font-size:var(--step-small);transition:background-color .15s,transform .1s}
+.chip:hover{background:var(--surface-2)}
+.chip:active{transform:translateY(1px)}
+/* results */
+.results{margin-top:40px}
+#ws-refining{font-size:var(--step-small)!important;color:var(--muted)!important;margin:0 0 12px!important}
+.card{background:var(--surface);border-radius:var(--r);padding:20px 22px 18px;margin:0 0 8px;animation:rise .5s var(--ease) both;animation-delay:calc(var(--i,0)*70ms)}
+.card .top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px}
+.card h3{font-size:var(--step-lead);font-weight:400;letter-spacing:-.02em;line-height:1.2;overflow-wrap:anywhere;min-width:0}
+.card .cat{color:var(--muted)}
+.card .cat:hover{color:var(--ink);text-decoration:underline}
+.card .when{margin:8px 0 16px;overflow-wrap:break-word}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;font-size:var(--step-small);color:var(--muted)}
+.meta .src{min-width:0;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.meta a{color:var(--ink);font-weight:500}
+.copy{flex:none;min-height:40px;padding:0 16px;border:0;border-radius:var(--r);background:var(--bg);color:var(--ink);font-size:var(--step-small);font-weight:500;transition:background-color .15s,transform .1s}
+.copy:hover{background:var(--surface-2)}
+.copy:active{transform:translateY(1px)}
+.empty{padding:20px 0;color:var(--ink)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+/* newsletter */
+.nl{margin:18px 0}
+.nl form{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.nl input[type=email]{flex:1 1 220px;min-width:0;min-height:48px;padding:0 16px;border:0;border-radius:var(--r);background:var(--surface);color:var(--ink);font:inherit;transition:background-color .15s}
+.nl input[type=email]:hover,.nl input[type=email]:focus{background:var(--surface-2);outline:none}
+.nl input[type=email]:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.nl input::placeholder{color:var(--muted);opacity:1}
+.nl button{min-height:48px;padding:0 22px;border:0;border-radius:var(--r);background:var(--ink);color:#fff;font-weight:500;transition:background-color .15s,transform .1s}
+.nl button:hover{background:#2c3b66}
+.nl button:active{transform:translateY(1px)}
+.nl .ok{margin-top:8px;color:var(--ink)}
+.nl-c{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:16px 0 0;font-size:var(--step-small)}
+.nl-c[hidden]{display:none}
+.nl-c .nl-t{color:var(--muted)}
+.nl-c form{flex:1 1 300px}
+.nl-c input[type=email],.nl-c button{min-height:40px;font-size:var(--step-small)}
+.nl-c button{background:var(--surface);color:var(--ink)}
+.nl-c button:hover{background:var(--surface-2)}
+/* sections */
+.sec{padding-top:clamp(96px,13vh,140px)}
+.sec h2{font-size:var(--step-sec);font-weight:400;letter-spacing:-.025em;line-height:1.1}
+.sec>p,.sec .col>p{margin-top:14px;max-width:34em}
+.facts{margin:36px 0 0;padding:8px 0;background:var(--surface);border-radius:var(--r)}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:12px 22px}
+.facts div:nth-child(even){background:var(--surface-2)}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;text-align:right;font-weight:500;font-variant-numeric:tabular-nums}
+.note{margin-top:14px;font-size:var(--step-small);color:var(--muted)}
+.repos{width:100%;margin-top:36px;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.repos th{text-align:left;font-weight:400;font-size:var(--step-small);color:var(--muted);padding:0 14px 10px}
+.repos td{padding:13px 14px;vertical-align:baseline}
+.repos tbody tr:nth-child(odd){background:var(--surface)}
+.repos td:first-child{overflow-wrap:anywhere}
+.repos .n{text-align:right;white-space:nowrap}
+.cats{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cats a{display:inline-flex;align-items:baseline;gap:8px;min-height:44px;padding:10px 16px;border-radius:var(--r);background:var(--surface);text-decoration:none;transition:background-color .15s}
+.cats a:hover{background:var(--surface-2)}
+.cats span{color:var(--muted);font-size:var(--step-small);font-variant-numeric:tabular-nums}
+/* faq */
+.faq{margin-top:28px}
+.q{display:flex;align-items:baseline;gap:14px;width:100%;padding:10px 0;border:0;background:none;text-align:left;font-size:inherit;line-height:1.4;color:var(--muted);transition:color .15s}
+.q::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--muted);transform:translateY(-2px);transition:background-color .15s,transform .2s var(--ease)}
+.q:hover,.q[aria-expanded=true]{color:var(--ink)}
+.q[aria-expanded=true]::before{background:var(--accent);transform:translateY(-2px) scale(1.25)}
+.a{padding:4px 0 18px 22px}
+.a p+p{margin-top:12px}
+.js .a{animation:fade .25s ease both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (min-width:860px){
+ .js .faq{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}
+ .js .qa{display:contents}
+ .js .q{grid-column:1}
+ .js .a{grid-column:2;grid-row:1 / span 8;padding:6px 0 0;font-size:var(--step-lead);line-height:1.35;letter-spacing:-.01em;max-width:30ch;position:sticky;top:120px}
+}
+/* cta + footer */
+.cta{padding-top:clamp(96px,13vh,140px)}
+.cta .say{font-size:var(--step-lead);line-height:1.35;letter-spacing:-.01em;max-width:30ch}
+.cta .nl{margin-top:24px}
+.cta .also{margin-top:18px;font-size:var(--step-small);color:var(--muted)}
+.foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;gap:12px 24px;padding:clamp(88px,14vh,140px) 0 max(30px,env(safe-area-inset-bottom));font-size:var(--step-small);color:var(--muted)}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 24px}
+.foot .yr{text-align:right}
+@media (max-width:720px){.foot{grid-template-columns:1fr;gap:8px}.foot .yr{text-align:left}}
+/* entrances */
+@media (prefers-reduced-motion:no-preference){
+ .rise-on .rise{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--d,0)*80ms)}
+ .rise-on .rise.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){.card,.js .a{animation:none}.ghost{transition:none}}
+@media (pointer:coarse){.hint{display:none}}
+@media (max-width:560px){.card{display:flex;flex-direction:column}.card .top{display:contents}.card .copy{order:3;align-self:flex-start;margin-top:14px;background:var(--bg)}.nl-c form{flex-wrap:nowrap}.nl-c input[type=email]{flex:1 1 0}}
+@media (max-width:520px){.bar nav{gap:16px}.facts div{padding:12px 16px}.repos td,.repos th{padding-inline:10px}}
+</style></head><body>
+<a class="skip" href="#q">Skip to the prompt box</a>
+<div class="wrap">
+<header class="bar"><a class="mark" href="/" aria-label="Waskill home"><i aria-hidden="true">W</i><span translate="no">Waskill</span></a><nav aria-label="Site"><a href="#sources">Skills</a><a href="#faq">FAQ</a><a href="/sponsor/">Sponsor</a></nav></header>
+<main id="main">
+<section class="hero col" aria-labelledby="h1">
+<h1 id="h1" class="rise">Which skill fits your prompt?</h1>
+<p class="lead rise" style="--d:1">Paste the prompt you’re about to send Claude. Waskill picks the 5 skills (SKILL.md) that help most, from <!--g:count-->2,363<!--/g:count--> open-source skills. Your prompt stays in your browser.</p>
+<div class="field rise" style="--d:2"><label class="vh" for="q">Your prompt for Claude</label><textarea id="q" name="q" placeholder="e.g. Make a pitch deck for my coffee startup…" autocomplete="off" spellcheck="true"></textarea><span class="ghost" aria-hidden="true"></span></div>
+<div class="actions rise" style="--d:3"><button id="go" type="button" class="btn">Suggest skills</button><span class="hint">or press Ctrl + Enter</span></div>
+<div class="tries rise" style="--d:4"><span>Try</span>
+<button type="button" class="chip">make a pitch deck</button><button type="button" class="chip">write a landing page</button><button type="button" class="chip">debug my python</button><button type="button" class="chip">analyze this CSV</button></div>
+<div class="results" aria-labelledby="res-h"><h2 id="res-h" class="vh">Matching skills</h2><p id="status" class="vh" role="status" aria-live="polite"></p>
+<div id="out"></div><div class="nl nl-c" hidden id="nl-res"><span class="nl-t">Get new Claude skills weekly</span><form action="https://buttondown.com/api/emails/embed-subscribe/waskill" method="post" target="_blank" data-nl><label class="vh" for="nl-res-e">Email address</label><input id="nl-res-e" type="email" name="email" placeholder="you@example.com" autocomplete="email" spellcheck="false" required><input type="hidden" name="tag" value="waskill-results"><button type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite"></p></div></div>
+</section>
+
+<section class="sec col" id="how" aria-labelledby="how-h">
+<h2 id="how-h" class="rise">How it picks</h2>
+<p class="rise" style="--d:1">Two matchers run on your device. Keyword search finds skills that use your words; a small language model finds skills that mean the same thing in other words. Their scores are blended into one top 5.</p>
+<dl class="facts rise" style="--d:2" data-ui>
+<div><dt>Skills indexed</dt><dd><!--g:count2-->2,363<!--/g:count2--></dd></div>
+<div><dt>Source repositories</dt><dd><!--g:repos-->11<!--/g:repos--></dd></div>
+<div><dt>Keyword match</dt><dd>BM25</dd></div>
+<div><dt>Meaning match</dt><dd translate="no">all-MiniLM-L6-v2</dd></div>
+<div><dt>Vector per skill</dt><dd>384 numbers, int8</dd></div>
+<div><dt>Where it runs</dt><dd>Your browser</dd></div>
+<div><dt>Prompt sent to a server</dt><dd>Never</dd></div>
+<div><dt>Account needed</dt><dd>None</dd></div>
+</dl>
+<p class="note rise" style="--d:3">If the language model can’t load on your device, keyword search answers on its own.</p>
+</section>
+
+<section class="sec col" id="sources" aria-labelledby="src-h">
+<h2 id="src-h" class="rise">Where the skills come from</h2>
+<p class="rise" style="--d:1">Every skill is a SKILL.md file from one of these public GitHub repositories, ranked by stars.</p>
+<table class="repos rise" style="--d:2"><thead><tr><th scope="col">Repository</th><th scope="col" class="n">Skills</th><th scope="col" class="n">Stars</th></tr></thead>
+<tbody><!--g:table--><tr><td><a href="https://github.com/obra/superpowers" rel="noopener" translate="no">obra/superpowers</a></td><td class="n">15</td><td class="n">299,951</td></tr><tr><td><a href="https://github.com/multica-ai/andrej-karpathy-skills" rel="noopener" translate="no">multica-ai/andrej-karpathy-skills</a></td><td class="n">1</td><td class="n">220,113</td></tr><tr><td><a href="https://github.com/anthropics/skills" rel="noopener" translate="no">anthropics/skills</a></td><td class="n">20</td><td class="n">181,412</td></tr><tr><td><a href="https://github.com/ComposioHQ/awesome-claude-skills" rel="noopener" translate="no">ComposioHQ/awesome-claude-skills</a></td><td class="n">864</td><td class="n">77,196</td></tr><tr><td><a href="https://github.com/coreyhaines31/marketingskills" rel="noopener" translate="no">coreyhaines31/marketingskills</a></td><td class="n">50</td><td class="n">54,913</td></tr><tr><td><a href="https://github.com/Imbad0202/academic-research-skills" rel="noopener" translate="no">Imbad0202/academic-research-skills</a></td><td class="n">5</td><td class="n">52,269</td></tr><tr><td><a href="https://github.com/K-Dense-AI/scientific-agent-skills" rel="noopener" translate="no">K-Dense-AI/scientific-agent-skills</a></td><td class="n">177</td><td class="n">50,561</td></tr><tr><td><a href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills" rel="noopener" translate="no">mukul975/Anthropic-Cybersecurity-Skills</a></td><td class="n">818</td><td class="n">34,516</td></tr><tr><td><a href="https://github.com/alirezarezvani/claude-skills" rel="noopener" translate="no">alirezarezvani/claude-skills</a></td><td class="n">374</td><td class="n">28,242</td></tr><tr><td><a href="https://github.com/OthmanAdi/planning-with-files" rel="noopener" translate="no">OthmanAdi/planning-with-files</a></td><td class="n">6</td><td class="n">27,469</td></tr><tr><td><a href="https://github.com/AgriciDaniel/claude-seo" rel="noopener" translate="no">AgriciDaniel/claude-seo</a></td><td class="n">33</td><td class="n">19,007</td></tr><!--/g:table--></tbody></table>
+<h3 class="vh" id="browse">Browse by category</h3>
+<p class="rise" style="--d:3;margin-top:44px">Or browse the most-starred skills by category.</p>
+<ul class="cats rise" style="--d:4" aria-labelledby="browse"><!--g:cats--><li><a href="skills/security.html">Security <span>846</span></a></li><li><a href="skills/integrations.html">Integrations <span>768</span></a></li><li><a href="skills/marketing.html">Marketing <span>215</span></a></li><li><a href="skills/data.html">Data <span>141</span></a></li><li><a href="skills/documents.html">Documents <span>101</span></a></li><li><a href="skills/design.html">Design <span>98</span></a></li><li><a href="skills/coding.html">Coding <span>93</span></a></li><li><a href="skills/productivity.html">Productivity <span>46</span></a></li><li><a href="skills/writing.html">Writing <span>42</span></a></li><li><a href="skills/business.html">Business <span>13</span></a></li><!--/g:cats--></ul>
+</section>
+
+<section class="sec wide" id="faq" aria-labelledby="faq-h">
+<h2 id="faq-h" class="rise">Questions</h2>
+<div class="faq rise" style="--d:1">
+<div class="qa"><button type="button" class="q" id="q1" aria-controls="a1">What are Claude skills?</button><div class="a" id="a1" role="region" aria-labelledby="q1"><p>Claude Agent Skills are folders with a SKILL.md file of instructions (and sometimes scripts) that teach Claude how to do a specific task well, like building slide decks, filling PDF forms or writing tests.</p></div></div>
+<div class="qa"><button type="button" class="q" id="q2" aria-controls="a2">How do I use a skill Waskill suggests?</button><div class="a" id="a2" role="region" aria-labelledby="q2"><p>Click “View SKILL.md” to read the skill and install it in Claude.ai, Claude Code (~/.claude/skills/) or the API, or click “Copy prompt with skill” to copy your prompt rewritten to use that skill.</p></div></div>
+<div class="qa"><button type="button" class="q" id="q3" aria-controls="a3">Where do the skills come from?</button><div class="a" id="a3" role="region" aria-labelledby="q3"><p>Waskill indexes SKILL.md files from popular public GitHub repositories with 100+ stars. Waskill is free and not affiliated with Anthropic.</p></div></div>
+<div class="qa"><button type="button" class="q" id="q4" aria-controls="a4">Is my prompt sent anywhere?</button><div class="a" id="a4" role="region" aria-labelledby="q4"><p>No. Matching runs entirely in your browser.</p></div></div>
+</div>
+</section>
+
+<section class="cta col" aria-labelledby="cta-h">
+<h2 id="cta-h" class="vh">Newsletter</h2>
+<p class="say rise">Get new and trending Claude skills, one short email a week.</p>
+<div class="nl rise" style="--d:1" id="nl-foot"><form action="https://buttondown.com/api/emails/embed-subscribe/waskill" method="post" target="_blank" data-nl><label class="vh" for="nl-foot-e">Email address</label><input id="nl-foot-e" type="email" name="email" placeholder="you@example.com" autocomplete="email" spellcheck="false" required><input type="hidden" name="tag" value="waskill-footer"><button type="submit">Subscribe</button></form><p class="ok" role="status" aria-live="polite"></p></div>
+<p class="also rise" style="--d:2">Building a tool for Claude users? <a href="/sponsor/">Sponsor Waskill</a>.</p>
+</section>
+</main>
+<footer class="foot"><span>Waskill. Not affiliated with Anthropic.</span><nav aria-label="Footer"><a href="/sponsor/">Sponsor</a><a href="llms.txt">llms.txt</a><a href="skills.json">Skill data</a></nav><span class="yr">Free, no signup</span></footer>
+</div>
 <script src="match.js"></script><script src="semantic.js" defer></script><script src="sponsor.js" defer></script><script>
 let idx;const $=s=>document.querySelector(s);$("#q").value=new URLSearchParams(location.search).get("q")||"";
 fetch("skills.json").then(r=>r.json()).then(d=>{idx=SkillMatch.build(d);if($("#q").value)run(1);});
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const COPY="Copy prompt with skill";
 function run(user){const q=$("#q").value.trim();if(!q||!idx)return;const r=SkillMatch.search(idx,q,5);
-if(user)try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:"search",title:q.slice(0,60),event:true})}catch(e){}
-$("#nl-res").hidden=!r.length;$("#out").innerHTML=r.length?r.map((x,i)=>`<div class="card"><div class="top"><span class="name">${esc(x.s.name)}</span><span class="cat">${x.s.category}</span></div><div class="when">${esc(x.s.when_to_use.length>180?x.s.when_to_use.slice(0,177)+"…":x.s.when_to_use)}</div><div class="meta"><span>📦 ${x.s.repo}</span><span>⭐ ${x.s.repo_stars.toLocaleString()}</span><a href="${x.s.url}" target="_blank">View SKILL.md ↗</a><button class="copy" data-i="${i}">Copy prompt with skill</button></div></div>`).join(""):'<p class="empty">No matching skills — try describing your task in a few more words.</p>';
-document.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(SkillMatch.rewrite(q,r[b.dataset.i].s)).catch(()=>{});b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy prompt with skill",1500);});}
+if(user)try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:"search",title:"search",event:true})}catch(e){}
+$("#nl-res").hidden=!r.length;$("#status").textContent=r.length?r.length+" matching skills":"No matching skills";
+$("#out").innerHTML=r.length?r.map((x,i)=>`<article class="card" style="--i:${i}"><div class="top"><h3>${esc(x.s.name)}</h3><button type="button" class="copy" data-i="${i}">${COPY}</button></div><p class="when">${esc(x.s.when_to_use.length>180?x.s.when_to_use.slice(0,177)+"…":x.s.when_to_use)}</p><div class="meta"><a href="${esc(x.s.url)}" target="_blank" rel="noopener">View SKILL.md ↗</a><span class="src"><a class="cat" href="skills/${encodeURIComponent(x.s.category)}.html">${esc(x.s.category)}</a> · <span translate="no">${esc(x.s.repo)}</span> · ${x.s.repo_stars.toLocaleString()} stars</span></div></article>`).join(""):'<p class="empty">No matching skills. Try describing your task in a few more words, for example what you want to make and for whom.</p>';
+document.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{const done=t=>{b.textContent=t;setTimeout(()=>b.textContent=COPY,1600);};const t=SkillMatch.rewrite(q,r[b.dataset.i].s);const legacy=()=>{const x=document.createElement("textarea");x.value=t;x.setAttribute("readonly","");x.style.cssText="position:fixed;opacity:0";document.body.appendChild(x);x.select();let ok=false;try{ok=document.execCommand("copy")}catch(e){}x.remove();done(ok?"Copied":"Copy failed, select and copy by hand");};(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>done("Copied"),legacy);});}
 $("#go").onclick=()=>run(1);$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"&&(e.metaKey||e.ctrlKey))run(1);});
 document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("#q").value=c.textContent;run(1);});
-</script><script>document.querySelectorAll('form[data-nl]').forEach(f=>f.addEventListener('submit',ev=>{try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'newsletter-signup',title:(f.querySelector('[name=tag]')||{}).value||'',event:true})}catch(e){}if(!window.fetch||!window.FormData)return;ev.preventDefault();const s=f.parentNode.querySelector('.ok');fetch(f.action,{method:'POST',body:new FormData(f),mode:'no-cors'}).then(()=>{f.hidden=true;s.textContent='Thanks! Check your inbox to confirm.'}).catch(()=>{f.submit()})}))</script><script data-goatcounter="https://waskill.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
+</script><script>document.querySelectorAll('form[data-nl]').forEach(f=>f.addEventListener('submit',ev=>{try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count({path:'newsletter-signup',title:(f.querySelector('[name=tag]')||{}).value||'',event:true})}catch(e){}if(!window.fetch||!window.FormData)return;ev.preventDefault();const s=f.parentNode.querySelector('.ok');fetch(f.action,{method:'POST',body:new FormData(f),mode:'no-cors'}).then(()=>{f.hidden=true;s.textContent='Thanks! Check your inbox to confirm.'}).catch(()=>{f.submit()})}))</script>
+<script>
+(function(){
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+// FAQ: one question selected; its answer shows in the pane (desktop) or beneath it (phone)
+const qs=[...document.querySelectorAll(".q")];
+function sel(b){qs.forEach(x=>{const on=x===b;x.setAttribute("aria-expanded",on);document.getElementById(x.getAttribute("aria-controls")).hidden=!on;});}
+if(qs.length){sel(qs[0]);const fine=matchMedia("(hover: hover) and (min-width: 860px)");qs.forEach(b=>{b.addEventListener("click",()=>sel(b));b.addEventListener("focus",()=>{if(fine.matches)sel(b);});b.addEventListener("mouseenter",()=>{if(fine.matches)sel(b);});});}
+// Ghost examples: slow crossfade of real prompts inside the empty prompt box
+const ta=document.getElementById("q"),g=document.querySelector(".ghost");
+const EX=["Make a pitch deck for my coffee startup…","Fill out this PDF form with my details…","Write a cold email sequence for my SaaS…","Find the bug in my Python script…","Turn this CSV of sales into a chart…","Write tests before I build the login page…"];
+if(ta&&g){ta.classList.add("ghosted");let i=0,t=null;g.textContent=EX[0];g.classList.add("on");
+ if(!reduce){const tick=()=>{g.classList.remove("on");setTimeout(()=>{i=(i+1)%EX.length;g.textContent=EX[i];g.classList.add("on");},800);};
+  const start=()=>{if(!t)t=setInterval(tick,5200);},stop=()=>{clearInterval(t);t=null;};start();
+  document.addEventListener("visibilitychange",()=>document.hidden?stop():start());ta.addEventListener("focus",stop);ta.addEventListener("blur",start);}}
+// Entrances: staggered rise as each section enters; content stays visible if this never runs
+if(!reduce&&"IntersectionObserver" in window){document.documentElement.classList.add("rise-on");
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}}),{rootMargin:"0px 0px -8% 0px"});
+ document.querySelectorAll(".rise").forEach(el=>io.observe(el));}
+})();
+</script>
+<script>window.goatcounter={path:function(){return location.pathname}}</script><script data-goatcounter="https://waskill.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
