@@ -1,0 +1,9 @@
+{
+ "active": false,
+ "name": "",
+ "tagline": "",
+ "logo": "",
+ "url": "",
+ "keywords": [],
+ "_help": "Set active:true and fill name/tagline/url (logo = image URL, optional). keywords (optional): show only when the prompt contains one of them; empty = show for every prompt. While inactive, a house card linking to /sponsor/ is shown."
+}

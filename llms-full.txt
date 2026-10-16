@@ -21,6 +21,7 @@ Claude Agent Skills are folders containing a SKILL.md file (instructions, plus o
 - [Home / search](https://waskill.dev/)
 - [Skill data (JSON)](https://waskill.dev/skills.json): name, description, repo, stars, url, category for every indexed skill
 - [Full index for LLMs](https://waskill.dev/llms-full.txt)
+- [Sponsor Waskill](https://waskill.dev/sponsor/): sponsor card under results + newsletter mention
 - Category pages: [security](https://waskill.dev/skills/security.html), [integrations](https://waskill.dev/skills/integrations.html), [marketing](https://waskill.dev/skills/marketing.html), [data](https://waskill.dev/skills/data.html), [documents](https://waskill.dev/skills/documents.html), [design](https://waskill.dev/skills/design.html), [coding](https://waskill.dev/skills/coding.html), [productivity](https://waskill.dev/skills/productivity.html), [writing](https://waskill.dev/skills/writing.html), [business](https://waskill.dev/skills/business.html)
 
 ## Full skill index (top 25 per category by repo stars)
