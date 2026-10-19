@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://waskill.dev/</loc><lastmod>2026-10-16</lastmod><priority>1.0</priority></url>
-  <url><loc>https://waskill.dev/skills/security.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/integrations.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/marketing.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/data.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/documents.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/design.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/coding.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/productivity.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/writing.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/skills/business.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://waskill.dev/sponsor/</loc><lastmod>2026-10-16</lastmod><priority>0.4</priority></url>
-  <url><loc>https://waskill.dev/llms.txt</loc><lastmod>2026-10-16</lastmod><priority>0.3</priority></url>
+  <url><loc>https://waskill.dev/</loc><lastmod>2026-10-19</lastmod><priority>1.0</priority></url>
+  <url><loc>https://waskill.dev/skills/security.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/integrations.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/marketing.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/data.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/documents.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/design.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/coding.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/productivity.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/writing.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/skills/business.html</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://waskill.dev/sponsor/</loc><lastmod>2026-10-19</lastmod><priority>0.4</priority></url>
+  <url><loc>https://waskill.dev/llms.txt</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
+  <url><loc>https://waskill.dev/llms-full.txt</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
 </urlset>

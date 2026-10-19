@@ -51,7 +51,7 @@ for k, v in GEN.items():
     idx, n = re.subn(rf"<!--g:{k}-->.*?<!--/g:{k}-->", lambda m: f"<!--g:{k}-->{v}<!--/g:{k}-->", idx, flags=re.S)
     if not n: print("warning: marker missing in index.html:", k)
 write("index.html", idx)
-urls = [("", "1.0")] + [(f"skills/{c}.html", "0.7") for c in cats] + [("sponsor/", "0.4"), ("llms.txt", "0.3")]
+urls = [("", "1.0")] + [(f"skills/{c}.html", "0.7") for c in cats] + [("sponsor/", "0.4"), ("llms.txt", "0.3"), ("llms-full.txt", "0.3")]
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{today}</lastmod><priority>{p}</priority></url>\n" for u, p in urls) + "</urlset>\n")
 _llms = read("llms.txt")
 SPONSOR_LINE = f"- [Sponsor Waskill]({BASE}sponsor/): sponsor card under results + newsletter mention"
