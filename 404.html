@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found — Waskill</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%231f2b4d%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Shared tokens: keep in sync with index.html and tools/gen_seo.py */
+:root{--bg:#fff;--surface:#f4f4f2;--ink:#1f2b4d;--muted:#5f667b;--accent:#f7941d;--accent-hover:#ffa63d;--r:4px;--gut:24px;color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(1.0625rem,1rem + .25vw,1.1875rem);line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:600px;margin:12vh auto 0;padding:0 var(--gut)}
+h1{font-weight:400;font-size:clamp(2rem,1.3rem + 3.2vw,3.25rem);line-height:1.1;margin:0 0 16px}
+p{margin:0 0 20px;color:var(--muted)}
+form{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+input{flex:1 1 260px;font:inherit;padding:12px 14px;border:1px solid #c9c6bf;border-radius:var(--r);color:var(--ink)}
+button{font:inherit;padding:12px 18px;border:0;border-radius:var(--r);background:var(--accent);color:var(--ink);cursor:pointer}
+button:hover{background:var(--accent-hover)}
+a{color:var(--ink);text-underline-offset:.2em}
+</style></head><body>
+<main>
+<h1>That page isn't here.</h1>
+<p>Tell Waskill what you want Claude to do and it'll find the top 5 matching Claude skills.</p>
+<form action="/" method="get"><label for="q" style="position:absolute;left:-9999px">Your prompt</label><input id="q" name="q" placeholder="e.g. make a pitch deck" autofocus><button type="submit">Find skills</button></form>
+<p><a href="/">Go to the Waskill home page</a> or browse <a href="/skills/coding.html">coding</a>, <a href="/skills/writing.html">writing</a>, <a href="/skills/marketing.html">marketing</a>, and <a href="/skills/data.html">data</a> skills.</p>
+</main>
+<script>(function(){var s=decodeURIComponent(location.pathname).replace(/\.(html?|md)$/i,"").replace(/^\/+|\/+$/g,"").split("/").pop().replace(/[-_+]+/g," ").trim();if(s&&s!=="404"&&s.length<80)document.getElementById("q").value=s})()</script>
+<script>window.goatcounter={path:function(){return "404"+location.pathname}}</script><script data-goatcounter="https://waskill.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
