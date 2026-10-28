@@ -30,6 +30,11 @@ function boost(d,q,base,qflat){let m=1;
   if(d.s.name==="seo-competitor-pages"&&!/seo|competitor|\bvs\b|alternative/i.test(q))m*=0.25;
   if(d.sci&&!SCIQ.test(q)&&!base.some(w=>d.nt.has(w)))m*=0.25;
   if(BUGQ.test(q)&&CODEQ.test(q)){if(/review|debug|fix/.test(d.s.name))m*=1.5;if(d.sec)m*=0.4;}
+  if(/summar|\bread\b|explain|tl;?dr|digest|understand|takeaways/i.test(q)&&!SECQ.test(q)){if(d.sec)m*=0.15;if(/screenshot/.test(d.s.name))m*=0.2;if(d.s.name==="canvas-design")m*=0.3;}
+  if(JOBQ.test(q)){if(/^(internal-comms|wrap-up|content-strategy|team-communications|tc-tracker|regulatory-affairs-head|internal-narrative)$/.test(d.s.name))m*=0.2;else if(/^(copywriting|copy-editing)$/.test(d.s.name))m*=1.8;}
+  if(/pull request|\bprs?\b|\bcode\b|merge|commit|diff/i.test(q)&&/^(weekly|daily|monthly)-/.test(d.s.name))m*=0.1;
+  if(/\bdecks?\b|\bslides?\b|presentation|pitch/i.test(q)){if(d.s.name==="sales-enablement"&&!/sales/i.test(q))m*=0.4;else if(/pptx|slides|deck/.test(d.s.name))m*=1.3;if(d.s.name==="scientific-slides"&&!/research|talk|conference|thesis|seminar|scien|lecture/i.test(q))m*=0.4;}
+  if((/seo/.test(d.s.name)||d.s.repo.startsWith("AgriciDaniel"))&&!/seo|search|rank|keyword|google|serp|backlink|organic|sitemap|schema/i.test(q))m*=0.3;
   if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
   return m*(1+0.08*Math.log10(d.s.repo_stars));}
 function search(idx,q,k=5,qvec){
