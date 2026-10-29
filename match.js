@@ -5,6 +5,7 @@ const DATAQ=/\b(csv|dataset|data|spreadsheet|excel|xlsx|analy[sz]e|chart|statist
 const JOBQ=/cover letter|job application|apply(ing)? (for|to) (a |an |the )?(job|role|position)|\bresume\b|\bcv\b|job interview|hiring manager/i;
 const SCIQ=/scien|research|paper|academ|biolog|bioinf|genom|gene\b|protein|chem|astro|telescope|physic|neuro|clinical|medic|patient|lab\b|cell|dna|rna|sequenc|molecul|thesis|journal|poster|statistic|survey|experiment|data|csv|dataset|chart|plot|graph|spreadsheet|excel|analy[sz]|fits\b|quantum|climate|geo|ecolog|microscop|imaging|drug|pharma|material|lattice|simulat/i;
 const BUGQ=/\b(bugs?|review|debug|lint|errors?)\b/i,CODEQ=/\b(code|python|javascript|js|typescript|ts|function|script|repo|java|go|rust|ruby|php|c\+\+|react|node)\b/i;
+const GENERIC=new Set("python code data file script tool api web".split(" "));
 const SECQ=/secur|attack|threat|vuln|malware|pentest|hack|exploit|siem|soc\b|forensic|incident|cve|phish|firewall|compliance|ransom|red team|blue team/i;
 function tok(s){return (s.toLowerCase().match(/[a-z0-9+#]+/g)||[]).filter(w=>!STOP.has(w)&&w.length>1).map(w=>w.length>4&&w.endsWith("s")?w.slice(0,-1):w);}
 function build(all){const best={};all.forEach(s=>{if(!best[s.name]||best[s.name].repo_stars<s.repo_stars)best[s.name]=s;});const skills=Object.values(best).filter(s=>!/-(ar|de|es|zh|zht)$/.test(s.name));
@@ -19,7 +20,7 @@ function boost(d,q,base,qflat){let m=1;
   if(DATAQ.test(q)){if(/data|analy|csv|xlsx|pandas|polars|statistic|visuali|matplotlib|plot/.test(d.s.name))m*=2.5;}
   if(/helm/.test(d.s.name)&&!/helm|kubernetes|k8s/i.test(q))m*=0.1;
   if(/\bseo\b|keyword research|search ranking|rank on google/i.test(q)&&/^seo(-audit)?$/.test(d.s.name))m*=2.2;
-  if(d.sec&&!SECQ.test(q))m*=0.35;
+  if(d.sec&&!SECQ.test(q))m*=0.25;
   if(/brainstorm/i.test(q)&&d.s.name==="brainstorming")m*=2;
   if(d.s.name==="ar-resume"&&!/experiment|paused|continue/i.test(q))m*=0.1;
   if(/refactor|clean ?up (my|this) code|messy (code|function)/i.test(q)&&/karpathy|refactor|tech-debt|simplif/.test(d.s.name))m*=2;
@@ -28,13 +29,29 @@ function boost(d,q,base,qflat){let m=1;
   if(JOBQ.test(q)){if(d.s.name==="tailored-resume-generator")m*=5;else if(d.s.name==="doc-coauthoring"&&/write|draft|letter/i.test(q))m*=2.5;else if(d.s.name==="interview"&&!/agent/i.test(q))m*=0.2;else if(/marketing|seo/.test(d.s.name))m*=0.3;}
   if(d.s.name==="write-a-skill"&&!/\bskills?\b/i.test(q))m*=0.25;
   if(d.s.name==="seo-competitor-pages"&&!/seo|competitor|\bvs\b|alternative/i.test(q))m*=0.25;
-  if(d.sci&&!SCIQ.test(q)&&!base.some(w=>d.nt.has(w)))m*=0.25;
+  if(d.sci&&!SCIQ.test(q)&&!base.some(w=>d.nt.has(w)&&!GENERIC.has(w)))m*=0.25;
   if(BUGQ.test(q)&&CODEQ.test(q)){if(/review|debug|fix/.test(d.s.name))m*=1.5;if(d.sec)m*=0.4;}
   if(/summar|\bread\b|explain|tl;?dr|digest|understand|takeaways/i.test(q)&&!SECQ.test(q)){if(d.sec)m*=0.15;if(/screenshot/.test(d.s.name))m*=0.2;if(d.s.name==="canvas-design")m*=0.3;}
   if(JOBQ.test(q)){if(/^(internal-comms|wrap-up|content-strategy|team-communications|tc-tracker|regulatory-affairs-head|internal-narrative)$/.test(d.s.name))m*=0.2;else if(/^(copywriting|copy-editing)$/.test(d.s.name))m*=1.8;}
   if(/pull request|\bprs?\b|\bcode\b|merge|commit|diff/i.test(q)&&/^(weekly|daily|monthly)-/.test(d.s.name))m*=0.1;
   if(/\bdecks?\b|\bslides?\b|presentation|pitch/i.test(q)){if(d.s.name==="sales-enablement"&&!/sales/i.test(q))m*=0.4;else if(/pptx|slides|deck/.test(d.s.name))m*=1.3;if(d.s.name==="scientific-slides"&&!/research|talk|conference|thesis|seminar|scien|lecture/i.test(q))m*=0.4;}
   if((/seo/.test(d.s.name)||d.s.repo.startsWith("AgriciDaniel"))&&!/seo|search|rank|keyword|google|serp|backlink|organic|sitemap|schema/i.test(q))m*=0.3;
+  if(d.s.name==="invoice-organizer"&&!/invoice|receipt|expense|tax|bill|accounting/i.test(q))m*=0.25;
+  if(d.s.name==="planning-with-files"&&!/\bplan|multi-?step|roadmap|todo|task list|progress/i.test(q))m*=0.3;
+  if(d.s.name==="xlsx"&&!/excel|spreadsheet|xlsx|\bsheets?\b|csv|table|workbook|data/i.test(q))m*=0.3;
+  if(/screenshot/.test(d.s.name)&&!/screenshot|capture|screen ?grab|snapshot/i.test(q))m*=0.3;
+  if(/^(team-communications|internal-comms)$/.test(d.s.name)&&!/team|announce|update|internal|company|staff|employee|newsletter|all-hands|memo|org\b/i.test(q))m*=0.3;
+  if(d.s.name==="md-document"&&!/markdown|\bmd\b|html|rfc|spec|explainer/i.test(q))m*=0.4;
+  if(/summar|tl;?dr|digest|takeaways/i.test(q)&&/summar|deepread/.test(d.s.name))m*=1.3;
+  if(JOBQ.test(q)&&/^(contract-and-proposal-writer|change-management)$/.test(d.s.name))m*=0.2;
+  if(/pull request|\bprs?\b|\bcode\b|merge|commit|diff|\bbugs?\b/i.test(q)&&/^(caio|cco|cdo|cfo|ciso|cmo|cpo|cro|cto|gc|vpe|ceo|coo)-review$/.test(d.s.name))m*=0.1;
+  if(/security|auditor/.test(d.s.name)&&!d.sec&&!SECQ.test(q)&&!/safe|malicious|audit/i.test(q))m*=0.35;
+  if(d.s.name==="coverage"&&!/coverage|\btests?\b|testing/i.test(q))m*=0.3;
+  if(d.s.name==="diagnosing-superpowers"&&!/superpower|session|diagnos|went wrong/i.test(q))m*=0.3;
+  if(d.s.name==="book-to-skill"&&!/\bskills?\b|\bbooks?\b|epub/i.test(q))m*=0.4;
+  if(d.s.name==="universal-scraping-architect"&&!/scrap|crawl|extract|pipeline|firecrawl|parse|parsing/i.test(q))m*=0.4;
+  if(JOBQ.test(q)&&d.s.name==="prospecting")m*=0.3;
+  if(d.s.name==="generate"&&!/\btests?\b|testing|playwright|e2e/i.test(q))m*=0.3;
   if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
   return m*(1+0.08*Math.log10(d.s.repo_stars));}
 function search(idx,q,k=5,qvec){
