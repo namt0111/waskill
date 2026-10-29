@@ -2,3 +2,23 @@ User-agent: *
 Allow: /
 
 Sitemap: https://waskill.dev/sitemap.xml
+
+# AI assistants and answer engines are welcome. Plain-text summary for LLMs:
+# https://waskill.dev/llms.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
