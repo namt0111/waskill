@@ -52,6 +52,7 @@ function boost(d,q,base,qflat){let m=1;
   if(d.s.name==="universal-scraping-architect"&&!/scrap|crawl|extract|pipeline|firecrawl|parse|parsing/i.test(q))m*=0.4;
   if(JOBQ.test(q)&&d.s.name==="prospecting")m*=0.3;
   if(d.s.name==="generate"&&!/\btests?\b|testing|playwright|e2e/i.test(q))m*=0.3;
+  if(/summar|\bread\b|explain|tl;?dr|digest|understand|takeaways/i.test(q)&&/^(lead-magnets|linkedin-content)$/.test(d.s.name)&&!/\blead|e-?book|opt-?in|gated|marketing|funnel|linkedin|audience/i.test(q))m*=0.2;
   if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
   return m*(1+0.08*Math.log10(d.s.repo_stars));}
 function search(idx,q,k=5,qvec){
