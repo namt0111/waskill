@@ -1,11 +1,14 @@
 (function(g){
 const STOP=new Set("a an the and or to of for in on with my me i is it this that be can you please help want need make some how do from at by as your our into about use using".split(" "));
-const SYN={deck:["pptx","powerpoint","presentation","slides"],slides:["pptx","presentation"],presentation:["pptx","slides"],pitch:["presentation","pptx"],spreadsheet:["xlsx","excel"],excel:["xlsx","spreadsheet"],csv:["data","exploratory","eda","dataset","analysis","xlsx"],data:["exploratory","analysis"],plan:["planning"],research:["research","literature"],paper:["academic","paper"],analyze:["analysis","exploratory"],word:["docx"],document:["docx"],pdf:["pdf"],debug:["debugging","bug","systematic","fix"],bug:["debugging"],landing:["page","conversion","copywriting","cro"],python:["code","debugging"],test:["testing","tdd"],email:["email","sequence"],logo:["design","brand"],seo:["seo","search"],react:["frontend","web","ui"],website:["frontend","web","page"],keyword:["seo","keyword"],refactor:["refactoring","code","quality","simplify"],messy:["clean"],script:["code","automation"],newsletter:["email","content","sequence"],chart:["visualization","plot","matplotlib"],plot:["matplotlib","visualization"],resume:["resume","cv","job"],cv:["resume","job"],cover:["resume","job","application"],job:["resume","job"],rename:["organize","organizer","file"],files:["file","organizer"],refactoring:["refactor"],poster:["design","canvas","art"]};
+const SYN={deck:["pptx","powerpoint","presentation","slides"],slides:["pptx","presentation"],presentation:["pptx","slides"],pitch:["presentation","pptx"],spreadsheet:["xlsx","excel"],excel:["xlsx","spreadsheet"],csv:["data","exploratory","eda","dataset","analysis","xlsx"],data:["exploratory","analysis"],plan:["planning"],research:["research","literature"],paper:["academic","paper"],analyze:["analysis","exploratory"],word:["docx"],document:["docx"],pdf:["pdf"],debug:["debugging","bug","systematic","fix"],error:["debugging","bug"],exception:["debugging","bug"],crash:["debugging","bug"],traceback:["debugging"],week:["weekly"],bug:["debugging"],landing:["page","conversion","copywriting","cro"],python:["code","debugging"],test:["testing","tdd"],email:["email","sequence"],logo:["design","brand"],seo:["seo","search"],react:["frontend","web","ui"],website:["frontend","web","page"],keyword:["seo","keyword"],refactor:["refactoring","code","quality","simplify"],messy:["clean"],script:["code","automation"],newsletter:["email","content","sequence"],chart:["visualization","plot","matplotlib"],plot:["matplotlib","visualization"],resume:["resume","cv","job"],cv:["resume","job"],cover:["resume","job","application"],job:["resume","job"],rename:["organize","organizer","file"],files:["file","organizer"],refactoring:["refactor"],poster:["design","canvas","art"]};
 const DATAQ=/\b(csv|dataset|data|spreadsheet|excel|xlsx|analy[sz]e|chart|statistic)/i;
 const JOBQ=/cover letter|job application|apply(ing)? (for|to) (a |an |the )?(job|role|position)|\bresume\b|\bcv\b|job interview|hiring manager/i;
 const SCIQ=/scien|research|paper|academ|biolog|bioinf|genom|gene\b|protein|chem|astro|telescope|physic|neuro|clinical|medic|patient|lab\b|cell|dna|rna|sequenc|molecul|thesis|journal|poster|statistic|survey|experiment|data|csv|dataset|chart|plot|graph|spreadsheet|excel|analy[sz]|fits\b|quantum|climate|geo|ecolog|microscop|imaging|drug|pharma|material|lattice|simulat/i;
 const BUGQ=/\b(bugs?|review|debug|lint|errors?)\b/i,CODEQ=/\b(code|python|javascript|js|typescript|ts|function|script|repo|java|go|rust|ruby|php|c\+\+|react|node)\b/i;
-const GENERIC=new Set("python code data file script tool api web".split(" "));
+const GENERIC=new Set("python code data file script tool api web plan".split(" "));
+const ERRQ=/\berrors?\b|\bbugs?\b|stack ?trace|traceback|exception|crash|not working|doesn'?t work|broken|segfault|\bfail(s|ed|ing)?\b/i;
+const MKTQ=/market|\bsales?\b|sell|prospect|campaign|outreach|newsletter|subscriber|drip|\bleads?\b|cold|b2b|lifecycle|nurtur|customers?\b|\bgtm\b|launch|brand|growth/i;
+const PERSONALQ=/\bmy (landlord|week|weekend|day|boss|manager|family|wife|husband|partner|kids?|friends?|roommates?|neighbou?rs?|doctor|teacher|apartment|rent|life|schedule|routine)\b|job interview|\bpersonal\b/i;
 const SECQ=/secur|attack|threat|vuln|malware|pentest|hack|exploit|siem|soc\b|forensic|incident|cve|phish|firewall|compliance|ransom|red team|blue team/i;
 function tok(s){return (s.toLowerCase().match(/[a-z0-9+#]+/g)||[]).filter(w=>!STOP.has(w)&&w.length>1).map(w=>w.length>4&&w.endsWith("s")?w.slice(0,-1):w);}
 function build(all){const best={};all.forEach(s=>{if(!best[s.name]||best[s.name].repo_stars<s.repo_stars)best[s.name]=s;});const skills=Object.values(best).filter(s=>!/-(ar|de|es|zh|zht)$/.test(s.name));
@@ -53,6 +56,27 @@ function boost(d,q,base,qflat){let m=1;
   if(JOBQ.test(q)&&d.s.name==="prospecting")m*=0.3;
   if(d.s.name==="generate"&&!/\btests?\b|testing|playwright|e2e/i.test(q))m*=0.3;
   if(/summar|\bread\b|explain|tl;?dr|digest|understand|takeaways/i.test(q)&&/^(lead-magnets|linkedin-content)$/.test(d.s.name)&&!/\blead|e-?book|opt-?in|gated|marketing|funnel|linkedin|audience/i.test(q))m*=0.2;
+  if(ERRQ.test(q)&&!SECQ.test(q)){const rv=/\breview|pull request|\bprs?\b/i.test(q);if(d.s.name==="systematic-debugging")m*=rv?1.2:3;else if(d.s.name==="focused-fix")m*=rv?1:2;}
+  if(d.s.name==="slo-architect"&&!/\bslos?\b|\bslis?\b|error budget|reliab|uptime|latency/i.test(q))m*=0.3;
+  if(d.s.name==="board"&&!/\bboard\b|agenthub|\bhub\b/i.test(q))m*=0.3;
+  if(d.s.name==="connect"&&!/connect|integrat|\bapps?\b|gmail|slack|notion|github/i.test(q))m*=0.4;
+  if(/^(marketing-plan|linkedin-strategy)$/.test(d.s.name)&&!/market|linkedin|brand|campaign|\bgtm\b|growth/i.test(q))m*=0.25;
+  if(/^(writing-plans|executing-plans)$/.test(d.s.name)&&!/\bcode|coding|implement|feature|\bspec\b|refactor|\bbuild|\bapp\b|software|migrat|repo|\bapi\b/i.test(q))m*=0.3;
+  if(/business plan|startup plan|plan (for )?(my|a|the) (business|startup|company)/i.test(q)&&/^(business-operations-skills|business-growth-skills|founder-coach|stress-test|business-investment-advisor)$/.test(d.s.name))m*=1.8;
+  if(/\b(my|this|next) week\b|\bweekly\b|plan my (day|week)/i.test(q)&&/^(weekly-review|capture)$/.test(d.s.name))m*=2.5;
+  if(/^(cold-email|email-sequence|emails|lead-magnets)$/.test(d.s.name)&&!MKTQ.test(q))m*=0.25;
+  if(d.s.name==="email-template-builder"&&!/template|transactional|react email|resend|postmark|sendgrid|ses\b/i.test(q))m*=0.3;
+  if(/\b(write|draft|reply)\b.*\b(email|letter|message)\b/i.test(q)&&!MKTQ.test(q)&&/^(copywriting|copy-editing|doc-coauthoring)$/.test(d.s.name))m*=1.5;
+  if(d.s.name==="inbox-setup"&&!/inbox|e-?mails?|triage/i.test(q))m*=0.25;
+  if(d.s.name==="interview-system-designer"&&/\b(prepare|prep|practi[cs]e|my)\b.*interview|interview (prep|practice|questions)/i.test(q)&&!/hiring|interviewers|candidates|recruit/i.test(q))m*=0.3;
+  if(PERSONALQ.test(q)&&!MKTQ.test(q)&&(/marketing|sales|cold-email|email-sequence|^emails$|lead|prospect|linkedin|launch|-cro$|^cro|seo|pricing|customer-research|cs-onboard|soc2|founder-mode|content-strategy|social-media|^sms$|churn|^onboard(ing)?$|c-level|executive-mentor|product-manager|^(caio|cco|cdo|cfo|ciso|cmo|cpo|cro|cto|gc|vpe|ceo|coo)-review$/.test(d.s.name)))m*=0.3;
+  if(ERRQ.test(q)&&/^(caio|cco|cdo|cfo|ciso|cmo|cpo|cro|cto|gc|vpe|ceo|coo)-review$/.test(d.s.name))m*=0.2;
+  if(d.s.name==="ms365-tenant-manager"&&!/ms ?365|microsoft|office 365|azure|entra|\bm365\b/i.test(q))m*=0.2;
+  if(d.s.name==="code-tour"&&!/\btour|walkthrough|onboard|codebase/i.test(q))m*=0.4;
+  if(d.s.name==="snowflake-development"&&!/snowflake|\bsql\b|warehouse|cortex/i.test(q))m*=0.3;
+  if(d.s.name==="langsmith-fetch"&&!/lang(smith|chain|graph)|\bagents?\b|trace/i.test(q))m*=0.4;
+  if(d.s.name==="run-without-you"&&!/\bagents?\b|cron|schedul|deploy|autonom/i.test(q))m*=0.3;
+  if(d.s.name==="discernment-nudge"&&ERRQ.test(q))m*=0.4;
   if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
   return m*(1+0.08*Math.log10(d.s.repo_stars));}
 function search(idx,q,k=5,qvec){
