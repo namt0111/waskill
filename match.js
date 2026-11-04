@@ -5,7 +5,7 @@ const DATAQ=/\b(csv|dataset|data|spreadsheet|excel|xlsx|analy[sz]e|chart|statist
 const JOBQ=/cover letter|job application|apply(ing)? (for|to) (a |an |the )?(job|role|position)|\bresume\b|\bcv\b|job interview|hiring manager/i;
 const SCIQ=/scien|research|paper|academ|biolog|bioinf|genom|gene\b|protein|chem|astro|telescope|physic|neuro|clinical|medic|patient|lab\b|cell|dna|rna|sequenc|molecul|thesis|journal|poster|statistic|survey|experiment|data|csv|dataset|chart|plot|graph|spreadsheet|excel|analy[sz]|fits\b|quantum|climate|geo|ecolog|microscop|imaging|drug|pharma|material|lattice|simulat/i;
 const BUGQ=/\b(bugs?|review|debug|lint|errors?)\b/i,CODEQ=/\b(code|python|javascript|js|typescript|ts|function|script|repo|java|go|rust|ruby|php|c\+\+|react|node)\b/i;
-const GENERIC=new Set("python code data file script tool api web plan".split(" "));
+const GENERIC=new Set("python code data file script tool api web plan unit".split(" "));
 const ERRQ=/\berrors?\b|\bbugs?\b|stack ?trace|traceback|exception|crash|not working|doesn'?t work|broken|segfault|\bfail(s|ed|ing)?\b/i;
 const MKTQ=/market|\bsales?\b|sell|prospect|campaign|outreach|newsletter|subscriber|drip|\bleads?\b|cold|b2b|lifecycle|nurtur|customers?\b|\bgtm\b|launch|brand|growth/i;
 const PERSONALQ=/\bmy (landlord|week|weekend|day|boss|manager|family|wife|husband|partner|kids?|friends?|roommates?|neighbou?rs?|doctor|teacher|apartment|rent|life|schedule|routine)\b|job interview|\bpersonal\b/i;
@@ -77,6 +77,18 @@ function boost(d,q,base,qflat){let m=1;
   if(d.s.name==="langsmith-fetch"&&!/lang(smith|chain|graph)|\bagents?\b|trace/i.test(q))m*=0.4;
   if(d.s.name==="run-without-you"&&!/\bagents?\b|cron|schedul|deploy|autonom/i.test(q))m*=0.3;
   if(d.s.name==="discernment-nudge"&&ERRQ.test(q))m*=0.4;
+  if(d.s.name==="uncertainty-and-units"&&!/uncertaint|measurement|\bpint\b|physic|scientific|astronom|\bqty\b|quantit/i.test(q))m*=0.15;
+  if(/unit tests?|tdd|test.?driven|\bjest\b|\bpytest\b|mocha|vitest/i.test(q)&&/^(tdd-guide|test-driven-development|senior-qa|generate)$/.test(d.s.name))m*=1.5;
+  if(/-cli$/.test(d.s.name)){const prod=d.s.name.replace(/-cli$/,"").replace(/-/g," ");const named=new RegExp(prod.split(" ").filter(w=>w.length>2).join("|"),"i").test(q)||/google|workspace|gmail|gws\b/i.test(q)&&/google-workspace/.test(d.s.name);if(!named)m*=0.2;}
+  if(/\bcli\b|command.?line|scaffolds?|scaffold(ing)?|starter (app|project|repo)|boilerplate/i.test(q)&&/^(spec-to-repo|saas-scaffolder|senior-fullstack|mcp-server-builder|skill-creator)$/.test(d.s.name))m*=1.8;
+  if(d.s.name==="free-tool-strategy"&&!/free tool|lead gen|engineering as marketing/i.test(q))m*=0.25;
+  if(d.s.name==="tc-tracker"&&!/\btc\b|change record|technical change|hand ?off/i.test(q))m*=0.3;
+  if(d.s.name==="engineering-skills"&&!/engineering (skills?|team|bundle)|browse.*skills/i.test(q))m*=0.4;
+  if(ERRQ.test(q)){if(d.s.name==="analytics-tracking"&&!/analytics|tracking|ga4|gtm|tag manager|event taxonom/i.test(q))m*=0.2;if(/^(connect|connect-apps)$/.test(d.s.name)&&!/connect|integrat|\bapps?\b|gmail|slack|notion|github/i.test(q))m*=0.2;if(d.s.name==="extract"&&!/\bextract\b|reusable skill|pattern/i.test(q))m*=0.35;if(d.s.name==="risk-management-specialist"&&!/risk|iso ?14971|medical device/i.test(q))m*=0.3;}
+  if(/\bcli\b|command.?line/i.test(q)&&!/canvas|design|art|poster|logo/i.test(q)&&d.s.name==="canvas-design")m*=0.3;
+  if(/\bcli\b|command.?line/i.test(q)&&d.s.name==="research-summarizer")m*=0.3;
+  if(/\bcli\b|command.?line/i.test(q)&&d.s.name==="terraform-patterns"&&!/terraform|iac|infra/i.test(q))m*=0.3;
+  if(ERRQ.test(q)&&/^(webapp-testing|schema-markup|linkedin-engagement|iso27001-audit-prep)$/.test(d.s.name)&&!/test|schema|linkedin|iso.?27001|audit/i.test(q))m*=0.35;
   if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
   return m*(1+0.08*Math.log10(d.s.repo_stars));}
 function search(idx,q,k=5,qvec){
