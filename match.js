@@ -43,7 +43,7 @@ function boost(d,q,base,qflat){let m=1;
   if(d.s.name==="planning-with-files"&&!/\bplan|multi-?step|roadmap|todo|task list|progress/i.test(q))m*=0.3;
   if(d.s.name==="xlsx"&&!/excel|spreadsheet|xlsx|\bsheets?\b|csv|table|workbook|data/i.test(q))m*=0.3;
   if(/screenshot/.test(d.s.name)&&!/screenshot|capture|screen ?grab|snapshot/i.test(q))m*=0.3;
-  if(/^(team-communications|internal-comms)$/.test(d.s.name)&&!/team|announce|update|internal|company|staff|employee|newsletter|all-hands|memo|org\b/i.test(q))m*=0.3;
+  if(/^(team-communications|internal-comms)$/.test(d.s.name)&&!/team|announce|update|internal|company|staff|employee|all-hands|memo|org\b/i.test(q))m*=0.3;
   if(d.s.name==="md-document"&&!/markdown|\bmd\b|html|rfc|spec|explainer/i.test(q))m*=0.4;
   if(/summar|tl;?dr|digest|takeaways/i.test(q)&&/summar|deepread/.test(d.s.name))m*=1.3;
   if(JOBQ.test(q)&&/^(contract-and-proposal-writer|change-management)$/.test(d.s.name))m*=0.2;
@@ -89,6 +89,11 @@ function boost(d,q,base,qflat){let m=1;
   if(/\bcli\b|command.?line/i.test(q)&&d.s.name==="research-summarizer")m*=0.3;
   if(/\bcli\b|command.?line/i.test(q)&&d.s.name==="terraform-patterns"&&!/terraform|iac|infra/i.test(q))m*=0.3;
   if(ERRQ.test(q)&&/^(webapp-testing|schema-markup|linkedin-engagement|iso27001-audit-prep)$/.test(d.s.name)&&!/test|schema|linkedin|iso.?27001|audit/i.test(q))m*=0.35;
+  if(/newsletter|subscriber|welcome[- ]?series|drip campaign|lifecycle emails?/i.test(q)){if(/^(email-sequence|emails)$/.test(d.s.name))m*=2.5;if(d.s.name==="cold-email"&&!/cold|outbound|prospect/i.test(q))m*=0.2;if(d.s.name==="lead-magnets"&&!/\blead|magnet|opt-?in|gated/i.test(q))m*=0.35;if(d.s.name==="product-marketing")m*=1.3;}
+  if(d.s.name==="influencer-marketing"&&!/influencer|creator|ambassador/i.test(q))m*=0.25;
+  if(d.s.name==="changelog-generator"&&!/changelog|release notes?|\bsemver\b|conventional commits?|version bump/i.test(q))m*=0.2;
+  if(/\bcommits?\b|commit messages?/i.test(q)&&!/changelog|release notes?/i.test(q)){if(d.s.name==="finishing-a-development-branch")m*=2.5;if(d.s.name==="karpathy-coder")m*=1.8;if(/^(requesting-code-review|receiving-code-review|code-reviewer|doc-coauthoring)$/.test(d.s.name))m*=1.4;if(/^(file-organizer|patent|handoff|commercial-forecaster|sql-database-assistant|linkedin-content|content-production|minimalist|skill-tester)$/.test(d.s.name))m*=0.3;}
+  if(/\bcommits?\b|commit messages?/i.test(q)&&!/changelog|release notes?/i.test(q)){if(/^(commercial-forecaster|ab-testing|content-strategy|skill-creator)$/.test(d.s.name))m*=0.35;}
   if(/^(anthropics|obra)\//.test(d.s.repo))m*=1.2;
   return m*(1+0.08*Math.log10(d.s.repo_stars));}
 function search(idx,q,k=5,qvec){
